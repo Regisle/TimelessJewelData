@@ -13,10 +13,30 @@ index_of_Change is dependant on value,
 Glorious Vanity not included because it's more complex (and around 50% larger than the other 4 combined)
 
 The suggested method for parsing it is to :
-- convert it to the above described unit8 array, 
+- convert/load it to the above described unit8 array, 
 - create a list of valid notables you want (by above index) (only do 1 jewel socket at a time)
 - create an array of weights, (most will be 0)
 - create an array of valid seeds
 - SEEK to a location, and input the value as the index into your weight_array to obtain the weight of the node, add this value to the value in your seed_array
 - once you have gone through all nodes/seeds, go through the list and remove any that fall below some chosen threshold
 - then sort the seed_array from largest to smallest
+
+
+example of how to load it by @zao
+Python
+```python
+lut = pathlib.Path('Militant Faith').read_bytes()
+```
+
+C++
+```c++
+std::ifstream is("Militant Faith", std::ios::binary);
+auto file_size = is.seekg(0, std::ios::end); // or use std::filesystem::file_size on a path
+is.seekg(0, std::ios::beg);
+std::vector<uint8_t> lut(file_size);
+is.read((char*)lut.data(), lut.size());
+```
+
+example of grabbing a single node
+
+take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up easier), this gives you an index of 0 + 116, the byte at that value is 52 (a "4" in ascii) which corresponds with "karui_notable_add_burning_damage", which is what it is ![](https://cdn.discordapp.com/attachments/175290321695932416/993077938847219722/unknown.png)
