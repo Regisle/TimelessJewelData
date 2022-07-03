@@ -1,8 +1,8 @@
-Data files are uint8 arrays (1 byte per node+seed), where array[node_id_INDEX * jewel_seed_Size + jewel_seed] = index_of_Change
+Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, where array[node_id_INDEX * jewel_seed_Size + jewel_seed_offset] = index_of_Change
 
 	node_id_INDEX is given by node_indices.csv
-	jewel_seed_Size is the number of seeds for a given jewel (note elegant hubris is divided by 20)
-	jewel_seed is self explanatory  (note elegant hubris is divided by 20)
+	jewel_seed_Size is the number of seeds for a given jewel (note elegant hubris seeds are divided by 20)
+	jewel_seed_offset is the value above the minimum  (note elegant hubris seeds are divided by 20)
 
 index_of_Change is dependant on value, 
 
