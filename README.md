@@ -12,10 +12,11 @@ index_of_Change is dependant on value,
 
 Glorious Vanity not included because it's more complex (and around 50% larger than the other 4 combined)
 
-The suggested method for parsing it is to convert it to the above described unit8 array, 
-create a list of valid notables you want (by above index) (only do 1 jewel socket at a time)
-create an array of weights, (most will be 0)
-create an array of valid seeds
-SEEK to a location, and input the value as the index into your weight_array to obtain the weight of the node, add this value to the value in your seed_array
-once you have gone through all nodes/seeds, go through the list and remove any that fall below some chosen threshold
-then sort the seed_array from largest to smallest
+The suggested method for parsing it is to :
+- convert it to the above described unit8 array, 
+- create a list of valid notables you want (by above index) (only do 1 jewel socket at a time)
+- create an array of weights, (most will be 0)
+- create an array of valid seeds
+- SEEK to a location, and input the value as the index into your weight_array to obtain the weight of the node, add this value to the value in your seed_array
+- once you have gone through all nodes/seeds, go through the list and remove any that fall below some chosen threshold
+- then sort the seed_array from largest to smallest
