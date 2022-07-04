@@ -21,17 +21,17 @@ The suggested method for parsing non-GV is to :
 - once you have gone through all nodes/seeds, go through the list and remove any that fall below some chosen threshold
 - then sort the seed_array from largest to smallest
 
-Glorious Vanity has its own node indicies as it also include all the small nodes, it has a nodecount of 1678, as such it is much larger, and thus is compressed for github
+Glorious Vanity has its own node indices as it also include all the small nodes, it has a nodecount of 1678, as such it is much larger, and thus is compressed for github
 
 next, each node can have multiple changes, and each change comes with an associated stat value (roll value for roll range), as such there is a header section first with the size of each, size of 1 for each stat/value
 - eg if it has 4 stats it has an 8 in the header (4 stats with 1 roll each)
 - if it has 1 stat with 2 rolls it has a 3 in the header
  
-becouse each node has more than 1 value associated with it, the recomended method for parsing it is a 2d array, to create it:
+because each node has more than 1 value associated with it, the recommended method for parsing it is a 2d array, to create it:
 - create a header of size: nodeCount \* maxSeedIndex
 - create a variable length 2d array for Data. the first coordinate, similar to the other jewels, will be the index of the node index \* maxSeedIndex + seed index, but since each stat needs multiple bytes, the value at that coordinate will be an array of bytes instead of just a single byte
 - load in the data an array of size equal to the value in header\[i\] into data\[i\] which gives you the full 2d array
-- when you itterate over it like in the non-GV method you can then access specific elements to check if its the change you want, or use the values for weighted sums
+- when you iterate over it like in the non-GV method you can then access specific elements to check if its the change you want, or use the values for weighted sums
 - eg for 1 stat (header\[i\]==2) its, data\[i\]\[0\] to check the 0th change, and data\[i\]\[1\] to get the value of the 0th change, where "i" is the same index formula as the non-GV version, but uses the GV indices csv
 - note that its all the stats then all the rolls, not stat, roll, stat, roll, eg for 3 stats its \[0\]stat1, \[1\]stat2, \[2\]stat3, \[3\]roll1, \[4\]roll2, \[5\]roll3
 - theres only 4 cases, 1 stat 1 roll, 1 stat 2 rolls, 3 stats 3 rolls, 4 stats 4 rolls
