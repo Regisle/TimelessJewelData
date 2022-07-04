@@ -7,7 +7,7 @@ Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, wher
 index_of_Change is dependant on value, 
 
 	additions are index_of_Change = _rid in alternate_passive_additions.json
-	replacements are index_of_Change = _rid - 94 in alternate_passive_additions.json
+	replacements are index_of_Change - 94 = _rid in alternate_passive_skills.json
 	if no change is made to the node then index is 249
 
 Glorious Vanity not included because it's more complex (and around 50% larger than the other 4 combined)
@@ -23,6 +23,7 @@ The suggested method for parsing it is to :
 
 
 example of how to load it by @zao
+
 Python
 ```python
 lut = pathlib.Path('Militant Faith').read_bytes()
