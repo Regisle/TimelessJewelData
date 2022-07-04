@@ -38,7 +38,7 @@ becouse each node has more than 1 value associated with it, the recomended metho
 
 basic example of parsing them in c# provided by Oxidisedgearz in examples folder
 
-list of which nodes are in range of what jewel socket can be found here https://gist.github.com/Scy147/7d1efbc19350fe94c07a68d7388c3566
+list of which nodes are in range of what jewel socket can be found in Jewel_Node_Link.json
 
 example of how to load it by @zao
 
