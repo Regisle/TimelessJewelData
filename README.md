@@ -71,4 +71,4 @@ It's built on top of a timeless jewel simulator, and the vast majority of the ed
 Running it will output 5 datafiles and 2 csv files in the same location as the executable.   
 Runtime is about 5 min (in a release mode with no debugging overhead).
 
-Only the glorious vanity handler has had much thought applied to optimization since it would have been by far the slowest.
+Only the glorious vanity handler has had much thought applied to optimization since it would have been much too slow otherwise.
