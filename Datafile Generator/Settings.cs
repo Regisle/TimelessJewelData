@@ -17,7 +17,7 @@ namespace DatafileGenerator
     private const string ALTERNATE_TREE_VERSIONS_FILE_NAME = "alternate_tree_versions.json";
     private const string PASSIVE_SKILLS_FILE_NAME = "passive_skills.json";
     public static readonly string BaseDirectoryPath = AppDomain.CurrentDomain.BaseDirectory;
-    public static readonly string DataDirectoryPath = Path.Combine(Settings.BaseDirectoryPath, "data");
+    public static readonly string DataDirectoryPath = Path.Combine(Settings.BaseDirectoryPath, "Data", "TreeData");
     public static readonly string AlternatePassiveAdditionsFilePath = Path.Combine(Settings.DataDirectoryPath, "alternate_passive_additions.json");
     public static readonly string AlternatePassiveSkillsFilePath = Path.Combine(Settings.DataDirectoryPath, "alternate_passive_skills.json");
     public static readonly string AlternateTreeVersionsFilePath = Path.Combine(Settings.DataDirectoryPath, "alternate_tree_versions.json");
