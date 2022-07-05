@@ -1,0 +1,392 @@
+PassiveSkillGraphId,Name,Datafile Parsing Index
+30439,Lava Lash,0
+42917,Whirling Barrier,1
+20832,Sanctuary,2
+51559,Smashing Strikes,3
+16703,Skull Cracking,4
+40645,Bone Breaker,5
+10542,Spiked Bulwark,6
+26096,Hatchet Master,7
+23038,Slaughter,8
+58449,Born to Fight,9
+37326,Stamina,10
+11730,Endurance,11
+4833,Vigour,12
+63422,Lust for Carnage,13
+64395,Blunt Trauma,14
+30160,Fending,15
+6289,Bloodless,16
+2225,Eagle Eye,17
+24383,Warrior's Blood,18
+6615,Arcing Blows,19
+16243,Fusillade,20
+26557,Static Blows,21
+22972,Wandslinger,22
+41476,Elder Power,23
+56276,Nightstalker,24
+36490,Flaying,25
+54791,Claws of the Magpie,26
+56648,Claws of the Falcon,27
+61982,Grave Intentions,28
+19897,Death Attunement,29
+34173,Overcharge,30
+42804,Mind Drinker,31
+56716,Heart of Thunder,32
+30225,Lightning Walker,33
+34661,Fire Walker,34
+2550,Arsonist,35
+58198,Fingers of Frost,36
+44955,Frost Walker,37
+8833,Heart of Ice,38
+29049,Holy Fire,39
+46842,Arcane Potency,40
+61308,Amplify,41
+24362,Deep Thoughts,42
+9788,Nimbleness,43
+11784,Vampirism,44
+57199,Fangs of Frost,45
+49318,Wrecking Ball,46
+15842,One With Nature,47
+32227,Adder's Touch,48
+25367,Blade Master,49
+529,Poisonous Fangs,50
+1405,From the Shadows,51
+28503,Life Raker,52
+37504,Intuition,53
+42720,Heavy Draw,54
+9535,Hunter's Gambit,55
+48614,Fervour,56
+42443,Frenetic,57
+23066,Savagery,58
+49459,King of the Hill,59
+19858,Herbalism,60
+54776,Mana Flows,61
+65210,Heart of Oak,62
+52230,Weathered Hunter,63
+47484,Depth Perception,64
+49621,Acuity,65
+50338,Ballistics,66
+10016,Executioner,67
+4940,Cleaving,68
+25058,Blood Siphon,69
+7085,Weapon Artistry,70
+15085,Ambidexterity,71
+65502,Heartseeker,72
+33082,Razor's Edge,73
+65224,Aspect of the Eagle,74
+14606,Butchery,75
+34666,Destroyer,76
+59151,Brutal Blade,77
+41119,Lethality,78
+51881,Master Fletcher,79
+44207,Testudo,80
+54268,Blade Barrier,81
+40743,Crystal Skin,82
+65308,Diamond Skin,83
+42795,Arcane Focus,84
+20528,Instability,85
+25411,Infused,86
+58831,Disemboweling,87
+30693,Divine Fervour,88
+47306,Throatseeker,89
+52714,Prowess,90
+15027,Beef,91
+10153,Physique,92
+34009,Master of the Arena,93
+61198,Heart of the Warrior,94
+48807,Art of the Gladiator,95
+56029,Agility,96
+32345,Alacrity,97
+6237,Precision,98
+34601,Proficiency,99
+32245,Expertise,100
+50197,Ancestral Knowledge,101
+27929,Deep Wisdom,102
+11420,Arcanist's Dominion,103
+60180,Thief's Craft,104
+36874,Wisdom of the Glade,105
+33435,Holy Dominion,106
+60619,Galvanic Hammer,107
+18025,Hard Knocks,108
+5823,Coordination,109
+54142,Finesse,110
+38246,Presage,111
+5456,Might,112
+25456,Dervish,113
+12809,Berserking,114
+6,Twin Terrors,115
+61981,Doom Cast,116
+35894,Trickery,117
+60737,Sleight of Hand,118
+26023,Savage Wounds,119
+1325,Golem's Blood,120
+44103,Reflexes,121
+33725,Swagger,122
+60501,Heart of Flame,123
+53114,Revenge of the Hunted,124
+15711,Blast Radius,125
+27611,Lord of the Dead,126
+27308,Gravepact,127
+60002,Fury Bolts,128
+12795,Versatility,129
+36915,Sacrifice,130
+19069,Thick Skin,131
+18769,Written in Blood,132
+21958,Cruel Preparation,133
+35958,Faith and Steel,134
+22535,Whispers of Doom,135
+36949,Devotion,136
+41472,Discipline and Training,137
+65097,Leadership,138
+50029,Unnatural Calm,139
+58218,Purity of Flesh,140
+24050,Coldhearted Calculation,141
+46408,Fangs of the Viper,142
+28754,Assassination,143
+42009,Soul of Steel,144
+48698,Void Barrier,145
+21435,Cloth and Chain,146
+22702,Serpent Stance,147
+25178,Primal Spirit,148
+53757,Shamanistic Fury,149
+63150,Ironwood,150
+63635,Primal Manifestation,151
+63933,Totemic Zeal,152
+9055,Volatile Mines,153
+7136,Master Sapper,154
+21297,High Explosives,155
+55380,Clever Construction,156
+46965,Saboteur,157
+12702,Path of the Warrior,158
+37078,Path of the Savant,159
+19506,Path of the Hunter,160
+63976,Shaper,161
+19144,Sentinel,162
+33545,Harrier,163
+23690,Essence Infusion,164
+12143,Influence,165
+6799,Charisma,166
+32932,Sovereignty,167
+51212,Entropy,168
+18707,One with Evil,169
+26620,Corruption,170
+21973,Decay Ward,171
+35663,Strong Arm,172
+38922,Goliath,173
+52157,Soul Siphon,174
+8001,Clever Thief,175
+27788,Blood Drinker,176
+27203,Heart and Soul,177
+53493,Annihilation,178
+63944,Prism Weave,179
+15400,Skittering Runes,180
+39986,Hex Master,181
+8135,Practical Application,182
+21228,Piercing Shots,183
+62577,Essence Surge,184
+24133,Survivalist,185
+55485,Constitution,186
+3452,Foresight,187
+51440,Druidic Rite,188
+4481,Forces of Nature,189
+1568,Fatal Blade,190
+14813,Revelry,191
+36687,Avatar of the Hunt,192
+45317,"Ash, Frost and Storm",193
+9432,Mental Rapidity,194
+21330,Quick Recovery,195
+21413,Combat Stamina,196
+27301,Martial Experience,197
+24256,Dynamo,198
+5289,Battle Rouse,199
+53042,Exceptional Performance,200
+57900,Command of Steel,201
+21634,Arcane Chemistry,202
+42041,Profane Chemistry,203
+47065,Master of Blades,204
+49379,Hired Killer,205
+45067,Thrill Killer,206
+10835,Dreamer,207
+18865,Melding,208
+30471,True Strike,209
+1006,Potency of Will,210
+33718,Champion of the Cause,211
+2715,Quickstep,212
+24721,Ribcage Crusher,213
+11924,Breath of Flames,214
+11645,Breath of Lightning,215
+21460,Breath of Rime,216
+63207,Tempest Blast,217
+48438,Bravery,218
+49538,Defiance,219
+49254,Retribution,220
+26866,Sanctity,221
+54694,Light of Divinity,222
+38516,Righteous Decree,223
+31033,Robust,224
+53118,Barbarism,225
+33287,Juggernaut,226
+12878,Retaliation,227
+32455,Storm Weaver,228
+57839,Blade of Cunning,229
+65108,Tireless,230
+27137,Sanctum of Thought,231
+26294,Bloodletting,232
+17171,Flash Freeze,233
+18703,Graceful Assault,234
+22356,Hematophagy,235
+1382,Spirit Void,236
+65053,Essence Sap,237
+39530,Vitality Void,238
+1340,Rampart,239
+61689,Explosive Elements,240
+44562,Shaman's Dominion,241
+24324,Explosive Impact,242
+7555,Crackling Speed,243
+42649,Snowforged,244
+33903,Will of Blades,245
+9864,Growth and Decay,246
+53013,Atrophy,247
+54713,Force Shaper,248
+31508,Aspect of the Lynx,249
+31359,Fatal Toxins,250
+42686,Elemental Focus,251
+59605,Unstable Munitions,252
+27190,Hasty Reconstruction,253
+59556,Expeditious Munitions,254
+21602,Destructive Apparatus,255
+47471,Overcharged,256
+43385,Winter Spirit,257
+36281,Primeval Force,258
+48298,Insightfulness,259
+39761,Counterweight,260
+59766,Dirty Techniques,261
+16236,Toxic Strikes,262
+56359,Cannibalistic Rite,263
+33777,Devastating Devices,264
+19103,Righteous Army,265
+43689,Spiritual Command,266
+15046,Redemption,267
+4177,Spiritual Aid,268
+50858,Admonisher,269
+31257,Natural Authority,270
+27163,Arcane Will,271
+21389,Runesmith,272
+29861,Explosive Runes,273
+15852,Ethereal Feast,274
+9567,Light Eater,275
+62094,Taste for Blood,276
+10511,Tolerance,277
+13164,Divine Judgement,278
+44347,Divine Fury,279
+14665,Divine Wrath,280
+41989,Resourcefulness,281
+32176,Soul Thief,282
+44824,Mysticism,283
+39743,Dark Arts,284
+7918,Enigmatic Defence,285
+65273,Enigmatic Reach,286
+6770,Arcane Guarding,287
+46904,Arcane Sanctuary,288
+53573,Arcane Expanse,289
+7263,Swift Venoms,290
+63727,Gladiator's Perseverance,291
+20835,Brinkmanship,292
+3309,Fleetfoot,293
+17608,Silent Steps,294
+15344,Freedom of Movement,295
+54629,Inexorable,296
+49416,Adamant,297
+37647,Dismembering,298
+13922,Steadfast,299
+2959,Season of Ice,300
+63251,Inveterate,301
+9194,Merciless Skewering,302
+33582,Forceful Skewering,303
+5430,Magmatic Strikes,304
+570,Dazzling Strikes,305
+58921,Disciple of the Slaughter,306
+64882,Disciple of the Unyielding,307
+8458,Longshot,308
+63921,Utmost Swiftness,309
+49772,Utmost Might,310
+55114,Utmost Intellect,311
+60031,Prismatic Skin,312
+52090,Feller of Foes,313
+39657,Pain Forger,314
+49969,Courage,315
+55772,Blacksmith's Clout,316
+5126,Spinecruncher,317
+59866,Entrench,318
+65093,Bladedancer,319
+47743,Farsight,320
+15614,Claws of the Hawk,321
+8920,Backstabbing,322
+44988,Wasting,323
+52031,Disintegration,324
+32059,Titanic Impacts,325
+35436,Kinetic Impacts,326
+861,Aggressive Bastion,327
+6967,Safeguard,328
+64077,Warrior Training,329
+36859,Steelwood Stance,330
+56094,One with the River,331
+48823,Deadly Draw,332
+51108,Arcane Capacitor,333
+51748,Carrion,334
+9261,Disciple of the Forbidden,335
+10115,Prodigal Perfection,336
+18174,Mystic Bulwark,337
+53802,Essence Extraction,338
+29381,Ravenous Horde,339
+7688,Enduring Bond,340
+35685,Fearsome Force,341
+25409,Indomitable Army,342
+44788,Inspiring Bond,343
+34506,Golem Commander,344
+41137,Field Medicine,345
+6233,Blast Waves,346
+45608,Successive Detonations,347
+44102,Efficient Explosives,348
+38849,Searing Heat,349
+9015,Dire Torment,350
+15290,Watchtowers,351
+544,Surveillance,352
+61039,Panopticon,353
+46471,Powerful Bond,354
+36736,Burning Brutality,355
+49445,Deep Breaths,356
+34973,Measured Fury,357
+14001,Unfaltering,358
+35233,Discord Artisan,359
+31513,Adjacent Animosity,360
+4207,Window of Opportunity,361
+25439,Undertaker,362
+63033,Bannerman,363
+24067,Instinct,364
+19730,Assured Strike,365
+11820,Anointed Flesh,366
+24858,Harpooner,367
+58032,Serpentine Spellslinger,368
+26960,Forethought,369
+37403,Infused Flesh,370
+64355,Brand Equity,371
+45329,Trick Shot,372
+7069,Split Shot,373
+15437,Deflection,374
+50690,Replenishing Remedies,375
+25970,Acrimony,376
+7440,Harvester of Foes,377
+34591,Malicious Intent,378
+41595,Marked for Death,379
+25738,Mark the Prey,380
+30302,Hearty,381
+26564,Vanquisher,382
+28878,Relentless,383
+45803,Veteran Soldier,384
+4854,Asylum,385
+31585,Careful Conservationist,386
+41420,Natural Remedies,387
+65107,Bastion Breaker,388
+48556,Heart of Darkness,389
+27119,Tribal Fury,390
