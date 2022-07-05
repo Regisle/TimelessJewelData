@@ -1,3 +1,5 @@
+# Using the data files
+
 Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, where array\[node_id_INDEX \* jewel_seed_Size + jewel_seed_offset\] = index_of_Change
 
 	node_id_INDEX is given by node_indices.csv
@@ -36,6 +38,8 @@ because each node has more than 1 value associated with it, the recommended meth
 - note that its all the stats then all the rolls, not stat, roll, stat, roll, eg for 3 stats its \[0\]stat1, \[1\]stat2, \[2\]stat3, \[3\]roll1, \[4\]roll2, \[5\]roll3
 - theres only 4 cases, 1 stat 1 roll, 1 stat 2 rolls, 3 stats 3 rolls, 4 stats 4 rolls
 
+# Additional info
+
 basic example of parsing them in c# provided by Oxidisedgearz in examples folder
 
 list of which nodes are in range of what jewel socket can be found in Jewel_Node_Link.json
@@ -58,4 +62,19 @@ is.read((char*)lut.data(), lut.size());
 
 example of grabbing a single node
 
-take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up easier), this gives you an index of 0 + 116, the byte at that value is 52 (a "4" in ascii) which corresponds with "karui_notable_add_burning_damage", which is what it is ![](https://cdn.discordapp.com/attachments/175290321695932416/993077938847219722/unknown.png)
+take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up easier), this gives you an index of 0 + 116, the byte at that value is 52 (a "4" in ascii) which corresponds with "karui_notable_add_burning_damage", which is what it is 
+  ![](https://cdn.discordapp.com/attachments/175290321695932416/993077938847219722/unknown.png)
+
+
+
+# Generating the data files
+
+These are on the "generator" branch
+
+Datafiles are generated using the DatafileGeneartor (a visual studio project, C#).    
+It's built on top of a timeless jewel simulator, and the vast majority of the edits used to get the simulator to dump the data files desired are all in the main method of Program.cs.   
+
+Running it will output 5 datafiles and 2 csv files in the same location as the executable.   
+Runtime is about 5 min (in a release mode with no debugging overhead).
+
+Only the glorious vanity handler has had much thought applied to optimization since it would have been much too slow otherwise.
