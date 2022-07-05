@@ -1,7 +1,0 @@
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\TimelessEmulator.exe
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\TimelessEmulator.dll
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\TimelessEmulator.deps.json
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\TimelessEmulator.runtimeconfig.json
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\TimelessEmulator.pdb
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\Newtonsoft.Json.dll
-F:\Downloads\TimelessEmulator\project\TimelessEmulator\bin\Release\net6.0\publish\Spectre.Console.dll
