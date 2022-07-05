@@ -2,15 +2,16 @@
 
 Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, where array\[node_id_INDEX \* jewel_seed_Size + jewel_seed_offset\] = index_of_Change
 
-	node_id_INDEX is given by node_indices.csv
+	node_id_INDEX is given by Node Indices.csv
 	jewel_seed_Size is the number of seeds for a given jewel (note elegant hubris seeds are divided by 20)
 	jewel_seed_offset is the value above the minimum  (note elegant hubris seeds are divided by 20)
+
+Note that Node Indices.csv contains indices for all modifiable nodes, but the non-Glorious Vanity jewels will only have data for notables (the lowest 391 indices). Modifications to non-notables for these jewels are consistent and thus have been omitted from their data files to save space.
 
 index_of_Change is dependant on value, 
 
 	additions are index_of_Change = _rid in alternate_passive_additions.json
 	replacements are index_of_Change - 94 = _rid in alternate_passive_skills.json
-	if no change is made to the node then index is 249
 
 Glorious Vanity is significantly more complex, and is described below
 
@@ -34,11 +35,11 @@ because each node has more than 1 value associated with it, the recommended meth
 - create a variable length 2d array for Data. the first coordinate, similar to the other jewels, will be the index of the node index \* maxSeedIndex + seed index, but since each stat needs multiple bytes, the value at that coordinate will be an array of bytes instead of just a single byte
 - load in the data an array of size equal to the value in header\[i\] into data\[i\] which gives you the full 2d array
 - when you iterate over it like in the non-GV method you can then access specific elements to check if its the change you want, or use the values for weighted sums
-- eg for 1 stat (header\[i\]==2) its, data\[i\]\[0\] to check the 0th change, and data\[i\]\[1\] to get the value of the 0th change, where "i" is the same index formula as the non-GV version, but uses the GV indices csv
+- eg for 1 stat (header\[i\]==2) its, data\[i\]\[0\] to check the 0th change, and data\[i\]\[1\] to get the value of the 0th change, where "i" is the same index formula as the non-GV version, but can access the non-notable indices in Node Indices.csv
 - note that its all the stats then all the rolls, not stat, roll, stat, roll, eg for 3 stats its \[0\]stat1, \[1\]stat2, \[2\]stat3, \[3\]roll1, \[4\]roll2, \[5\]roll3
-- theres only 4 cases, 1 stat 1 roll, 1 stat 2 rolls, 3 stats 3 rolls, 4 stats 4 rolls
+- theres only 4 cases: 1 stat 1 roll, 1 stat 2 rolls, 3 stats 3 rolls, 4 stats 4 rolls
 
-basic example of parsing them in c# provided by Oxidisedgearz in examples folder
+basic example of parsing them in c# provided by OxidisedGearz in examples folder
 
 list of which nodes are in range of what jewel socket can be found in Jewel_Node_Link.json
 
