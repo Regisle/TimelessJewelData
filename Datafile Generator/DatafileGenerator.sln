@@ -1,24 +1,25 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.2.32505.173
+VisualStudioVersion = 17.2.32526.322
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatafileGenerator", "DatafileGenerator.csproj", "{BB74DFB5-2383-4A75-BC30-90E936BD1DD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DatafileGenerator", "DatafileGenerator\DatafileGenerator.csproj", "{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{BB74DFB5-2383-4A75-BC30-90E936BD1DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BB74DFB5-2383-4A75-BC30-90E936BD1DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BB74DFB5-2383-4A75-BC30-90E936BD1DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BB74DFB5-2383-4A75-BC30-90E936BD1DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|x64.ActiveCfg = Debug|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Debug|x64.Build.0 = Debug|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|x64.ActiveCfg = Release|x64
+		{7A2085C2-6374-4B0C-A49C-82EA18D2E0BE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {23FC8EE5-87E2-4E49-A30A-DF1ED180F39B}
+		SolutionGuid = {F4243387-0BA6-41F7-A114-0A2A52B85127}
 	EndGlobalSection
 EndGlobal
