@@ -45,10 +45,15 @@ like before:
 
 and data files are in a pure binary format with one byte per piece of information; however, with glorious vanity, each node requires multiple pieces of information.
 
+
 For a jewel, each node can have multiple changes, and each change comes with 1 or 2 associated stat values (roll value for roll range), as such there is a header section at the start of the file with the size of the amount of data each jewel holds for a given node.
 - eg if it has 4 stats it has an 8 in the header (4 stats with 1 roll each)
 - if it has 1 stat with 2 rolls it has a 3 in the header
-    
+
+To know the length of the header, we have the additional definition:
+
+	nodeCount is the number of nodes in the Node_Indices.csv (currently 1678)
+
 Because each node has more than 1 value associated with it, the recommended method for parsing it is a header array and a 2d array of data as follows:
 - create a header of size: nodeCount \* maxSeedIndex
 - create a variable length 2d array for Data. the first coordinate, similar to the other jewels, will be the index of the node index \* maxSeedIndex + seed index, but since each stat needs multiple bytes, the value at that coordinate will be an array of bytes instead of just a single byte
