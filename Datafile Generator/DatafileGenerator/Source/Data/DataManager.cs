@@ -35,7 +35,9 @@ public static class DataManager
         AlternatePassiveAdditions = LoadFromFile<AlternatePassiveAddition>(Settings.AlternatePassiveAdditionsFilePath);
         AlternatePassiveSkills = LoadFromFile<AlternatePassiveSkill>(Settings.AlternatePassiveSkillsFilePath);
         AlternateTreeVersions = LoadFromFile<AlternateTreeVersion>(Settings.AlternateTreeVersionsFilePath);
-        PassiveSkills = LoadFromFile<PassiveSkill>(Settings.PassiveSkillsFilePath);
+        var treeData = LoadSingleFromFile<TreeDataFile>(Settings.PassiveSkillsFilePath).PassiveSkills;
+        treeData.Remove("root");
+        PassiveSkills = treeData.Values.ToList();
         Stats = LoadFromFile<Stat>(Settings.StatsFilePath);
 
         if ((AlternatePassiveAdditions == null) || (AlternatePassiveSkills == null) || (AlternateTreeVersions == null) || (PassiveSkills == null) || (Stats == null))
@@ -56,7 +58,7 @@ public static class DataManager
             PassiveSkillType passiveSkillType = GetPassiveSkillType(passiveSkill);
 
             if ((alternatePassiveAddition.AlternateTreeVersionIndex != timelessJewel.AlternateTreeVersion.Index) ||
-                !alternatePassiveAddition.ApplicablePassiveTypes.Any(q => (q == ((uint) passiveSkillType))))
+                !alternatePassiveAddition.ApplicablePassiveTypes.Any(q => (q == ((uint)passiveSkillType))))
             {
                 continue;
             }
@@ -76,7 +78,7 @@ public static class DataManager
             (q.ConquerorIndex == timelessJewel.TimelessJewelConqueror.Index) &&
             (q.ConquerorVersion == timelessJewel.TimelessJewelConqueror.Version)));
 
-        if (!alternatePassiveSkillKeyStone.ApplicablePassiveTypes.Any(q => (q == ((uint) PassiveSkillType.KeyStone))))
+        if (!alternatePassiveSkillKeyStone.ApplicablePassiveTypes.Any(q => (q == ((uint)PassiveSkillType.KeyStone))))
             return null;
 
         return alternatePassiveSkillKeyStone;
@@ -94,7 +96,7 @@ public static class DataManager
             PassiveSkillType passiveSkillType = GetPassiveSkillType(passiveSkill);
 
             if ((alternatePassiveSkill.AlternateTreeVersionIndex != timelessJewel.AlternateTreeVersion.Index) ||
-                !alternatePassiveSkill.ApplicablePassiveTypes.Any(q => (q == ((uint) passiveSkillType))))
+                !alternatePassiveSkill.ApplicablePassiveTypes.Any(q => (q == ((uint)passiveSkillType))))
             {
                 continue;
             }
@@ -112,17 +114,6 @@ public static class DataManager
 
         return PassiveSkills.FirstOrDefault(x => x.GraphIdentifier == graphId);
     }
-    public static PassiveSkill GetPassiveSkillByFuzzyValue(string fuzzyValue)
-    {
-        ArgumentNullException.ThrowIfNull(fuzzyValue, nameof(fuzzyValue));
-
-        if (PassiveSkills == null)
-            return null;
-
-        return PassiveSkills.FirstOrDefault(q => (
-            (q.Identifier.ToLowerInvariant() == fuzzyValue.ToLowerInvariant()) ||
-            (q.Name.ToLowerInvariant() == fuzzyValue.ToLowerInvariant())));
-    }
 
     public static PassiveSkillType GetPassiveSkillType(PassiveSkill passiveSkill)
     {
@@ -137,12 +128,9 @@ public static class DataManager
         if (passiveSkill.IsNotable)
             return PassiveSkillType.Notable;
 
-        if (passiveSkill.StatIndices.Count == 1)
+        if (passiveSkill.IsAttribute)
         {
-            uint bitPosition = ((passiveSkill.StatIndices.ElementAt(0) + 1) - 574);
-
-            if ((bitPosition <= 6) && ((0x49 & (1 << ((int) bitPosition))) != 0))
-                return PassiveSkillType.SmallAttribute;
+            return PassiveSkillType.SmallAttribute;
         }
 
         return PassiveSkillType.SmallNormal;
@@ -191,6 +179,16 @@ public static class DataManager
 
         using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
             return JsonSerializer.Deserialize<IReadOnlyCollection<T>>(fileStream);
+    }
+    private static T LoadSingleFromFile<T>(string filePath)
+    {
+        ArgumentNullException.ThrowIfNull(filePath, nameof(filePath));
+
+        if (!File.Exists(filePath))
+            return default(T);
+
+        using (FileStream fileStream = new FileStream(filePath, FileMode.Open, FileAccess.Read, FileShare.Read))
+            return JsonSerializer.Deserialize<T>(fileStream);
     }
 
 }
