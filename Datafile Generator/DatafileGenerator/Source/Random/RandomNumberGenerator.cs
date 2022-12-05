@@ -19,9 +19,9 @@ public class RandomNumberGenerator
     {
         ArgumentNullException.ThrowIfNull(timelessJewel, nameof(timelessJewel));
 
-        this.state = default;
+        state = default;
 
-        this.Initialize(Array.Empty<uint>()
+        Initialize(Array.Empty<uint>()
             .Append(passiveSkill.GraphIdentifier)
             .Append(timelessJewel.Seed)
             .ToArray());
@@ -47,7 +47,7 @@ public class RandomNumberGenerator
         {
             do
             {
-                value = (this.GenerateUInt() | (2 * (value << 31)));
+                value = (GenerateUInt() | (2 * (value << 31)));
                 roundState = (0xFFFFFFFF | (2 * (roundState << 31)));
             } while (roundState < maximumValue);
         } while (((value / exclusiveMaximumValue) >= roundState) && ((roundState % exclusiveMaximumValue) != maximumValue));
@@ -66,14 +66,14 @@ public class RandomNumberGenerator
         if (maximumValue >= 0x80000000)
             b = (maximumValue + 0x80000000);
 
-        uint roll = this.Generate(((b - a) + 1));
+        uint roll = Generate(((b - a) + 1));
 
         return ((roll + a) + 0x80000000);
     }
 
     private void Initialize(uint[] seeds)
     {
-        this.state = new uint[]
+        state = new uint[]
         {
             0,
             INITIAL_STATE_CONSTANT_0,
@@ -87,16 +87,16 @@ public class RandomNumberGenerator
         for (int i = 0; i < seeds.Length; i++)
         {
             uint roundState = ManipulateAlpha(
-                this.state[(index % 4) + 1] ^
-                this.state[((index + 1) % 4) + 1] ^
-                this.state[(((index + 4) - 1) % 4) + 1]);
+                state[(index % 4) + 1] ^
+                state[((index + 1) % 4) + 1] ^
+                state[(((index + 4) - 1) % 4) + 1]);
 
-            this.state[((index + 1) % 4) + 1] += roundState;
+            state[((index + 1) % 4) + 1] += roundState;
 
             roundState += (seeds[i] + index);
 
-            this.state[(((index + 1) + 1) % 4) + 1] += roundState;
-            this.state[(index % 4) + 1] = roundState;
+            state[(((index + 1) + 1) % 4) + 1] += roundState;
+            state[(index % 4) + 1] = roundState;
 
             index = ((index + 1) % 4);
         }
@@ -104,16 +104,16 @@ public class RandomNumberGenerator
         for (int i = 0; i < 5; i++)
         {
             uint roundState = ManipulateAlpha(
-                this.state[(index % 4) + 1] ^
-                this.state[((index + 1) % 4) + 1] ^
-                this.state[(((index + 4) - 1) % 4) + 1]);
+                state[(index % 4) + 1] ^
+                state[((index + 1) % 4) + 1] ^
+                state[(((index + 4) - 1) % 4) + 1]);
 
-            this.state[((index + 1) % 4) + 1] += roundState;
+            state[((index + 1) % 4) + 1] += roundState;
 
             roundState += index;
 
-            this.state[(((index + 1) + 1) % 4) + 1] += roundState;
-            this.state[(index % 4) + 1] = roundState;
+            state[(((index + 1) + 1) % 4) + 1] += roundState;
+            state[(index % 4) + 1] = roundState;
 
             index = ((index + 1) % 4);
         }
@@ -121,22 +121,22 @@ public class RandomNumberGenerator
         for (int i = 0; i < 4; i++)
         {
             uint roundState = ManipulateBravo(
-                this.state[(index % 4) + 1] +
-                this.state[((index + 1) % 4) + 1] +
-                this.state[(((index + 4) - 1) % 4) + 1]);
+                state[(index % 4) + 1] +
+                state[((index + 1) % 4) + 1] +
+                state[(((index + 4) - 1) % 4) + 1]);
 
-            this.state[((index + 1) % 4) + 1] ^= roundState;
+            state[((index + 1) % 4) + 1] ^= roundState;
 
             roundState -= index;
 
-            this.state[(((index + 1) + 1) % 4) + 1] ^= roundState;
-            this.state[(index % 4) + 1] = roundState;
+            state[(((index + 1) + 1) % 4) + 1] ^= roundState;
+            state[(index % 4) + 1] = roundState;
 
             index = ((index + 1) % 4);
         }
 
         for (int i = 0; i < 8; i++)
-            this.GenerateNextState();
+            GenerateNextState();
     }
 
     private void GenerateNextState()
@@ -144,27 +144,27 @@ public class RandomNumberGenerator
         uint a = 0;
         uint b = 0;
 
-        a = this.state[4];
-        b = (((this.state[1] & 0x7FFFFFFF) ^ this.state[2]) ^ this.state[3]);
+        a = state[4];
+        b = (((state[1] & 0x7FFFFFFF) ^ state[2]) ^ state[3]);
 
         a ^= (a << 1);
         b ^= ((b >> 1) ^ a);
 
-        this.state[1] = this.state[2];
-        this.state[2] = this.state[3];
-        this.state[3] = (a ^ (b << 10));
-        this.state[4] = b;
+        state[1] = state[2];
+        state[2] = state[3];
+        state[3] = (a ^ (b << 10));
+        state[4] = b;
 
-        this.state[2] ^= ((uint) ((int) (-((int) (b & 1)) & 0x8F7011EE)));
-        this.state[3] ^= ((uint) ((int) (-((int) (b & 1)) & 0xFC78FF1F)));
+        state[2] ^= ((uint) ((int) (-((int) (b & 1)) & 0x8F7011EE)));
+        state[3] ^= ((uint) ((int) (-((int) (b & 1)) & 0xFC78FF1F)));
 
-        this.state[0]++;
+        state[0]++;
     }
 
     private uint Temper()
     {
-        uint a = this.state[4];
-        uint b = (this.state[1] + (this.state[3] >> 8));
+        uint a = state[4];
+        uint b = (state[1] + (state[3] >> 8));
 
         a ^= b;
 
@@ -176,9 +176,9 @@ public class RandomNumberGenerator
 
     private uint GenerateUInt()
     {
-        this.GenerateNextState();
+        GenerateNextState();
 
-        return this.Temper();
+        return Temper();
     }
 
 }

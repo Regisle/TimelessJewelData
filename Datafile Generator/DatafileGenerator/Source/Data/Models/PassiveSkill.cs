@@ -35,38 +35,18 @@ public class PassiveSkill : IComparable<PassiveSkill>
     public bool IsProxy { get; init; }
 
     [JsonPropertyName("ascendancyName")]
-    public string ascName { get; init; }
-    private bool? m_isAsc = null;
-    public bool IsAscendancy => m_isAsc ?? InitAsc();
-
+    public string AscName { get; init; }
+    public bool IsAscendancy => !string.IsNullOrEmpty(AscName);
 
     [JsonPropertyName("orbit")]
     public uint? Orbit { get; init; }
     public bool IsCluster => Orbit == null;
-
-
-    private bool? m_isAttr = null;
-    public bool IsAttribute => m_isAttr ?? InitAttr();
-
+    public bool IsAttribute => 
+        StatStrings != null && StatStrings.Count == 1 &&
+        (StatStrings.First() == "+10 to Strength" ||
+         StatStrings.First() == "+10 to Dexterity" ||
+         StatStrings.First() == "+10 to Intelligence");
     public bool IsModifiable => !(IsCluster || IsAscendancy || IsProxy || IsMastery || IsKeyStone || IsJewelSocket || IsBlight);
-
-
-    private bool InitAttr()
-    {
-        bool val = (StatStrings != null && StatStrings.Count == 1) &&
-            (StatStrings.First() == "+10 to Strength" ||
-             StatStrings.First() == "+10 to Dexterity" ||
-             StatStrings.First() == "+10 to Intelligence");
-        m_isAttr = val;
-        return val;
-    }
-    private bool InitAsc()
-    {
-        bool val = !string.IsNullOrEmpty(ascName);
-        m_isAsc = val;
-        return val;
-    }
-
 
     public int CompareTo(PassiveSkill other)
     {
@@ -76,10 +56,4 @@ public class PassiveSkill : IComparable<PassiveSkill>
         }
         return GraphIdentifier.CompareTo(other.GraphIdentifier);
     }
-}
-
-public class TreeDataFile
-{
-    [JsonPropertyName("nodes")]
-    public Dictionary<string, PassiveSkill> PassiveSkills { get; set; }
 }

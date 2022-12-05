@@ -9,9 +9,6 @@ public class AlternatePassiveAddition
     [JsonPropertyName("_rid")]
     public uint Index { get; init; }
 
-    [JsonPropertyName("Id")]
-    public string Identifier { get; init; }
-
     [JsonPropertyName("AlternateTreeVersionsKey")]
     public uint AlternateTreeVersionIndex { get; init; }
 
@@ -35,19 +32,4 @@ public class AlternatePassiveAddition
 
     [JsonPropertyName("SpawnWeight")]
     public uint SpawnWeight { get; init; }
-
-    public AlternatePassiveAddition()
-    {
-        this.Index = default;
-        this.Identifier = default;
-        this.AlternateTreeVersionIndex = default;
-        this.StatIndices = default;
-        this.StatAMinimumValue = default;
-        this.StatAMaximumValue = default;
-        this.StatBMinimumValue = default;
-        this.StatBMaximumValue = default;
-        this.ApplicablePassiveTypes = default;
-        this.SpawnWeight = default;
-    }
-
 }

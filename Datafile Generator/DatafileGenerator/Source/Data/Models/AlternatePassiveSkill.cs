@@ -5,15 +5,8 @@ namespace DatafileGenerator.Data.Models;
 
 public class AlternatePassiveSkill
 {
-
     [JsonPropertyName("_rid")]
     public uint Index { get; init; }
-
-    [JsonPropertyName("Id")]
-    public string Identifier { get; init; }
-
-    [JsonPropertyName("Name")]
-    public string Name { get; init; }
 
     [JsonPropertyName("AlternateTreeVersionsKey")]
     public uint AlternateTreeVersionIndex { get; init; }
@@ -56,34 +49,4 @@ public class AlternatePassiveSkill
 
     [JsonPropertyName("RandomMax")]
     public uint MaximumAdditions { get; init; }
-
-    [JsonPropertyName("Unknown19")]
-    public uint ConquerorIndex { get; init; }
-
-    [JsonPropertyName("Unknown25")]
-    public uint ConquerorVersion { get; init; }
-
-    public AlternatePassiveSkill()
-    {
-        this.Index = default;
-        this.Identifier = default;
-        this.Name = default;
-        this.AlternateTreeVersionIndex = default;
-        this.StatIndices = default;
-        this.StatAMinimumValue = default;
-        this.StatAMaximumValue = default;
-        this.StatBMinimumValue = default;
-        this.StatBMaximumValue = default;
-        this.StatCMinimumValue = default;
-        this.StatCMaximumValue = default;
-        this.StatDMinimumValue = default;
-        this.StatDMaximumValue = default;
-        this.ApplicablePassiveTypes = default;
-        this.SpawnWeight = default;
-        this.MinimumAdditions = default;
-        this.MaximumAdditions = default;
-        this.ConquerorIndex = default;
-        this.ConquerorVersion = default;
-    }
-
 }
