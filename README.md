@@ -100,4 +100,3 @@ It's built on top of a timeless jewel simulator, so its not very consice, but th
 It will need an alternate passive additions json, an alternate passive skills json, and the most recent skill tree json. You'll also have to tell it where to output and whether you want the compressed or uncompressed files.    
 
 Running it will output 5 datafiles, 1 lua file, and 1 csv file (note that if compressed, the Glorious Vanity "file" will actually come out to be multiple files each with size at most 5MB due to the limitations within Path of Building).
-Runtime is about 45 seconds (in a release mode with no debugging overhead).
