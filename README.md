@@ -93,6 +93,7 @@ take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up 
 
 
 # Generating the data files
+These are on the "generator" branch
 
 Datafiles are generated using the DatafileGeneartor (a visual studio project, C#).    
 It's built on top of a timeless jewel simulator, so its not very consice, but the meat of the file format logic is in program.cs while the rest is just modelling the prng and parsing jsons.    
