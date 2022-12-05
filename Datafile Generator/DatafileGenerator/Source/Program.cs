@@ -188,7 +188,7 @@ public static class Program
                 if (skillInfo.AlternatePassiveSkill.Index == LegacyOfTheVaal || skillInfo.AlternatePassiveSkill.Index == MightOfTheVaal)
                 {
                     //do we want to add the indicator for this being Legacy of the Vaal/Might of the Vaal or just shit out the stats?
-                    //indices.Add((byte)(skillInfo.AlternatePassiveSkill.Index + NumAdditions + 1));
+                    //indices.Add((byte)(skillInfo.AlternatePassiveSkill.Index + NumAdditions));
                     for (int k = 0; k < skillInfo.AlternatePassiveAdditionInformations.Count; k++)
                     {
                         //add the additions
@@ -252,7 +252,7 @@ public static class Program
                 byte passiveSkillIndex = 0;
                 if (flag)
                 {
-                    //replacements get stat rid + count(alternate_passive_additions) + 1
+                    //replacements get stat rid + count(alternate_passive_additions)
                     passiveSkillIndex = (byte)(alternateTreeManager.ReplacePassiveSkill().AlternatePassiveSkill.Index + NumAdditions);
                 }
                 else
