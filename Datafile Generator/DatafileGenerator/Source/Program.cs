@@ -199,7 +199,7 @@ public static class Program
                 //handle all others
                 else
                 {
-                    indices.Add((byte)(skillInfo.AlternatePassiveSkill.Index + NumAdditions + 1));
+                    indices.Add((byte)(skillInfo.AlternatePassiveSkill.Index + NumAdditions));
                     for (int k = 0; k < skillInfo.StatRolls.Count; k++)
                     {
                         rolls.Add((byte)skillInfo.StatRolls[(uint)k]);
