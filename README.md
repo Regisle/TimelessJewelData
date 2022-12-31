@@ -91,12 +91,13 @@ take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up 
 
 
 
-# Generating the data files
 
+# Generating the data files
 These are on the "generator" branch
 
 Datafiles are generated using the DatafileGeneartor (a visual studio project, C#).    
-It's built on top of a timeless jewel simulator, and the vast majority of the edits used to get the simulator to dump the data files desired are all in the main method of Program.cs.   
+It's built on top of a timeless jewel simulator, so its not very consice, but the meat of the file format logic is in program.cs while the rest is just modelling the prng and parsing jsons.    
 
-Running it will output 5 datafiles and 1 csv file in a folder called DatafileOutput at the same location as the executable.   
-Runtime is about 45 seconds (in a release mode with no debugging overhead).
+It will need an alternate passive additions json, an alternate passive skills json, and the most recent skill tree json. You'll also have to tell it where to output and whether you want the compressed or uncompressed files.    
+
+Running it will output 5 datafiles, 1 lua file, and 1 csv file (note that if compressed, the Glorious Vanity "file" will actually come out to be multiple files each with size at most 5MB due to the limitations within Path of Building).
