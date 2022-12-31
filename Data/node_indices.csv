@@ -1,0 +1,1697 @@
+PassiveSkillGraphId,Name,Datafile Parsing Index
+6,Twin Terrors,0
+529,Poisonous Fangs,1
+544,Surveillance,2
+570,Dazzling Strikes,3
+861,Aggressive Bastion,4
+1006,Potency of Will,5
+1325,Golem's Blood,6
+1340,Rampart,7
+1382,Spirit Void,8
+1405,From the Shadows,9
+1568,Fatal Blade,10
+2225,Eagle Eye,11
+2550,Arsonist,12
+2715,Quickstep,13
+2959,Season of Ice,14
+3309,Fleetfoot,15
+3452,Foresight,16
+4177,Spiritual Aid,17
+4207,Window of Opportunity,18
+4481,Forces of Nature,19
+4833,Vigour,20
+4854,Asylum,21
+4940,Cleaving,22
+5126,Spinecruncher,23
+5289,Battle Rouse,24
+5430,Magmatic Strikes,25
+5456,Might,26
+5823,Coordination,27
+6233,Blast Waves,28
+6237,Precision,29
+6289,Bloodless,30
+6615,Arcing Blows,31
+6770,Arcane Guarding,32
+6799,Charisma,33
+6967,Safeguard,34
+7069,Split Shot,35
+7085,Weapon Artistry,36
+7136,Master Sapper,37
+7263,Swift Venoms,38
+7440,Harvester of Foes,39
+7555,Crackling Speed,40
+7688,Enduring Bond,41
+7918,Enigmatic Defence,42
+8001,Clever Thief,43
+8135,Practical Application,44
+8458,Longshot,45
+8833,Heart of Ice,46
+8920,Backstabbing,47
+9015,Dire Torment,48
+9055,Volatile Mines,49
+9194,Merciless Skewering,50
+9261,Disciple of the Forbidden,51
+9432,Mental Rapidity,52
+9535,Hunter's Gambit,53
+9567,Light Eater,54
+9788,Nimbleness,55
+9864,Growth and Decay,56
+10016,Executioner,57
+10115,Prodigal Perfection,58
+10153,Physique,59
+10511,Tolerance,60
+10542,Spiked Bulwark,61
+10835,Dreamer,62
+11420,Arcanist's Dominion,63
+11645,Breath of Lightning,64
+11730,Endurance,65
+11784,Vampirism,66
+11820,Anointed Flesh,67
+11924,Breath of Flames,68
+12143,Influence,69
+12702,Path of the Warrior,70
+12795,Versatility,71
+12809,Berserking,72
+12878,Retaliation,73
+13164,Divine Judgement,74
+13922,Steadfast,75
+14001,Unfaltering,76
+14606,Butchery,77
+14665,Divine Wrath,78
+14813,Revelry,79
+15027,Beef,80
+15046,Redemption,81
+15085,Ambidexterity,82
+15290,Watchtowers,83
+15344,Freedom of Movement,84
+15400,Skittering Runes,85
+15437,Deflection,86
+15614,Claws of the Hawk,87
+15711,Blast Radius,88
+15842,One With Nature,89
+15852,Ethereal Feast,90
+16236,Toxic Strikes,91
+16243,Fusillade,92
+16703,Skull Cracking,93
+17171,Flash Freeze,94
+17608,Silent Steps,95
+18025,Hard Knocks,96
+18174,Mystic Bulwark,97
+18703,Graceful Assault,98
+18707,One with Evil,99
+18769,Written in Blood,100
+18865,Melding,101
+19069,Thick Skin,102
+19103,Righteous Army,103
+19144,Sentinel,104
+19506,Path of the Hunter,105
+19730,Assured Strike,106
+19858,Herbalism,107
+19897,Death Attunement,108
+20528,Instability,109
+20832,Sanctuary,110
+20835,Brinkmanship,111
+21228,Piercing Shots,112
+21297,High Explosives,113
+21330,Quick Recovery,114
+21389,Runesmith,115
+21413,Combat Stamina,116
+21435,Cloth and Chain,117
+21460,Breath of Rime,118
+21602,Destructive Apparatus,119
+21634,Arcane Chemistry,120
+21958,Cruel Preparation,121
+21973,Decay Ward,122
+22356,Hematophagy,123
+22535,Whispers of Doom,124
+22702,Serpent Stance,125
+22972,Wandslinger,126
+23038,Slaughter,127
+23066,Savagery,128
+23690,Essence Infusion,129
+24050,Coldhearted Calculation,130
+24067,Instinct,131
+24133,Survivalist,132
+24256,Dynamo,133
+24324,Explosive Impact,134
+24362,Deep Thoughts,135
+24383,Warrior's Blood,136
+24721,Ribcage Crusher,137
+24858,Harpooner,138
+25058,Blood Siphon,139
+25178,Primal Spirit,140
+25367,Blade Master,141
+25409,Indomitable Army,142
+25411,Infused,143
+25439,Undertaker,144
+25456,Dervish,145
+25738,Mark the Prey,146
+25970,Acrimony,147
+26023,Savage Wounds,148
+26096,Hatchet Master,149
+26294,Bloodletting,150
+26557,Static Blows,151
+26564,Vanquisher,152
+26620,Corruption,153
+26866,Sanctity,154
+26960,Forethought,155
+27119,Tribal Fury,156
+27137,Sanctum of Thought,157
+27163,Arcane Will,158
+27190,Overprepared,159
+27203,Heart and Soul,160
+27301,Martial Experience,161
+27308,Gravepact,162
+27611,Lord of the Dead,163
+27788,Blood Drinker,164
+27929,Deep Wisdom,165
+28503,Life Raker,166
+28754,Assassination,167
+28878,Relentless,168
+29049,Holy Fire,169
+29381,Ravenous Horde,170
+29861,Explosive Runes,171
+30160,Fending,172
+30225,Lightning Walker,173
+30302,Hearty,174
+30439,Lava Lash,175
+30471,True Strike,176
+30693,Divine Fervour,177
+31033,Robust,178
+31257,Natural Authority,179
+31359,Fatal Toxins,180
+31508,Aspect of the Lynx,181
+31513,Adjacent Animosity,182
+31585,Careful Conservationist,183
+32059,Titanic Impacts,184
+32176,Soul Thief,185
+32227,Adder's Touch,186
+32245,Expertise,187
+32345,Alacrity,188
+32455,Storm Weaver,189
+32932,Sovereignty,190
+33082,Razor's Edge,191
+33287,Juggernaut,192
+33435,Holy Dominion,193
+33545,Harrier,194
+33582,Forceful Skewering,195
+33718,Champion of the Cause,196
+33725,Swagger,197
+33777,Devastating Devices,198
+33903,Will of Blades,199
+34009,Master of the Arena,200
+34173,Overcharge,201
+34506,Golem Commander,202
+34591,Malicious Intent,203
+34601,Proficiency,204
+34661,Fire Walker,205
+34666,Destroyer,206
+34973,Measured Fury,207
+35233,Discord Artisan,208
+35436,Kinetic Impacts,209
+35663,Strong Arm,210
+35685,Fearsome Force,211
+35894,Trickery,212
+35958,Faith and Steel,213
+36281,Primeval Force,214
+36490,Flaying,215
+36687,Avatar of the Hunt,216
+36736,Burning Brutality,217
+36859,Steelwood Stance,218
+36874,Wisdom of the Glade,219
+36915,Sacrifice,220
+36949,Devotion,221
+37078,Path of the Savant,222
+37326,Stamina,223
+37403,Infused Flesh,224
+37504,Intuition,225
+37647,Dismembering,226
+38246,Presage,227
+38516,Righteous Decree,228
+38849,Searing Heat,229
+38922,Goliath,230
+39530,Vitality Void,231
+39657,Pain Forger,232
+39743,Dark Arts,233
+39761,Counterweight,234
+39986,Defiled Forces,235
+40645,Bone Breaker,236
+40743,Crystal Skin,237
+41119,Lethality,238
+41137,Field Medicine,239
+41420,Natural Remedies,240
+41472,Discipline and Training,241
+41476,Elder Power,242
+41595,Marked for Death,243
+41989,Resourcefulness,244
+42009,Soul of Steel,245
+42041,Profane Chemistry,246
+42443,Frenetic,247
+42649,Snowforged,248
+42686,Elemental Focus,249
+42720,Heavy Draw,250
+42795,Arcane Focus,251
+42804,Mind Drinker,252
+42917,Whirling Barrier,253
+43385,Winter Spirit,254
+43689,Spiritual Command,255
+44102,Efficient Explosives,256
+44103,Reflexes,257
+44207,Testudo,258
+44347,Divine Fury,259
+44562,Shaman's Dominion,260
+44788,Inspiring Bond,261
+44824,Mysticism,262
+44955,Frost Walker,263
+44988,Wasting,264
+45067,Thrill Killer,265
+45317,"Ash, Frost and Storm",266
+45329,Trick Shot,267
+45608,Successive Detonations,268
+45803,Veteran Soldier,269
+46408,Fangs of the Viper,270
+46471,Powerful Bond,271
+46842,Arcane Potency,272
+46904,Arcane Sanctuary,273
+46965,Saboteur,274
+47065,Master of Blades,275
+47306,Throatseeker,276
+47471,Overcharged,277
+47484,Depth Perception,278
+47743,Farsight,279
+48298,Insightfulness,280
+48438,Bravery,281
+48556,Heart of Darkness,282
+48614,Fervour,283
+48698,Void Barrier,284
+48807,Art of the Gladiator,285
+48823,Deadly Draw,286
+49254,Retribution,287
+49318,Wrecking Ball,288
+49379,Hired Killer,289
+49416,Adamant,290
+49445,Deep Breaths,291
+49459,King of the Hill,292
+49538,Defiance,293
+49621,Acuity,294
+49772,Utmost Might,295
+49969,Courage,296
+50029,Unnatural Calm,297
+50197,Ancestral Knowledge,298
+50338,Ballistics,299
+50690,Replenishing Remedies,300
+50858,Admonisher,301
+51108,Arcane Capacitor,302
+51212,Entropy,303
+51440,Druidic Rite,304
+51559,Smashing Strikes,305
+51748,Last Rites,306
+51881,Master Fletcher,307
+52031,Disintegration,308
+52090,Feller of Foes,309
+52157,Soul Siphon,310
+52230,Weathered Hunter,311
+52714,Prowess,312
+53013,Atrophy,313
+53042,Exceptional Performance,314
+53114,Revenge of the Hunted,315
+53118,Barbarism,316
+53493,Annihilation,317
+53573,Arcane Expanse,318
+53652,Steeped in the Profane,319
+53757,Shamanistic Fury,320
+53802,Essence Extraction,321
+54142,Finesse,322
+54268,Blade Barrier,323
+54629,Inexorable,324
+54694,Light of Divinity,325
+54713,Force Shaper,326
+54776,Mana Flows,327
+54791,Claws of the Magpie,328
+55114,Utmost Intellect,329
+55380,Clever Construction,330
+55485,Constitution,331
+55772,Blacksmith's Clout,332
+56029,Agility,333
+56094,One with the River,334
+56276,Nightstalker,335
+56359,Cannibalistic Rite,336
+56648,Claws of the Falcon,337
+56716,Heart of Thunder,338
+57199,Fangs of Frost,339
+57839,Blade of Cunning,340
+57900,Command of Steel,341
+58032,Serpentine Spellslinger,342
+58168,High Voltage,343
+58198,Fingers of Frost,344
+58218,Purity of Flesh,345
+58449,Born to Fight,346
+58831,Disemboweling,347
+58921,Disciple of the Slaughter,348
+59151,Brutal Blade,349
+59556,Expeditious Munitions,350
+59605,Unstable Munitions,351
+59766,Dirty Techniques,352
+59866,Entrench,353
+60002,Fury Bolts,354
+60031,Prismatic Skin,355
+60180,Thief's Craft,356
+60501,Heart of Flame,357
+60619,Galvanic Hammer,358
+60737,Sleight of Hand,359
+61039,Panopticon,360
+61198,Heart of the Warrior,361
+61308,Amplify,362
+61689,Explosive Elements,363
+61981,Doom Cast,364
+61982,Grave Intentions,365
+62094,Taste for Blood,366
+62577,Essence Surge,367
+63033,Bannerman,368
+63150,Ironwood,369
+63207,Tempest Blast,370
+63251,Inveterate,371
+63422,Lust for Carnage,372
+63635,Primal Manifestation,373
+63727,Gladiator's Perseverance,374
+63921,Utmost Swiftness,375
+63933,Totemic Zeal,376
+63944,Prism Weave,377
+63976,Shaper,378
+64077,Warrior Training,379
+64355,Brand Equity,380
+64395,Blunt Trauma,381
+64882,Disciple of the Unyielding,382
+65053,Essence Sap,383
+65093,Bladedancer,384
+65097,Leadership,385
+65107,Bastion Breaker,386
+65108,Tireless,387
+65210,Heart of Oak,388
+65224,Aspect of the Eagle,389
+65273,Enigmatic Reach,390
+65308,Diamond Skin,391
+65502,Heartseeker,392
+94,Evasion,393
+127,Life on Kill and Recoup,394
+224,Warcry Cooldown Recovery,395
+238,Dexterity,396
+265,Claw Critical Strike Chance,397
+367,Energy Shield,398
+420,Physical and Minion Damage,399
+444,Dexterity,400
+465,Projectile Damage and Attack Speed,401
+476,Strength,402
+487,Strength,403
+651,Elemental Resistances,404
+720,Accuracy and Attack Damage,405
+739,Cast Speed,406
+864,Impale Effect with Two Handed Weapons,407
+885,Fire Damage,408
+903,Movement Speed and Spell Suppression,409
+918,Attack Speed,410
+930,Bow Damage,411
+1031,Intelligence,412
+1159,Attack Damage and Attack Speed with Shield,413
+1201,Attack Damage,414
+1203,Life,415
+1252,Knockback Chance,416
+1346,Spell Critical Strike Chance,417
+1427,Chaos Resistance,418
+1461,Dexterity,419
+1550,Fire Damage and Life Regeneration,420
+1572,Physical Damage Over Time Multiplier,421
+1593,Shield Block and Elemental Resistances with a Shield,422
+1600,Elemental Damage,423
+1609,Minion Life Regeneration,424
+1648,Poison Chance,425
+1652,Hex Area of Effect,426
+1655,Mine Damage,427
+1696,Totem Placement Speed and Duration,428
+1698,Sword Critical Strike Chance and Multiplier,429
+1722,Minion Critical Strike Multiplier,430
+1761,Staff Damage and Armour,431
+1767,Life and Energy Shield on Kill,432
+1822,Life and Energy Shield,433
+1891,Mana,434
+1909,Two Handed Melee Damage and Attack Speed,435
+1957,Cast Speed,436
+2081,Curse Mana Reservation Efficiency,437
+2092,Melee Damage and Strike Range,438
+2094,Evasion and Life,439
+2121,Claw Attack Speed,440
+2151,Mana Regeneration and Intelligence,441
+2185,Bow Damage and Attack Speed,442
+2219,Life Regeneration,443
+2260,Mine Damage,444
+2292,Mana and Life,445
+2348,Link Mana Cost and Cast Speed,446
+2355,Shield Defences,447
+2392,Dual Wield Damage and Block,448
+2411,Mace Damage and Stun Duration,449
+2454,Two Handed Melee Damage,450
+2474,Life Recoup,451
+2785,Curse Duration,452
+2913,Dexterity,453
+2957,Armour,454
+3009,Dual Wield Accuracy,455
+3167,Life Regeneration,456
+3187,Movement Speed and Spell Suppression,457
+3314,Frenzy Charge Duration,458
+3319,Shield Block and Block Recovery,459
+3359,Curse Cast Speed,460
+3362,Claw Attack Speed and Poison Chance,461
+3398,Shock Resistance,462
+3424,Dagger Damage and Movement Speed,463
+3469,Dexterity,464
+3533,Life and Reduced Cost,465
+3537,Power Charge Duration,466
+3634,Life on Hit,467
+3644,Strength,468
+3656,Intelligence,469
+3676,Flask Charges Gained,470
+3863,Dagger Critical Strike Multiplier and Poison Duration,471
+3992,Accuracy,472
+4011,Dexterity,473
+4036,Critical Strike Multiplier,474
+4105,Life on Kill and Recoup,475
+4184,Elemental Damage,476
+4219,Evasion and Energy Shield,477
+4247,Minion Life,478
+4270,Brand Duration,479
+4300,Totem Damage and Placement Speed,480
+4336,Sword Damage,481
+4367,Intelligence,482
+4378,Life Leech,483
+4397,Intelligence,484
+4432,Energy Shield,485
+4502,Intelligence,486
+4546,Mine Detonation Speed,487
+4565,Dual Wield Attack Speed,488
+4568,Physical and Minion Damage,489
+4573,Evasion and Movement Skill Cooldown Recovery,490
+4656,Spell Suppression and Life Flask Recovery,491
+4713,Burning Damage Multiplier,492
+4750,Totem Attack and Placement Speed,493
+4944,"Armour, Evasion and Onslaught Effect",494
+4973,Damage Over Time Multiplier,495
+4977,Staff Critical Strike Chance and Multiplier,496
+5018,Chance to Poison with Spells,497
+5022,Weapon Lightning Damage,498
+5065,Maximum Lightning Resistance,499
+5068,Mace Critical Strike Chance and Multiplier,500
+5103,Life Regeneration and Stun Threshold,501
+5129,Damage Over Time Multiplier,502
+5152,Life,503
+5197,Life,504
+5233,Strength,505
+5237,Dexterity,506
+5296,Intelligence,507
+5408,Dexterity,508
+5462,Staff Area of Effect,509
+5560,Area of Effect,510
+5591,Energy Shield Recharge Rate,511
+5612,Physical Attack Damage,512
+5613,Physical Damage and Attack and Cast Speed,513
+5616,Dexterity,514
+5622,Dual Wield Critical Strike Multiplier and Accuracy,515
+5629,Claw Damage,516
+5743,Life and Energy Shield,517
+5802,Dagger Damage and Movement Speed,518
+5875,Cast Speed and Spell Critical Strike Chance,519
+5916,Burning Damage Multiplier,520
+5935,Aura Area of Effect,521
+5972,Cold Damage,522
+6043,Maximum Fire Resistance,523
+6108,Sword Critical Strike Chance and Multiplier,524
+6109,Curse Effect,525
+6113,Axe Damage,526
+6139,Fortification Gain,527
+6204,Mana,528
+6245,Chance to Ignite,529
+6250,Curse Cast Speed,530
+6359,Armour and Life,531
+6363,Dexterity,532
+6383,Spell Suppression and Life Flask Recovery,533
+6446,Strength,534
+6534,Evasion and Spell Suppression,535
+6538,Intelligence,536
+6542,Evasion,537
+6580,Dexterity,538
+6616,Dual Wield Cast Speed and Movement Skill Cooldown Recovery,539
+6633,Mace Damage and Area of Effect,540
+6654,Bow Damage and Critical Strike Chance,541
+6685,Minion Attack and Cast Speed,542
+6712,Life,543
+6718,Elemental Resistances,544
+6741,Strength,545
+6764,Intelligence,546
+6785,Fire Damage,547
+6797,Projectile Damage,548
+6884,Two Handed Melee Damage and Life Leech Speed,549
+6913,Bow Damage and Critical Strike Chance,550
+6949,Energy Shield and Recovery,551
+6981,Strength,552
+7082,Sword Damage,553
+7092,Physical and Lightning Damage,554
+7112,Dexterity,555
+7153,Lightning Damage,556
+7162,Armour and Elemental Resistances,557
+7187,Burning Damage Multiplier with Attacks,558
+7285,Damage with Life Cost Skills and Reduced Life Cost,559
+7335,Armour and Life Regeneration,560
+7364,Staff Area of Effect,561
+7374,Life and Reduced Cost,562
+7388,Intelligence,563
+7444,Intelligence,564
+7503,Energy Shield Recharge Rate,565
+7594,Reservation Efficiency,566
+7609,Forking Angle,567
+7614,Skill Duration,568
+7641,Energy Shield and Energy Shield Recharge Rate,569
+7659,Marked Enemy Reduced Accuracy,570
+7786,Totem Damage and Attack Speed,571
+7828,Melee Attack Speed,572
+7898,Minion Critical Strike Chance,573
+7903,Block,574
+7920,Trap and Mine Throwing Speed,575
+7938,Intelligence,576
+8012,Life and Mana on Hit,577
+8027,Mine Critical Strike Chance and Multiplier,578
+8198,"Chance to Ignite, Freeze and Shock",579
+8302,Power Charge Duration,580
+8348,Evasion and Spell Suppression,581
+8426,Two Handed Melee Damage and Reduced Enemy Stun Threshold,582
+8500,Mace Damage and Stun Duration,583
+8533,Two Handed Melee Damage,584
+8544,Dexterity,585
+8566,Physical Bow Damage and Stun Threshold,586
+8620,Mark Effect,587
+8624,Ignite Chance and Duration,588
+8640,Dexterity,589
+8643,Cast Speed,590
+8879,Weapon Fire Damage,591
+8930,Life and Flasks,592
+8938,Dexterity,593
+8948,Intelligence,594
+9009,Movement Speed,595
+9149,Chill and Freeze Resistance,596
+9171,Life Leech,597
+9206,Life,598
+9262,Sword Damage and Melee Range,599
+9294,Physical and Minion Damage,600
+9355,Strength,601
+9370,Minion Attack and Cast Speed,602
+9373,Mana and Flask Effect,603
+9386,Life and Energy Shield,604
+9392,Aura Effect,605
+9469,Critical Strike Chance,606
+9505,Minion Accuracy,607
+9511,Strength,608
+9650,Minion Damage and Life,609
+9695,Armour and Elemental Resistances,610
+9769,Spell Suppression and Energy Shield Recharge Rate,611
+9786,Evasion and Movement Speed,612
+9877,Life,613
+9976,Axe Damage,614
+9995,Aura Area of Effect,615
+10017,Attack Speed,616
+10031,Life,617
+10073,Armour and Guard Skill Cooldown Recovery,618
+10221,Strength,619
+10282,One Handed Melee Damage,620
+10490,Intelligence,621
+10555,Link Duration,622
+10575,Intelligence,623
+10594,Warcry Speed and Area of Effect,624
+10763,Critical Strike Chance,625
+10829,Dexterity,626
+10843,Projectile Damage,627
+10851,Shield Damage,628
+10893,Fire Damage,629
+10904,Minion Life,630
+10992,Hex Area of Effect,631
+11016,Physical and Elemental Damage,632
+11018,Evasion and Energy Shield,633
+11088,Life and Reduced Cost,634
+11128,Avoid Interruption while Casting and Elemental Resistances,635
+11162,Cold Damage Over Time Multiplier,636
+11190,Totem Life and Physical Damage Reduction,637
+11200,Corpse Life,638
+11334,Intelligence,639
+11364,Ailment Damage,640
+11431,Totem Life and Physical Damage Reduction,641
+11489,Dagger Critical Strike Chance and Multiplier,642
+11497,Dexterity,643
+11515,Two Handed Melee Damage and Area of Effect,644
+11551,Intelligence,645
+11568,Bleed Damage Multiplier,646
+11651,Intelligence,647
+11659,Avoid Interruption while Casting and Elemental Resistances,648
+11678,Projectile Damage,649
+11688,Spell Damage,650
+11689,Shield Spell Damage and Spell Block,651
+11700,Melee Area of Effect and Damage,652
+11716,Mine Critical Strike Multiplier,653
+11792,Warcry Speed and Duration,654
+11811,Poison Chance and Duration,655
+11850,Blind Duration,656
+11859,Strength,657
+11984,Chance to Poison with Spells,658
+12068,Bow Damage and Attack Speed,659
+12189,Cast Speed and Spell Critical Strike Chance,660
+12236,Attack Damage with Shield,661
+12246,Energy Shield,662
+12247,Damage with Life Cost Skills and Reduced Life Cost,663
+12250,Energy Shield and Mana,664
+12379,Lightning Damage and Cast Speed,665
+12407,Axe Damage and Attack Speed,666
+12412,Dexterity,667
+12415,Attack Ignite Chance and Attack Speed,668
+12439,Cold Damage and Freeze Chance,669
+12536,Elemental Damage,670
+12720,Sword Damage and Block,671
+12769,Reservation Efficiency,672
+12783,Critical Strike Multiplier per Power Charge,673
+12794,Projectile Attack Critical Strike Chance and Multiplier,674
+12801,Evasion and Life,675
+12824,Trap Damage,676
+12852,Elemental Damage,677
+12888,Mana Regeneration per Power Charge,678
+12913,Mana,679
+12948,Bow Critical Strike Chance and Multiplier,680
+13009,Dexterity,681
+13168,Poison Damage and Cast Speed,682
+13191,Skill Duration,683
+13202,Cold Damage and Cold Ailment Effect,684
+13231,Bow Attack Speed and Phasing,685
+13232,Increased Energy Shield Leeched,686
+13273,Bleed Chance,687
+13322,Energy Shield,688
+13498,Impale Chance,689
+13559,Burning Damage Multiplier,690
+13573,Dual Wield Attack and Cast Speed and Block,691
+13714,Life,692
+13753,Energy Shield,693
+13782,Physical Damage,694
+13807,Dual Wield Damage and Attack Speed,695
+13885,Dexterity,696
+13961,Lightning Ailment Effect,697
+14021,Intelligence,698
+14040,Fire Damage,699
+14056,Strength,700
+14057,Life and Energy Shield,701
+14090,Reduced Skill Duration,702
+14151,Intelligence,703
+14157,Dagger Critical Strike Chance,704
+14182,Energy Shield,705
+14209,Cold Ailment Duration,706
+14211,Energy Shield,707
+14292,Dexterity,708
+14384,Maximum Fortification,709
+14400,Flask Effect Duration,710
+14419,Weapon Fire Damage,711
+14745,Spell Area of Effect and Damage,712
+14767,Fortification Duration,713
+14804,Projectile Attack Critical Strike Chance,714
+14930,Strength,715
+14936,Life,716
+15021,Shield Block and Elemental Resistances,717
+15064,Strength,718
+15073,Life,719
+15081,Minion Damage and Duration,720
+15086,Mace Damage and Critical Strike Chance,721
+15117,Intelligence,722
+15144,Attack Speed and Dexterity,723
+15163,Mace Damage and Area of Effect,724
+15167,Golem Life and Buff Effect,725
+15228,Critical Strike Multiplier,726
+15365,Area of Effect,727
+15405,Strength,728
+15438,Two Handed Melee Damage and Stun Duration,729
+15451,Warcry Speed and Cooldown Recovery,730
+15549,Intelligence,731
+15599,"Attack and Cast Speed, Accuracy",732
+15631,Strength,733
+15678,Melee Critical Strike Multiplier,734
+15716,Staff Critical Strike Chance and Multiplier,735
+15837,Avoid Status Ailments,736
+15868,Life and Armour,737
+15973,Brand Damage and Duration,738
+16079,Evasion Per Frenzy Charge,739
+16167,Dexterity,740
+16213,Attack Speed per Frenzy Charge,741
+16380,Accuracy and Critical Strike Chance,742
+16544,Dexterity,743
+16602,Life Flasks and Flask Duration,744
+16743,Dual Wield Spell Damage and Movement Speed,745
+16754,Staff Critical Strike Chance,746
+16756,Axe Damage and Impale Chance,747
+16775,Strength,748
+16790,Spell Critical Strike Chance,749
+16851,Bow Damage and Accuracy,750
+16860,Physical Attack Damage,751
+16882,Flask Effect Duration,752
+16954,Critical Strike Chance per Power Charge,753
+16970,Damage if Consumed a Corpse,754
+17038,Stun Duration,755
+17201,Dexterity,756
+17236,Energy Shield and Energy Shield Recharge Rate,757
+17251,Armour and Energy Shield,758
+17352,Mana and Life,759
+17383,Mana and Aura Area of Effect,760
+17412,Minion Life,761
+17421,Mana and Flask Charges Gained,762
+17546,Mana and Flasks,763
+17566,Armour and Evasion,764
+17569,Totem Critical Strike Chance,765
+17579,Spell Damage,766
+17674,Physical Damage,767
+17735,Intelligence,768
+17788,Flask Charges Gained,769
+17790,Flask Charges Gained,770
+17814,Evasion and Spell Suppression,771
+17821,Mana Regeneration and Life,772
+17833,Bleed Damage Multiplier,773
+17849,Mine Damage,774
+17908,Claw Damage and Attack Speed,775
+17934,Attack Damage and Speed,776
+18009,Melee Damage and Strike Range,777
+18033,Intelligence,778
+18103,Dexterity,779
+18182,Intelligence,780
+18302,Life,781
+18359,Minion Block,782
+18379,Mace Critical Strike Chance and Multiplier,783
+18402,Life and Flasks,784
+18661,Mine Damage and Reservation Efficiency,785
+18670,Weapon Elemental Damage,786
+18715,Fire Damage,787
+18767,Energy Shield and Mana,788
+18770,Spell Suppression,789
+18866,Cast Speed,790
+18901,Melee Damage,791
+18990,Staff Block,792
+19008,Shield Spell Damage and Spell Block,793
+19098,Wand Lightning Damage,794
+19140,Totem Life and Placement Speed,795
+19210,Physical Damage,796
+19228,Claw Ailment Damage and Poison Chance,797
+19261,Warcry Cooldown Recovery,798
+19287,Life and Life on Kill,799
+19374,Energy Shield,800
+19388,Axe Damage and Accuracy,801
+19501,Intelligence,802
+19609,Physical Damage Over Time Multiplier,803
+19635,Intelligence,804
+19679,Brand Range and Brand Recall Cooldown Recovery,805
+19711,Dexterity,806
+19782,Defences with Shield,807
+19884,Strength,808
+19919,Spell Block,809
+19939,Life,810
+20010,Dexterity,811
+20018,Axe Damage,812
+20127,Poison Damage Multiplier,813
+20142,Totem Critical Strike Multiplier,814
+20167,Dagger Ailment Damage and Poison Chance,815
+20228,Mana Regeneration and Life,816
+20310,Block,817
+20467,Mace Critical Strike Chance and Multiplier,818
+20546,Intelligence,819
+20551,Life,820
+20807,Dexterity,821
+20812,Evasion and Spell Suppression,822
+20844,Wand Attack Speed and Accuracy,823
+20852,Fire and Cold Damage,824
+20966,Mace Damage,825
+20987,Elemental Damage,826
+21033,Mana,827
+21048,Link Duration and Cast Speed,828
+21075,Area of Effect Damage,829
+21170,Cold Ailment Effect,830
+21262,Elemental Damage,831
+21301,Strength,832
+21575,Elemental Damage,833
+21678,Intelligence,834
+21693,Physical Damage and Attack and Cast Speed,835
+21758,Frenzy Charge Duration,836
+21835,Life,837
+21929,Armour and Energy Shield,838
+21934,Spell Damage,839
+21974,Reservation Efficiency,840
+22061,Mana,841
+22062,Minion Damage and Duration,842
+22090,Cold Damage,843
+22217,Spell Suppression and Life Flask Recovery,844
+22261,Dagger Damage and Attack Speed,845
+22266,Dexterity,846
+22285,Strength,847
+22315,Mana Regeneration,848
+22407,Wand Physical Damage and Attack Speed,849
+22423,Dual Wield Damage,850
+22472,Mana,851
+22473,Energy Shield,852
+22488,Trap Throwing Speed,853
+22497,Cast Speed,854
+22577,Block Recovery and Energy Shield,855
+22618,Mana,856
+22627,Life and Armour,857
+22647,Ignite Chance,858
+22703,Strength,859
+22728,Staff Elemental Damage and Penetration,860
+22893,Skill Duration,861
+23027,Strength,862
+23122,Projectile Damage,863
+23185,Minion Damage and Accuracy,864
+23199,Bleed Damage and Chance,865
+23215,Curse Effect on You and Chaos Resistance,866
+23334,Projectile Damage,867
+23438,Life Flasks and Flask Duration,868
+23439,Critical Strike Chance,869
+23449,Poison Damage and Chance,870
+23456,Mana and Life Regeneration,871
+23471,Dexterity,872
+23507,Attack and Cast Speed,873
+23616,Physical and Chaos Damage,874
+23659,Energy Shield,875
+23760,Physical Damage and Overwhelm,876
+23852,Axe Damage,877
+23881,Strength,878
+23886,Attack Speed and Poison Duration,879
+23912,Bow Damage and Attack Speed,880
+23951,Movement Speed per Frenzy Charge,881
+24083,Strength,882
+24155,Mace Critical Strike Chance,883
+24157,Totem Damage and Placement Speed,884
+24229,Staff Critical Strike Chance,885
+24377,Attack Speed,886
+24472,Skill Duration,887
+24496,Dexterity,888
+24641,Dual Wield Damage,889
+24643,Attack Speed,890
+24677,Mace Elemental Damage and Accuracy,891
+24772,Mace Damage and Area of Effect,892
+24824,Minion Attack and Cast Speed,893
+24865,Strength,894
+24872,Golem Life and Buff Effect,895
+24914,Strength,896
+25067,Evasion and Life,897
+25168,Physical Damage as Extra Fire Damage,898
+25209,Dual Wield Critical Strike Multiplier and Accuracy,899
+25222,Minion Attack and Cast Speed,900
+25237,Mana Regeneration and Reduced Mana Cost,901
+25260,Life,902
+25324,Attack Damage with Shield,903
+25332,Minion Damage and Attack and Cast Speed,904
+25431,Curse Mana Cost,905
+25511,Weapon Elemental Damage,906
+25531,Strength,907
+25682,Axe Damage,908
+25714,Mana Regeneration and Increased Mana Cost,909
+25732,Totem Attack and Cast Speed,910
+25757,Spell Critical Strike Chance,911
+25766,Poison Damage Multiplier,912
+25770,Trap Cooldown Recovery,913
+25775,Claw Damage and Attack Speed,914
+25781,Fortification Gain,915
+25789,Energy Shield Leech,916
+25796,Bleed Chance,917
+25831,Reservation Efficiency,918
+25933,Life,919
+25959,Hex Area of Effect,920
+26002,Critical Strike Chance against Marked Enemy,921
+26188,Axe Damage and Critical Strike Chance,922
+26270,Intelligence,923
+26365,Attack Ignite Chance,924
+26456,Mace Damage and Attack Speed,925
+26471,Shock Avoidance,926
+26481,Minion Damage and Life,927
+26523,Strength,928
+26528,Life and Elemental Ailment Avoidance,929
+26712,Armour,930
+26740,Life Regeneration,931
+27134,Mace Damage,932
+27140,Two Handed Melee Damage and Leech,933
+27276,Physical and Chaos Damage,934
+27283,Dexterity,935
+27323,Shield Spell Block,936
+27325,Damage against Marked Enemy,937
+27415,Intelligence,938
+27444,Totem Critical Strike Chance and Multiplier,939
+27564,Intelligence,940
+27575,Power Charge Duration,941
+27592,Intelligence,942
+27605,Fortification Gain,943
+27656,Intelligence,944
+27659,Dexterity,945
+27709,Ignite Chance,946
+27718,Attack Speed and Rage ,947
+27879,Wand Critical Strike Chance and Multiplier,948
+27962,Trap Throwing Speed and Trigger Area,949
+28012,Dexterity,950
+28076,Mana and Mana Regeneration,951
+28221,Attack Speed,952
+28265,Mana and Mana Regeneration,953
+28311,Life Leech Speed and Attack Speed,954
+28330,Strength,955
+28424,Mana and Mana on Kill,956
+28574,Dexterity,957
+28658,Projectile Attack Critical Strike Chance,958
+28753,Trap Damage,959
+28758,Dagger Critical Strike Multiplier,960
+28859,Reservation Efficiency,961
+28887,Faster Ignite,962
+29005,Armour and Energy Shield,963
+29033,Brand Critical Strike Chance,964
+29034,Two Handed Melee Damage and Stun Duration,965
+29061,Elemental Damage,966
+29089,Bow Damage and Evasion,967
+29104,Mana and Flask Charges Gained,968
+29106,Minion Damage and Attack and Cast Speed,969
+29171,Minion Life,970
+29185,Two Handed Melee Critical Strike Chance and Accuracy,971
+29199,Intelligence,972
+29292,Attack Speed and Rage ,973
+29353,Strength,974
+29359,Attack Damage and Leech,975
+29379,Accuracy and Elemental Resistances,976
+29454,Spell Suppression,977
+29543,Axe Damage and Attack Speed,978
+29547,Life Leech,979
+29549,Mine Damage,980
+29552,Wand Damage,981
+29629,Chaos Damage,982
+29781,Mana,983
+29797,Melee Damage,984
+29856,Sword Critical Strike Chance and Multiplier,985
+29870,Attack Speed,986
+29933,Life,987
+29937,Dexterity,988
+30030,Axe Damage and Attack Speed,989
+30110,Chaos Damage Over Time Multiplier,990
+30155,Projectile Damage,991
+30205,Physical Damage,992
+30251,Axe Damage,993
+30319,Trap Critical Strike Chance and Multiplier,994
+30335,Melee Damage,995
+30338,Damage Over Time,996
+30380,Life and Elemental Resistances,997
+30455,Projectile Attack Critical Strike Chance and Multiplier,998
+30547,Mace Damage and Area of Effect,999
+30626,Dual Wield Critical Strike Chance,1000
+30658,Minion Life and Elemental Resistances,1001
+30679,Dexterity,1002
+30691,Intelligence,1003
+30733,Strength,1004
+30745,Claw Critical Strike Chance and Multiplier,1005
+30767,Curse Effect,1006
+30825,Totem Life and Physical Damage Reduction,1007
+30842,Two Handed Melee Accuracy,1008
+30894,Weapon Elemental Damage,1009
+30926,Wand Elemental Damage and Penetration,1010
+30969,Weapon Elemental Damage and Ailment Effect,1011
+31080,Dexterity,1012
+31103,Minion Life and Physical Damage Reduction,1013
+31137,Charge on Kill,1014
+31153,Physical and Fire Damage,1015
+31222,Pierce,1016
+31315,Evasion and Life,1017
+31371,Mine Area of Effect,1018
+31462,Burning Damage Multiplier,1019
+31471,Life,1020
+31501,Trap Throwing Speed and Trigger Area,1021
+31520,Totem Attack and Cast Speed,1022
+31583,Elemental Damage,1023
+31604,Faster Bleeding,1024
+31619,Dual Wield Spell Damage and Spell Block,1025
+31628,Melee Damage and Life,1026
+31758,Mana and Life Regeneration,1027
+31819,Mana and Reduced Mana Cost,1028
+31875,Strength,1029
+31928,Armour,1030
+31931,Strength,1031
+31973,Curse Effect,1032
+32024,Minion Life,1033
+32053,Melee Damage and Strike Range,1034
+32075,Curse Cast Speed,1035
+32091,Evasion and Spell Suppression,1036
+32117,Life and Stun Avoidance,1037
+32210,Intelligence,1038
+32314,Curse Mana Reservation Efficiency,1039
+32431,Lightning Damage,1040
+32432,Trap Critical Strike Chance and Multiplier,1041
+32477,Weapon Elemental Damage and Ailment Effect,1042
+32480,Melee Damage,1043
+32482,Life Regeneration,1044
+32514,Bow Critical Strike Chance and Multiplier,1045
+32519,Axe Damage and Critical Strike Chance,1046
+32555,Dexterity,1047
+32690,Area of Effect per Endurance Charge,1048
+32710,Intelligence,1049
+32739,Accuracy,1050
+32802,Poison Damage Multiplier,1051
+32942,Wand Physical Damage and Attack Speed,1052
+33089,Dual Wield Damage and Attack Speed,1053
+33196,Cold Damage,1054
+33296,Spell Damage,1055
+33310,Intelligence,1056
+33374,Chance for Extra Fork Projectile,1057
+33479,Intelligence,1058
+33508,Fire Resistance,1059
+33558,Evasion and Movement Speed,1060
+33740,Strength,1061
+33755,Life,1062
+33779,Totem Critical Strike Chance,1063
+33783,Intelligence,1064
+33864,Energy Shield,1065
+33911,Mine Duration,1066
+33923,Elemental Damage,1067
+33988,Melee Damage,1068
+34031,Strength,1069
+34130,Melee Attack Speed,1070
+34144,Minion Damage,1071
+34157,Cast Speed,1072
+34171,Strength,1073
+34191,Impale Effect,1074
+34207,Physical Damage,1075
+34225,Curse Effect,1076
+34306,Minion Spell Block,1077
+34327,Staff Accuracy,1078
+34400,Strength,1079
+34423,Damage Over Time Multiplier,1080
+34478,Energy Shield Recharge Rate,1081
+34510,Bow Damage Over Time,1082
+34513,Aura Effect,1083
+34560,Dual Wield Spell Damage and Movement Speed,1084
+34579,Critical Strike Chance,1085
+34625,Bow Accuracy,1086
+34678,Life and Elemental Ailment Avoidance,1087
+34763,Chaos Damage Over Time Multiplier,1088
+34880,Minion Life,1089
+34906,Mana,1090
+34907,Mana,1091
+34959,Two Handed Melee Damage and Life Leech Speed,1092
+35035,Brand Recall Cooldown Recovery,1093
+35053,Sword Critical Strike Chance,1094
+35179,Movement Speed,1095
+35190,Curse Mana Reservation Efficiency,1096
+35260,Minion Damage,1097
+35283,Critical Strike Chance,1098
+35288,Armour,1099
+35334,Mine Critical Strike Chance and Multiplier,1100
+35362,Two Handed Melee Damage and Area of Effect,1101
+35384,Claw Damage and Attack Speed,1102
+35503,Lightning Resistance,1103
+35507,Life Leech,1104
+35556,Strength,1105
+35568,"Armour, Evasion and Life",1106
+35706,Energy Shield,1107
+35724,Damage and Mana,1108
+35730,Curse Duration,1109
+35737,Charge on Kill,1110
+35791,Minion Critical Strike Multiplier,1111
+35851,Accuracy and Critical Strike Chance,1112
+35910,Totem Life and Elemental Resistances,1113
+35992,Mace Damage and Reduced Enemy Stun Threshold,1114
+36047,Life and Armour,1115
+36107,Reservation Efficiency of Heralds,1116
+36121,Lightning Damage,1117
+36200,Warcry Speed and Exerted Attack Damage,1118
+36221,Life,1119
+36222,Projectile Damage,1120
+36225,Claw Critical Strike Chance and Multiplier,1121
+36226,Cold Damage and Freeze Chance,1122
+36287,Dexterity,1123
+36371,Corpse Life,1124
+36412,Cold Damage,1125
+36452,Spell Critical Strike Multiplier,1126
+36542,Intelligence,1127
+36543,Strength,1128
+36585,Cold Damage,1129
+36678,Intelligence,1130
+36704,Life and Mana Leech,1131
+36761,Attack Damage and Attack Speed with Shield,1132
+36774,Spell Damage,1133
+36801,Claw Ailment Damage and Poison Duration,1134
+36849,Attack Speed and Poison Duration,1135
+36858,Intelligence,1136
+36877,Trap Damage,1137
+36881,Cold Resistance,1138
+36972,Two Handed Attack Speed,1139
+37163,Fire Damage and Cast Speed,1140
+37175,Damage if Consumed a Corpse,1141
+37501,Melee Critical Strike Chance,1142
+37569,Intelligence,1143
+37575,Accuracy,1144
+37584,Endurance Charge Duration,1145
+37619,Evasion and Elemental Resistances,1146
+37639,Staff Damage and Stun Duration,1147
+37663,Chaos Damage Over Time Multiplier,1148
+37671,Intelligence,1149
+37690,Mana,1150
+37785,Poison Damage Multiplier,1151
+37800,Life Leech,1152
+37884,Elemental Resistances,1153
+37887,Attack Damage and Leech,1154
+37895,Life Regeneration and Stun Threshold,1155
+37999,Intelligence,1156
+38023,Mace Damage and Reduced Enemy Stun Threshold,1157
+38048,Life Regeneration,1158
+38129,Damage and Energy Shield,1159
+38148,Cold Damage,1160
+38149,Bow Damage and Accuracy,1161
+38176,Intelligence,1162
+38190,Life and Energy Shield,1163
+38344,Attack Speed,1164
+38348,Dexterity,1165
+38450,Area of Effect,1166
+38508,Endurance Charge Duration,1167
+38520,Claw Critical Strike Multiplier,1168
+38538,Physical Damage and Overwhelm,1169
+38539,Physical Damage and Attack and Cast Speed,1170
+38662,Dexterity,1171
+38664,Melee Critical Strike Chance,1172
+38701,Energy Shield and Mana,1173
+38772,Melee Damage and Strike Range,1174
+38777,Melee Damage,1175
+38789,Ignite Chance and Duration,1176
+38805,Area of Effect,1177
+38836,Armour and Energy Shield,1178
+38864,Dagger Damage and Attack Speed,1179
+38900,Area of Effect,1180
+38906,Armour and Energy Shield,1181
+38947,Chain Distance,1182
+38989,Minion Damage,1183
+38995,Life and Mana on Hit,1184
+39023,Melee Critical Strike Chance,1185
+39211,Physical Attack Damage,1186
+39443,Dagger Critical Strike Chance and Leech,1187
+39521,Wand Damage,1188
+39524,Critical Ailment Damage Over Time Multiplier,1189
+39631,Armour and Energy Shield,1190
+39648,Mana Regeneration and Life,1191
+39665,Bow Damage and Attack Speed,1192
+39678,Armour,1193
+39718,Dexterity,1194
+39725,Attack Speed and Accuracy,1195
+39768,Accuracy,1196
+39773,Projectile Damage,1197
+39786,One Handed Melee Damage,1198
+39814,Trap Cooldown Recovery,1199
+39821,Evasion and Life,1200
+39841,Intelligence,1201
+39861,Dexterity,1202
+39916,Strength,1203
+39938,Bow Damage,1204
+40075,Staff Spell Damage,1205
+40100,Critical Strike Chance,1206
+40126,Curse Effect,1207
+40132,Evasion,1208
+40135,Sword Damage,1209
+40287,Critical Strikes against Blinded Enemies,1210
+40291,Fire Damage and Area of Effect,1211
+40362,Life,1212
+40366,Intelligence,1213
+40409,Mine Detonation Speed,1214
+40508,Armour and Energy Shield,1215
+40535,Melee Damage,1216
+40609,Cold Damage,1217
+40637,Minion Damage and Life,1218
+40644,Elemental Damage,1219
+40653,Strength,1220
+40705,Cold Damage Over Time Multiplier,1221
+40751,Mine Area of Effect,1222
+40766,Endurance Charge Duration,1223
+40776,Brand Damage,1224
+40840,Wand Damage,1225
+40841,Impale Chance and Physical Attack Damage,1226
+40867,Strength,1227
+40927,Area of Effect,1228
+41026,Mana and Guard Skill Cooldown Recovery,1229
+41047,Bow Area of Effect,1230
+41082,Aura Area of Effect,1231
+41190,Minion Damage and Life,1232
+41250,Projectile Damage,1233
+41251,Ailment Effect,1234
+41380,Bow Attack Speed and Accuracy,1235
+41536,Projectile Damage,1236
+41599,Staff Damage and Block,1237
+41635,Intelligence,1238
+41689,Physical and Chaos Damage,1239
+41819,Life Leech,1240
+41866,Dexterity,1241
+41967,Mana,1242
+42006,Mine Damage and Reservation Efficiency,1243
+42104,Accuracy and Attack Speed,1244
+42133,Life Flask Charge Gain,1245
+42161,Attack Ignite Chance and Attack Speed,1246
+42485,Staff Spell Damage and Block,1247
+42623,One Handed Damage,1248
+42632,Totem Critical Strike Chance and Multiplier,1249
+42637,Axe Damage and Attack Speed,1250
+42668,Minion Attack and Cast Speed,1251
+42731,Energy Shield,1252
+42744,Mine Critical Strike Chance and Multiplier,1253
+42760,Intelligence,1254
+42800,Strength,1255
+42837,Mana and Life Regeneration,1256
+42900,Totem Damage and Placement Speed,1257
+42907,Chaos Damage Over Time Multiplier,1258
+42911,Strength,1259
+42964,Bow Damage,1260
+42981,Mana Flasks,1261
+43000,Mana and Spell Damage,1262
+43010,Curse Mana Reservation Efficiency,1263
+43057,Ignite Resistance,1264
+43061,Shield Spell Block,1265
+43133,Minion Damage and Accuracy,1266
+43162,Projectile Damage,1267
+43303,Two Handed Melee Damage,1268
+43316,Physical Damage,1269
+43328,Energy Shield Leech,1270
+43374,Strength,1271
+43412,Two Handed Melee Damage,1272
+43413,Shield Block and Block Recovery,1273
+43457,Evasion and Blind Effect,1274
+43491,Flask Charges Used,1275
+43514,Sword Accuracy and Critical Strike Chance,1276
+43608,Dexterity,1277
+43684,Damaging Ailment Duration,1278
+43716,Minion Damage,1279
+43787,Accuracy and Elemental Resistances,1280
+43822,Mace Damage and Stun Duration,1281
+43833,Warcry Cooldown Recovery,1282
+44134,Dagger Critical Strike Chance and Multiplier,1283
+44183,Lightning Damage and Cast Speed,1284
+44184,Intelligence,1285
+44202,Strength,1286
+44306,Projectile Damage and Speed,1287
+44339,Weapon Lightning Damage,1288
+44360,Minion Attack and Cast Speed,1289
+44362,Chaos Damage and Withered Expiry Rate,1290
+44429,Life and Elemental Resistances,1291
+44529,"Attack and Cast Speed, Accuracy",1292
+44606,Intelligence,1293
+44624,Bleed Chance,1294
+44683,SIX,1295
+44723,Spell Critical Strike Chance,1296
+44799,Elemental Damage,1297
+44908,Strength,1298
+44922,Shield Damage and Defences,1299
+44924,Intelligence,1300
+44967,Strength,1301
+44983,Fire Damage,1302
+45033,Evasion and Phasing,1303
+45035,Projectile Damage and Accuracy,1304
+45227,Attack Speed,1305
+45272,Physical and Chaos Damage and Life,1306
+45341,Maximum Cold Resistance,1307
+45360,Poison Chance and Damage,1308
+45366,Totem Critical Strike Multiplier,1309
+45436,"Weapon Elemental Damage, Status Ailment Chance",1310
+45456,Spell Damage,1311
+45486,Staff Critical Strike Chance and Multiplier,1312
+45491,Attack Damage,1313
+45593,Evasion and Life,1314
+45680,Mana,1315
+45788,Claw Attack Speed,1316
+45810,Poison Damage and Cast Speed,1317
+45827,Trap Damage,1318
+45838,Dexterity,1319
+45887,Block,1320
+46092,Intelligence,1321
+46106,Bow Accuracy,1322
+46111,Curse Effect,1323
+46127,Mace Damage and Stun Duration,1324
+46136,Evasion and Energy Shield,1325
+46277,Dexterity,1326
+46289,Damage Over Time,1327
+46291,Totem Damage and Placement Speed,1328
+46340,Intelligence,1329
+46344,Bow Damage and Evasion,1330
+46469,Lightning Damage and Shock Chance,1331
+46578,Strength,1332
+46636,Armour and Energy Shield,1333
+46672,Staff Elemental Damage and Penetration,1334
+46694,Evasion and Blind Effect,1335
+46726,Mana and Reduced Mana Cost,1336
+46730,Attack Damage with Shield,1337
+46756,Stun Duration,1338
+46896,Damage Over Time Multiplier and Life Regeneration,1339
+46897,Armour and Energy Shield,1340
+46910,Strength,1341
+47030,Projectile Damage,1342
+47062,Spell Damage and Intelligence,1343
+47175,MARAUDER,1344
+47251,Intelligence,1345
+47312,Elemental Damage and Resistances,1346
+47321,Claw Critical Strike Chance and Accuracy,1347
+47362,Life and Energy Shield on Kill,1348
+47389,Physical Attack Damage and Life,1349
+47421,Physical Damage Over Time Multiplier,1350
+47422,Dagger Critical Strike Chance and Multiplier,1351
+47426,Warcry Cooldown Recovery and Duration,1352
+47427,Staff Damage and Stun Duration,1353
+47507,Spell Critical Strike Multiplier,1354
+47949,Chaos Damage,1355
+48093,Dual Wield Cast Speed and Movement Skill Cooldown Recovery,1356
+48099,Life and Stun Avoidance,1357
+48109,Life Regeneration per Endurance Charge,1358
+48118,Damage Over Time Multiplier,1359
+48282,Staff Critical Strike Chance,1360
+48287,Life,1361
+48362,Mana and Life,1362
+48423,Mana,1363
+48477,Attack and Cast Speed,1364
+48513,Physical Attack Damage,1365
+48514,Mana and Mana Regeneration,1366
+48713,Minion Critical Strike Chance,1367
+48778,Intelligence,1368
+48813,Shield Damage and Block,1369
+48822,Life Regeneration,1370
+48828,Physical Damage and Strength,1371
+48878,Wand Attack Speed and Accuracy,1372
+48971,Chaos Damage,1373
+49047,Minion Life and Chaos Resistance,1374
+49109,Armour and Evasion,1375
+49147,Armour and Guard Skill Cooldown Recovery,1376
+49178,Strength,1377
+49308,Mana,1378
+49343,Block Chance and Attack Damage with Shield,1379
+49408,Evasion and Energy Shield,1380
+49412,Strength,1381
+49415,Sword Damage and Attack Speed,1382
+49481,Mana on Hit,1383
+49515,Spell Suppression and Energy Shield Recharge Rate,1384
+49534,Staff Spell Damage and Spell Block,1385
+49547,Dual Wield Damage,1386
+49568,Claw Critical Strike Chance and Multiplier,1387
+49571,Axe Damage and Attack Speed,1388
+49588,Lightning Damage and Shock Chance,1389
+49605,Intelligence,1390
+49651,Intelligence,1391
+49779,Wand Damage,1392
+49806,Dexterity,1393
+49807,Accuracy,1394
+49900,Dexterity,1395
+49929,Spell Critical Strike Multiplier,1396
+49971,Frenzy Charge Duration,1397
+49978,Dexterity,1398
+50041,Physical Bow Damage,1399
+50150,"Weapon Elemental Damage, Status Ailment Chance",1400
+50225,Mace Critical Strike Multiplier,1401
+50264,Life Regeneration,1402
+50306,"Armour, Evasion and Life",1403
+50340,Elemental Resistances,1404
+50360,Mana and Mana Regeneration,1405
+50382,Dual Wield Cast Speed,1406
+50422,Strength,1407
+50459,RANGER,1408
+50472,Wand Damage,1409
+50515,Attack Damage while Fortified,1410
+50570,Strength,1411
+50826,Mana and Spell Block,1412
+50862,Strength,1413
+50904,Life and Armour,1414
+50969,Melee Area of Effect and Damage,1415
+50986,DUELIST,1416
+51146,Wand Attack Speed and Accuracy,1417
+51191,Curse Duration,1418
+51213,Reservation Efficiency of Heralds,1419
+51219,Energy Shield Leech,1420
+51220,Physical and Chaos Damage,1421
+51235,Chaos Resistance,1422
+51291,Area of Effect,1423
+51382,Curse Duration,1424
+51404,Weapon Cold Damage,1425
+51420,Mana Leech,1426
+51517,Minion Life and Chaos Resistance,1427
+51524,Wand Attack Speed and Accuracy,1428
+51786,Dexterity,1429
+51801,Spell Area of Effect and Damage,1430
+51856,Physical Attack Damage,1431
+51923,Intelligence,1432
+51953,Forking Angle,1433
+51954,Brand Critical Strike Chance,1434
+52095,Stun Avoidance,1435
+52099,Reduced Skill Duration,1436
+52213,Sword Damage and Block,1437
+52288,Projectile Damage and Speed,1438
+52407,Lightning Critical Strike Multiplier,1439
+52412,Minion Life and Damage,1440
+52423,Blind Chance,1441
+52502,Elemental Damage,1442
+52522,Mine Critical Strike Chance,1443
+52632,Accuracy,1444
+52655,Brand Duration,1445
+52848,Wand Critical Strike Chance and Multiplier,1446
+52904,Dexterity,1447
+53002,"Armour, Evasion and Onslaught Effect",1448
+53018,Brand Damage and Duration,1449
+53213,Dexterity,1450
+53279,Intelligence,1451
+53292,Impale Effect,1452
+53324,Evasion and Phasing,1453
+53456,Intelligence,1454
+53558,Shield Damage and Block,1455
+53574,Curse Cast Speed,1456
+53677,Minion Accuracy,1457
+53732,Cold Damage Over Time Multiplier,1458
+53793,Strength,1459
+53945,Staff Accuracy,1460
+53957,Staff Critical Strike Chance and Multiplier,1461
+53987,Warcry Buff Effect,1462
+54043,Wand Elemental Damage and Penetration,1463
+54144,Dual Wield Attack and Cast Speed and Block,1464
+54267,Minion Damage and Accuracy,1465
+54338,Physical Damage,1466
+54354,Sword Damage,1467
+54396,Burning Damage Multiplier,1468
+54447,WITCH,1469
+54452,Increased Energy Shield Leeched,1470
+54574,Trap Trigger Area,1471
+54645,Lightning Critical Strike Multiplier,1472
+54657,Cast Speed,1473
+54667,Staff Block,1474
+54868,Bow Damage,1475
+54872,Mana Leech,1476
+54954,Curse Effect on You and Chaos Resistance,1477
+54974,Trap Trigger Area,1478
+55085,Armour and Evasion,1479
+55166,Sword Damage and Attack Speed,1480
+55247,Life and Energy Shield,1481
+55307,Ignite Avoidance,1482
+55332,Intelligence,1483
+55373,Life and Strength,1484
+55392,Armour and Evasion,1485
+55414,Dagger Damage,1486
+55558,Life on Kill against Cursed Enemies,1487
+55563,Minion Life Regeneration,1488
+55571,Aura Effect,1489
+55643,Energy Shield,1490
+55647,Lightning Damage,1491
+55648,Totem Damage and Attack Speed,1492
+55649,Strength,1493
+55676,Life and Armour,1494
+55743,Spell Block,1495
+55750,Bow Critical Strike Chance and Multiplier,1496
+55804,Life Recoup,1497
+55854,Physical Damage,1498
+55866,Elemental Damage and Resistances,1499
+55906,Life Regeneration,1500
+55926,Staff Damage and Block,1501
+55993,Elemental Damage,1502
+56001,Strength,1503
+56066,Wand Elemental Damage,1504
+56090,Evasion and Energy Shield,1505
+56149,Accuracy and Attack Damage,1506
+56153,Spell Damage,1507
+56158,Spell Damage per Power Charge,1508
+56174,Dagger Damage and Attack Speed,1509
+56186,Cold Damage Over Time Multiplier,1510
+56231,Dual Wield Damage and Block,1511
+56295,Intelligence,1512
+56355,Melee Critical Strike Chance,1513
+56370,Attack Damage while Fortified,1514
+56381,Two Handed Melee Damage and Attack Speed,1515
+56460,Melee Critical Strike Multiplier,1516
+56509,Sword Damage and Block,1517
+56589,Dexterity,1518
+56646,Weapon Elemental Damage,1519
+56671,Chaos Damage and Withered Expiry Rate,1520
+56803,Attack Speed,1521
+56807,Block,1522
+56814,Evasion,1523
+56855,Bow Attack Speed and Phasing,1524
+56982,Stun Threshold Reduction,1525
+57011,Stun Duration per Endurance Charge,1526
+57030,Poison Chance and Damage,1527
+57044,Bleed Avoidance,1528
+57061,Mana,1529
+57080,Accuracy and Attack Speed,1530
+57167,Mana and Arcane Surge Effect,1531
+57226,Energy Shield and Mana,1532
+57240,Mana and Flask Effect,1533
+57248,Attack and Cast Speed,1534
+57259,Mana Flask Charge Gain,1535
+57264,Spell Damage and Mana,1536
+57266,Mace Damage and Reduced Enemy Stun Threshold,1537
+57362,Lightning Damage,1538
+57449,Evasion per Frenzy Charge,1539
+57457,Dual Wield Attack and Cast Speed,1540
+57565,Link Mana Cost,1541
+57615,Mine Throwing Speed,1542
+57736,Aura Effect,1543
+57746,Avoidance,1544
+57819,Bow Attack Speed and Accuracy,1545
+57923,Stun Duration,1546
+57953,Axe Damage and Attack Speed,1547
+57992,Warcry Cooldown Recovery and Area of Effect,1548
+58069,One Handed Damage,1549
+58210,Shield Spell Damage,1550
+58244,Intelligence,1551
+58271,Life and Elemental Ailment Avoidance,1552
+58288,Totem Attack and Placement Speed,1553
+58402,Intelligence,1554
+58453,Elemental Damage,1555
+58474,Physical Damage as Extra Cold Damage,1556
+58541,Mace Damage,1557
+58545,Mana and Aura Area of Effect,1558
+58603,Freeze Chance,1559
+58604,Lightning Damage,1560
+58649,Evasion and Energy Shield,1561
+58763,Cold and Lightning Damage,1562
+58803,Two Handed Melee Critical Strike Chance and Accuracy,1563
+58833,Seven,1564
+58854,Evasion,1565
+58869,Curse Cast Speed,1566
+58968,Chaos Damage Over Time Multiplier,1567
+59005,Elemental Damage,1568
+59009,Mana,1569
+59016,Dual Wield Block and Attack Speed,1570
+59070,Brand Range and Brand Recall Cooldown Recovery,1571
+59220,Critical Strike Chance,1572
+59252,Dexterity,1573
+59306,Physical Damage,1574
+59370,Dexterity,1575
+59482,Life Regeneration,1576
+59494,Accuracy and Critical Strike Chance,1577
+59606,Dexterity,1578
+59650,Energy Shield and Mana Regeneration,1579
+59699,Energy Shield Leech,1580
+59718,"Armour, Evasion and Life",1581
+59728,Area of Effect Damage,1582
+59861,Life Regeneration,1583
+59928,Strength,1584
+60090,Energy Shield,1585
+60153,Physical Attack Damage,1586
+60169,Two Handed Melee Damage,1587
+60204,Evasion and Spell Suppression,1588
+60259,Evasion and Energy Shield,1589
+60388,Mana,1590
+60398,Intelligence,1591
+60405,Spell Critical Strike Chance,1592
+60440,Intelligence,1593
+60472,Strength,1594
+60529,Impale Chance,1595
+60532,Movement Speed,1596
+60554,Minion Damage,1597
+60592,Accuracy and Critical Strike Chance,1598
+60648,Mana Flasks,1599
+60803,Evasion,1600
+60887,Bleed Chance,1601
+60942,Dexterity,1602
+60949,Trap and Mine Damage,1603
+60989,Herald Buff Effect,1604
+61050,Sword Critical Strike Multiplier,1605
+61217,Elemental Damage,1606
+61262,Strength,1607
+61264,Lightning Damage and Shock Chance,1608
+61283,Mana on Kill against Cursed Enemies,1609
+61306,Dexterity,1610
+61320,Life and Energy Shield,1611
+61327,Weapon Cold Damage,1612
+61388,Impale Chance with Two Handed Weapons,1613
+61471,Life,1614
+61525,TEMPLAR,1615
+61602,Warcry Speed,1616
+61636,Melee Critical Strike Chance,1617
+61653,Life and Energy Shield,1618
+61804,Fire Damage,1619
+61868,Armour,1620
+61875,Life and Life on Kill,1621
+61950,Mace Elemental Damage and Accuracy,1622
+62017,Life and Armour,1623
+62021,Life,1624
+62042,Sword Damage,1625
+62069,Elemental Damage,1626
+62103,Projectile Damage and Dexterity,1627
+62108,Life Leech and Attack Speed,1628
+62214,Shield Spell Block and Elemental Resistances with a Shield,1629
+62217,Wand Attack Speed and Accuracy,1630
+62303,Mana and Reduced Mana Cost,1631
+62319,Melee Damage,1632
+62363,Strength,1633
+62429,Strength,1634
+62480,Curse Mana Cost,1635
+62490,Poison Avoidance,1636
+62530,Fortification Duration,1637
+62662,Physical Damage,1638
+62694,Attack Speed,1639
+62697,Shock Chance,1640
+62712,Projectile Damage,1641
+62744,Spell Suppression,1642
+62767,Spell Block and Elemental Resistances,1643
+62795,Evasion and Energy Shield,1644
+62831,Physical and Chaos Damage,1645
+62970,Shield Cast Speed,1646
+63027,Exerted Attack Damage,1647
+63039,Herald Buff Effect,1648
+63048,Life and Armour,1649
+63067,Wand Damage and Attack Speed,1650
+63138,Spell Block and Elemental Resistances,1651
+63139,Strength,1652
+63194,Reservation Efficiency,1653
+63228,Mana,1654
+63282,Strength,1655
+63398,Spell Critical Strike Chance,1656
+63439,Dexterity,1657
+63447,Intelligence,1658
+63618,Totem Damage and Placement Speed,1659
+63639,Damage and Energy Shield,1660
+63649,Dexterity,1661
+63723,Strength,1662
+63795,Dexterity,1663
+63799,Life and Energy Shield,1664
+63843,Dexterity,1665
+63845,Cast Speed,1666
+63963,Cold Damage,1667
+63965,Damage and Mana,1668
+64024,Sword Critical Strike Multiplier,1669
+64181,Warcry Area of Effect,1670
+64210,Intelligence,1671
+64221,Armour,1672
+64235,Evasion and Elemental Resistances,1673
+64239,Wand Physical Damage,1674
+64241,Freeze and Chill Avoidance,1675
+64265,Aura Area of Effect,1676
+64401,Life and Mana on Kill against Cursed Enemies,1677
+64426,Elemental Resistances with a Shield,1678
+64501,Evasion and Energy Shield,1679
+64509,Dagger Ailment Damage,1680
+64587,Life,1681
+64612,Wand Lightning Damage,1682
+64709,Dexterity,1683
+64769,Poison Chance,1684
+64816,Two Handed Melee Damage and Leech,1685
+64878,Weapon Elemental Damage,1686
+65033,Attack Speed,1687
+65034,Life,1688
+65112,Maximum Fortification,1689
+65159,Totem Attack and Cast Speed,1690
+65167,Life,1691
+65203,Mana and Mana Regeneration,1692
+65400,Warcry Cooldown Recovery and Exerted Attack Damage,1693
+65456,Knockback Distance,1694
+65485,Armour per Endurance Charge,1695

@@ -6,7 +6,6 @@ namespace DatafileGenerator.Game;
 
 public class AlternatePassiveSkillInformation
 {
-
     public AlternatePassiveSkill AlternatePassiveSkill { get; private set; }
 
     public IReadOnlyDictionary<uint, uint> StatRolls { get; private set; }
@@ -19,9 +18,8 @@ public class AlternatePassiveSkillInformation
         ArgumentNullException.ThrowIfNull(statRolls, nameof(statRolls));
         ArgumentNullException.ThrowIfNull(alternatePassiveAdditionInformations, nameof(alternatePassiveAdditionInformations));
 
-        this.AlternatePassiveSkill = alternatePassiveSkill;
-        this.StatRolls = statRolls;
-        this.AlternatePassiveAdditionInformations = alternatePassiveAdditionInformations;
+        AlternatePassiveSkill = alternatePassiveSkill;
+        StatRolls = statRolls;
+        AlternatePassiveAdditionInformations = alternatePassiveAdditionInformations;
     }
-
 }

@@ -1,40 +1,55 @@
-﻿using System.Text.Json.Serialization;
-
-namespace DatafileGenerator.Data.Models;
-
+﻿namespace DatafileGenerator.Data.Models;
 public class AlternateTreeVersion
 {
-
-    [JsonPropertyName("_rid")]
     public uint Index { get; init; }
-
-    [JsonPropertyName("Id")]
-    public string Identifier { get; init; }
-
-    [JsonPropertyName("Unknown2")]
-    public bool AreSmallAttributePassiveSkillsReplaced { get; init; }
-
-    [JsonPropertyName("Unknown3")]
-    public bool AreSmallNormalPassiveSkillsReplaced { get; init; }
-
-    [JsonPropertyName("Unknown6")]
-    public uint MinimumAdditions { get; init; }
-
-    [JsonPropertyName("Unknown7")]
-    public uint MaximumAdditions { get; init; }
-
-    [JsonPropertyName("Unknown10")]
-    public uint NotableReplacementSpawnWeight { get; init; }
-
-    public AlternateTreeVersion()
+    public bool AreSmallAttributePassiveSkillsReplaced => Index switch
     {
-        this.Index = default;
-        this.Identifier = default;
-        this.AreSmallAttributePassiveSkillsReplaced = default;
-        this.AreSmallNormalPassiveSkillsReplaced = default;
-        this.MinimumAdditions = default;
-        this.MaximumAdditions = default;
-        this.NotableReplacementSpawnWeight = default;
-    }
+        1 => true,
+        2 => false,
+        3 => false,
+        4 => true,
+        5 => true,
+        _ => false
+    };
+    public bool AreSmallNormalPassiveSkillsReplaced => Index switch
+    {
+        1 => true,
+        2 => false,
+        3 => false,
+        4 => false,
+        5 => true,
+        _ => false
+    };
+    public uint MinimumAdditions => Index switch
+    {
+        1 => 0,
+        2 => 1,
+        3 => 1,
+        4 => 1,
+        5 => 0,
+        _ => 0
+    };
+    public uint MaximumAdditions => Index switch
+    {
+        1 => 0,
+        2 => 1,
+        3 => 1,
+        4 => 1,
+        5 => 0,
+        _ => 0
+    };
+    public uint NotableReplacementSpawnWeight => Index switch
+    {
+        1 => 100,
+        2 => 0,
+        3 => 0,
+        4 => 20,
+        5 => 100,
+        _ => 0
+    };
 
+    public AlternateTreeVersion(uint index)
+    {
+        Index = index;
+    }
 }
