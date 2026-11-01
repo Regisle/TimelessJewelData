@@ -140,6 +140,27 @@ public static class Program
             var calculator = new AffectedNotablesCalculator();
             notableJewelSocketMappings = calculator.GetNotableToSocketMapping();
             AnsiConsole.MarkupLine($"{notableJewelSocketMappings.Count} Affected Notable skills found");
+
+            AnsiConsole.MarkupLine("[green]Calculating Notable skills affected by Impossible Escape Keystone radii[/]...");
+            var notableKeystoneMappings = calculator.GetNotableToKeystoneMapping(notableJewelSocketMappings);
+            AnsiConsole.MarkupLine($"{notableKeystoneMappings.Count} Affected Notable skills found");
+
+            var KeystoneCsvFileName = "notable_keystones.csv";
+            //build the csv
+            if (File.Exists(KeystoneCsvFileName))
+                File.Delete(KeystoneCsvFileName);
+
+            var ksb = new StringBuilder("NotableName,KeystoneName\n");
+            foreach (var kvp in notableKeystoneMappings)
+            {
+                var notableName = kvp.Key;
+                foreach (var keystoneName in kvp.Value)
+                {
+                    ksb.AppendLine($"{notableName},{keystoneName}");
+                }
+            }
+            File.WriteAllText(Path.Combine(outputDir, KeystoneCsvFileName), ksb.ToString());
+            ksb.Clear();
         }
 
         var justNotables = GetModifiableNodes(true);
