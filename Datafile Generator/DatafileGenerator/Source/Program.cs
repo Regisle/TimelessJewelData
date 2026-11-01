@@ -34,6 +34,7 @@ public static class Program
         Console.Title = $"{GeneratorSettings.ApplicationName} (v{GeneratorSettings.ApplicationVersion})";
         AnsiConsole.MarkupLine("Spinning up!");
         IsInteractiveMode = args == null || args.Length == 0;
+
         if (IsAbyssRangeExportRequested(args))
         {
             RunAbyssRangeExport(args);
@@ -54,8 +55,12 @@ public static class Program
             PrintUsage();
             return;
         }
+
         string outputDir;
         int compression;
+        bool isCsvExport = false;
+        bool compressCsvExport = false;
+
         if (args != null && args.Length > 0)
         {
             IsInteractiveMode = false;
@@ -71,13 +76,59 @@ public static class Program
         {
             IsInteractiveMode = true;
 
-            PromptUserForFile("Path to [yellow]alternate passive ADDITIONS[/] file:", out GeneratorSettings.AlternatePassiveAdditionsFilePath);
-            PromptUserForFile("Path to [yellow]alternate passive SKILLS[/] file:", out GeneratorSettings.AlternatePassiveSkillsFilePath);
-            PromptUserForFile("Path to [yellow]skill tree[/] file:", out GeneratorSettings.PassiveSkillsFilePath);
-            PromptUserForFile("Path to [yellow]output[/] directory:", out outputDir, true);
-            PromptUserForChoice("Output type:", new List<string>() { "compressed", "uncompressed", "both" }, out compression);
-            compression += 1; //hacky but it turns it into a bitmask by doing this
+            GeneratorSettings.AlternatePassiveAdditionsFilePath = Path.GetFullPath(@"source-data\alternatepassiveadditions.json");
+            if (!File.Exists(GeneratorSettings.AlternatePassiveAdditionsFilePath))
+            {
+                PromptUserForFile("Path to [yellow]alternate passive ADDITIONS[/] file:", out GeneratorSettings.AlternatePassiveAdditionsFilePath);
+            }
+
+            GeneratorSettings.AlternatePassiveSkillsFilePath = Path.GetFullPath(@"source-data\alternatepassiveskills.json");
+            if (!File.Exists(GeneratorSettings.AlternatePassiveSkillsFilePath))
+            {
+                PromptUserForFile("Path to [yellow]alternate passive SKILLS[/] file:", out GeneratorSettings.AlternatePassiveSkillsFilePath);
+            }
+
+            GeneratorSettings.PassiveSkillsFilePath = Path.GetFullPath(@"source-data\data.json");
+            if (!File.Exists(GeneratorSettings.PassiveSkillsFilePath))
+            {
+                PromptUserForFile("Path to [yellow]skill tree[/] file:", out GeneratorSettings.PassiveSkillsFilePath);
+            }
+
+            outputDir = Path.GetFullPath(@"output-data");
+            if (!Directory.Exists(outputDir))
+            {
+                PromptUserForFile("Path to [yellow]output[/] directory:", out outputDir, true);
+            }
+
+            const string OutputCompressedFiles = "compressed";
+            const string OutputUncompressedFiles = "uncompressed";
+            const string OutputBothFileFormats = "both";
+            const string OutputCsvFiles = "csv";
+            const string OutputCsvFilesCompressed = "csv (compressed)";
+            var exportOptions = new List<string>()
+            {
+                OutputCompressedFiles,
+                OutputUncompressedFiles,
+                OutputBothFileFormats,
+                OutputCsvFiles,
+                OutputCsvFilesCompressed
+            };
+            PromptUserForChoice("Select output type:", exportOptions, out int compressionChoice);
+            string selectedCompression = exportOptions[compressionChoice];
+            isCsvExport = selectedCompression == OutputCsvFiles || selectedCompression == OutputCsvFilesCompressed;
+            compressCsvExport = selectedCompression == OutputCsvFilesCompressed;
+
+            compression = selectedCompression switch
+            {
+                OutputCompressedFiles => 1,
+                OutputUncompressedFiles => 2,
+                OutputBothFileFormats => 3,
+                OutputCsvFiles => 2,
+                OutputCsvFilesCompressed => 2,
+                _ => 3
+            };
         }
+
         AnsiConsole.MarkupLine("[green]Loading[/]...");
 
         if (!DataManager.Initialize())
@@ -88,17 +139,26 @@ public static class Program
         if (!Directory.Exists(outputDir))
             Directory.CreateDirectory(outputDir);
 
+        Dictionary<string, int> notableJewelSocketMappings = null;
+        if (isCsvExport)
+        {
+            AnsiConsole.MarkupLine("[green]Calculating Notable skills affected by jewel radii[/]...");
+            var calculator = new AffectedNotablesCalculator();
+            notableJewelSocketMappings = calculator.GetNotableToSocketMapping();
+            AnsiConsole.MarkupLine($"{notableJewelSocketMappings.Count} Affected Notable skills found");
+        }
+
         var justNotables = GetModifiableNodes(true);
         var justSmallNodes = GetModifiableNodes(false);
         justNotables.Sort();
         justSmallNodes.Sort();
-        //generate our indices
         var notablesThenSmalls = justNotables.ToList();
         notablesThenSmalls.AddRange(justSmallNodes);
+
         AnsiConsole.MarkupLine("[green]Processing[/]...");
-        //build the csv
         if (File.Exists(CsvFileName))
             File.Delete(CsvFileName);
+
         var sb = new StringBuilder("PassiveSkillGraphId,Name,Datafile Parsing Index\n");
         for (int k = 0; k < notablesThenSmalls.Count; k++)
         {
@@ -107,19 +167,15 @@ public static class Program
         }
         File.WriteAllText(Path.Combine(outputDir, CsvFileName), sb.ToString());
         sb.Clear();
-        //begin iterating over the 11 jewel types
-        //reverse order since glorious vanity sucks
+
         for (int i = 11; i > 0; i--)
         {
             var sw = Stopwatch.StartNew();
             GetJewelTypeInfo(i, out _, out _, out _, out string outputFile);
             byte[] dataBuffer;
-            //glorious vanity logic
             if (i == 1)
             {
-                //calculate
                 GenerateGloriousVanity(notablesThenSmalls, out var luaSizes, out dataBuffer);
-                //create the lua mapping file
                 sb.Clear();
                 sb.AppendLine("nodeIDList = { }");
                 sb.AppendLine($"nodeIDList[\"size\"] = {notablesThenSmalls.Count}");
@@ -134,7 +190,6 @@ public static class Program
                 File.WriteAllText(Path.Combine(outputDir, LuaMappingFileName), sb.ToString());
                 sb.Clear();
             }
-            //Abyss jewels use socket/path-aware formats introduced in 3.29.
             else if (i >= 7 && i <= 10)
             {
                 IReadOnlyDictionary<uint, byte> localIdMapping = GetGlobalToLocalIdMapping(i);
@@ -159,12 +214,11 @@ public static class Program
                     NumAdditions,
                     globalId => MapGlobalIdToLocalId(localIdMapping, i, globalId));
             }
-            //non-glorious vanity logic
             else
             {
                 GenerateRegular(justNotables, i, out dataBuffer);
             }
-            //output uncompressed
+
             if ((compression & 2) == 2)
             {
                 string outputPath = Path.Combine(outputDir, outputFile);
@@ -177,18 +231,16 @@ public static class Program
                     file.Write(dataBuffer, 0, dataBuffer.Length);
                 }
             }
-            //output compressed
+
             if ((compression & 1) == 1)
             {
                 byte[] compressedData = Compress(dataBuffer);
-                //need to split into multiple files because PoB is dumb
                 if (compressedData.Length > MaxBytesInFile)
                 {
                     int splitIndex = 0;
                     byte[] split = compressedData.Take(MaxBytesInFile).ToArray();
                     while (split.Any())
                     {
-                        //write the data
                         string outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, $"zip.part{splitIndex}"));
                         if (File.Exists(outputPath))
                         {
@@ -201,7 +253,6 @@ public static class Program
                         split = compressedData.Skip(MaxBytesInFile * ++splitIndex).Take(MaxBytesInFile).ToArray();
                     }
                 }
-                //file is small enough as is, just write the file
                 else
                 {
                     string outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, "zip"));
@@ -215,10 +266,11 @@ public static class Program
                     }
                 }
             }
-            //log completion
+
             sw.Stop();
             Console.WriteLine($"{outputFile} took {sw.Elapsed.TotalSeconds} seconds");
         }
+
         AnsiConsole.MarkupLine("[green]Done[/]!");
     }
 
@@ -896,7 +948,16 @@ public static class Program
         TextPrompt<string> fileTextPrompt = new TextPrompt<string>(query)
             .Validate((string input) =>
             {
-                if (!isDir && !File.Exists(input))
+                if (isDir)
+                {
+                    if (!Directory.Exists(input))
+                    {
+                        return ValidationResult.Error($"[red]Error[/]: Unable to find directory: '{input}'");
+                    }
+                    return ValidationResult.Success();
+                }
+
+                if (!File.Exists(input))
                 {
                     return ValidationResult.Error($"[red]Error[/]: Unable to find file: '{input}'");
                 }
