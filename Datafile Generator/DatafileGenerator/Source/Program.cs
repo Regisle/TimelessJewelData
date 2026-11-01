@@ -227,7 +227,7 @@ public static class Program
                 GenerateRegular(justNotables, isCsvExport, i, notableJewelSocketMappings, out dataBuffer, out csvExport);
             }
 
-            if ((compression & 2) == 2)
+            if (!isCsvExport && (compression & 2) == 2)
             {
                 outputPath = Path.Combine(outputDir, outputFile);
                 if (File.Exists(outputPath))
@@ -240,7 +240,7 @@ public static class Program
                 }
             }
 
-            if ((compression & 1) == 1)
+            if (!isCsvExport && (compression & 1) == 1)
             {
                 byte[] compressedData = Compress(dataBuffer);
                 if (compressedData.Length > MaxBytesInFile)
