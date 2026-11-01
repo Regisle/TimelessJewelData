@@ -198,7 +198,11 @@ public static class Program
             //glorious vanity logic
             if (i == 1)
             {
+                AnsiConsole.MarkupLine("[green]Calculating Glorious Vanity seeds[/]...");
+
+                //calculate
                 GenerateGloriousVanity(notablesThenSmalls, isCsvExport, notableJewelSocketMappings, out var luaSizes, out dataBuffer, out csvExport);
+                //create the lua mapping file
                 sb.Clear();
                 sb.AppendLine("nodeIDList = { }");
                 sb.AppendLine($"nodeIDList[\"size\"] = {notablesThenSmalls.Count}");
@@ -318,7 +322,11 @@ public static class Program
 
             if (isCsvExport && IsTimelessJewel(i))
             {
-                AnsiConsole.MarkupLine("[green]Generating CSV export[/]...");
+                if(compression == OutputCsvFilesCompressed){
+                    AnsiConsole.MarkupLine("[green]Generating GZipped CSV file[/]...");
+                } else {
+                    AnsiConsole.MarkupLine("[green]Generating CSV export[/]...");
+                }
 
                 outputPath = CreateCSVFile(csvExport, outputDir, outputFile, compressCSVOutput);
             }
@@ -1067,7 +1075,7 @@ public static class Program
     {
         AnsiConsole.WriteLine("Usage:");
         AnsiConsole.WriteLine("  DataFileGenerator <alternate_additions_json> <alternate_skills_json> <skill_tree_json> <output_dir> <output_type>");
-        AnsiConsole.WriteLine("  output_type: compressed | uncompressed | both | csv | csv (compressed) | 1 | 2 | 3");
+        AnsiConsole.WriteLine("  output_type: compressed | uncompressed | both | 1 | 2 | 3");
         AnsiConsole.WriteLine();
         AnsiConsole.WriteLine("Abyss diagnostics:");
         AnsiConsole.WriteLine("  DataFileGenerator --inspect-abyss <additions_json> <skills_json> <tree_json> <jewel_type> <seed> <socket_or_node_id>");
