@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Text;
 using System.Text.Json;
@@ -10,7 +12,9 @@ using Spectre.Console;
 using DatafileGenerator.Data;
 using DatafileGenerator.Data.Models;
 using DatafileGenerator.Game;
-using System.IO.Compression;
+using DatafileGenerator.Source.Data.Models;
+using CsvSerializer = ServiceStack.Text.CsvSerializer;
+using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace DatafileGenerator;
 
@@ -64,12 +68,14 @@ public static class Program
         if (args != null && args.Length > 0)
         {
             IsInteractiveMode = false;
-            if (!TryParseCommandLineArguments(args, out outputDir, out compression, out string argumentError))
+            if (!TryParseCommandLineArguments(args, out outputDir, out compression, out bool isCsvExportFromArgs, out bool compressCsvExportFromArgs, out string argumentError))
             {
                 PrintUsage();
                 ExitWithError(argumentError);
                 return;
             }
+            isCsvExport = isCsvExportFromArgs;
+            compressCsvExport = compressCsvExportFromArgs;
             AnsiConsole.MarkupLine("[grey]Using command-line arguments.[/]");
         }
         else
@@ -168,14 +174,16 @@ public static class Program
         File.WriteAllText(Path.Combine(outputDir, CsvFileName), sb.ToString());
         sb.Clear();
 
+        string outputPath = null;
         for (int i = 11; i > 0; i--)
         {
             var sw = Stopwatch.StartNew();
             GetJewelTypeInfo(i, out _, out _, out _, out string outputFile);
             byte[] dataBuffer;
+            List<CsvExportRow> csvExport = new List<CsvExportRow>();
             if (i == 1)
             {
-                GenerateGloriousVanity(notablesThenSmalls, out var luaSizes, out dataBuffer);
+                GenerateGloriousVanity(notablesThenSmalls, isCsvExport, notableJewelSocketMappings, out var luaSizes, out dataBuffer, out csvExport);
                 sb.Clear();
                 sb.AppendLine("nodeIDList = { }");
                 sb.AppendLine($"nodeIDList[\"size\"] = {notablesThenSmalls.Count}");
@@ -216,12 +224,12 @@ public static class Program
             }
             else
             {
-                GenerateRegular(justNotables, i, out dataBuffer);
+                GenerateRegular(justNotables, isCsvExport, i, notableJewelSocketMappings, out dataBuffer, out csvExport);
             }
 
             if ((compression & 2) == 2)
             {
-                string outputPath = Path.Combine(outputDir, outputFile);
+                outputPath = Path.Combine(outputDir, outputFile);
                 if (File.Exists(outputPath))
                 {
                     File.Delete(outputPath);
@@ -241,7 +249,7 @@ public static class Program
                     byte[] split = compressedData.Take(MaxBytesInFile).ToArray();
                     while (split.Any())
                     {
-                        string outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, $"zip.part{splitIndex}"));
+                        outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, $"zip.part{splitIndex}"));
                         if (File.Exists(outputPath))
                         {
                             File.Delete(outputPath);
@@ -255,7 +263,7 @@ public static class Program
                 }
                 else
                 {
-                    string outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, "zip"));
+                    outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, "zip"));
                     if (File.Exists(outputPath))
                     {
                         File.Delete(outputPath);
@@ -267,8 +275,18 @@ public static class Program
                 }
             }
 
+            if (isCsvExport)
+            {
+                AnsiConsole.MarkupLine("[green]Generating CSV export[/]...");
+                outputPath = CreateCSVFile(csvExport, outputDir, outputFile, compressCsvExport);
+            }
+
             sw.Stop();
-            Console.WriteLine($"{outputFile} took {sw.Elapsed.TotalSeconds} seconds");
+            AnsiConsole.MarkupLine($"{outputFile} took {string.Format("{0:0.##}", sw.Elapsed.TotalSeconds)} seconds");
+            if (outputPath != null)
+            {
+                AnsiConsole.MarkupLine($"[blue]File available at:[/] {outputPath}");
+            }
         }
 
         AnsiConsole.MarkupLine("[green]Done[/]!");
@@ -397,17 +415,17 @@ public static class Program
         }
     }
 
-    private static void GenerateGloriousVanity(List<PassiveSkill> nodes, out int[] luaDefinitions, out byte[] data)
+    private static void GenerateGloriousVanity(List<PassiveSkill> nodes, bool isCsvExport, Dictionary<string, int> notableJewelSocketMappings, out int[] luaDefinitions, out byte[] data, out List<CsvExportRow> csvData)
     {
         IReadOnlyDictionary<uint, byte> localIdMapping = GetGlobalToLocalIdMapping(1);
-        GetJewelTypeInfo(1, out int jewelMin, out int jewelMax, out int jewelIncrement, out _);
+        GetJewelTypeInfo(1, out int jewelMin, out int jewelMax, out int jewelIncrement, out string jewelName);
         int seedMinimumIndex = jewelMin / jewelIncrement;
         int seedMaximumIndex = jewelMax / jewelIncrement;
         int maxSeed = (jewelMax - jewelMin) / jewelIncrement + 1;
-        //the datafile header. cant use out params in anonymous methods
         byte[] header = new byte[maxSeed * nodes.Count];
-        //the actual information for the jewels. will convert to 1d later
         byte[][] data2d = new byte[maxSeed * nodes.Count][];
+        var export = new ConcurrentBag<CsvExportRow>();
+
         Parallel.For(0, nodes.Count, nodeIndex =>
         {
             var node = nodes[nodeIndex];
@@ -416,15 +434,13 @@ public static class Program
                 int jewelSeed = (seedIndex * jewelIncrement);
                 int jewelIndex = (seedIndex - seedMinimumIndex);
                 int jewelType = 1;
-                //modify the tree using that jewel
                 TimelessJewel timelessJewelFromInput = GetTimelessJewel((uint)jewelSeed, (uint)jewelType);
                 if (timelessJewelFromInput == null)
                     Program.ExitWithError("Failed to get the [yellow]timeless jewel[/] from input.");
-                //determine how the particular node was modified
+
                 var alternateTreeManager = new AlternateTreeManager(node, timelessJewelFromInput);
                 var skillInfo = alternateTreeManager.ReplacePassiveSkill();
                 byte[] dataEntry;
-                //handle might/legacy of the vaal
                 if (skillInfo.AlternatePassiveSkill.Index == LegacyOfTheVaal || skillInfo.AlternatePassiveSkill.Index == MightOfTheVaal)
                 {
                     int additionCount = skillInfo.AlternatePassiveAdditionInformations.Count;
@@ -436,7 +452,6 @@ public static class Program
                         dataEntry[additionCount + k] = (byte)additionInformation.StatRolls[0];
                     }
                 }
-                //handle all others
                 else
                 {
                     int rollCount = skillInfo.StatRolls.Count;
@@ -446,15 +461,32 @@ public static class Program
                     for (int k = 0; k < rollCount; k++)
                         dataEntry[k + 1] = (byte)skillInfo.StatRolls[k];
                 }
-                //save the data
+
                 int dataIndex = ((nodeIndex * maxSeed) + jewelIndex);
                 header[dataIndex] = (byte)dataEntry.Length;
                 data2d[dataIndex] = dataEntry;
+
+                if (isCsvExport)
+                {
+                    var exportRow = new CsvExportRow(
+                        jewelSeed,
+                        jewelName,
+                        jewelType,
+                        node,
+                        (uint)nodeIndex,
+                        skillInfo.AlternatePassiveSkill.Name,
+                        notableJewelSocketMappings
+                    );
+                    if (exportRow.JewelSocketId > 0)
+                    {
+                        export.Add(exportRow);
+                    }
+                }
             }
         });
-        //write the data
+
         var outputData = new List<byte>(header);
-        foreach (var entry in data2d)
+        foreach (var entry in data2d.Where(d => d is not null))
         {
             outputData.AddRange(entry);
         }
@@ -464,36 +496,95 @@ public static class Program
             luaDefinitions[i] = header.Skip(i * maxSeed).Take(maxSeed).Sum(x => x);
         }
         data = outputData.ToArray();
+        csvData = export.ToList();
     }
 
-    private static void GenerateRegular(List<PassiveSkill> nodes, int jewelType, out byte[] data)
+    private static void GenerateRegular(List<PassiveSkill> nodes, bool isCsvExport, int jewelType, Dictionary<string, int> notableJewelSocketMappings, out byte[] data, out List<CsvExportRow> csvData)
     {
-        IReadOnlyDictionary<uint, byte> localIdMapping = GetGlobalToLocalIdMapping(jewelType);
-        GetJewelTypeInfo(jewelType, out int jewelMin, out int jewelMax, out int jewelIncrement, out _);
-        int seedMinimumIndex = jewelMin / jewelIncrement;
-        int seedMaximumIndex = jewelMax / jewelIncrement;
+        GetJewelTypeInfo(jewelType, out int jewelMin, out int jewelMax, out int jewelIncrement, out string jewelName);
         int maxSeed = (jewelMax - jewelMin) / jewelIncrement + 1;
         byte[] dataInternal = new byte[maxSeed * nodes.Count];
-        //for non glorious vanity, we only care about notables
+        IReadOnlyDictionary<uint, byte> localIdMapping = GetGlobalToLocalIdMapping(jewelType);
+
+        uint numAdditions = (uint)DataManager.AlternatePassiveAdditions.Count;
+        var jewelEffectOptions = DataManager.AlternatePassiveAdditions.Where(x => x.AlternateTreeVersionIndex == jewelType).Select(x => x.Index)
+            .Concat(DataManager.AlternatePassiveSkills.Where(x => x.AlternateTreeVersionIndex == jewelType).Select(x => x.Index + numAdditions))
+            .Select((x, i) => new { rid = x, index = (byte)i }).ToDictionary(x => x.rid, x => x.index);
+
+        Dictionary<uint, string> notableJewelReplacementNames;
+        var timelessJewelsWithAdditions = new[] { "LethalPride", "BrutalRestraint" };
+        if (timelessJewelsWithAdditions.Contains(jewelName))
+        {
+            notableJewelReplacementNames = DataManager.AlternatePassiveAdditions
+                .Where(x => x.AlternateTreeVersionIndex == jewelType)
+                .ToDictionary(x => x.Index, x => x.Id);
+        }
+        else
+        {
+            notableJewelReplacementNames = DataManager.AlternatePassiveSkills
+                .Where(x => x.AlternateTreeVersionIndex == jewelType)
+                .ToDictionary(x => x.Index, x => x.Name);
+        }
+
+        if (jewelEffectOptions.Count > 256)
+        {
+            throw new Exception("Cannot safely construct file: possible indices greater than byte size");
+        }
+
+        var export = new ConcurrentBag<CsvExportRow>();
         Parallel.For(0, nodes.Count, notableIndex =>
         {
             var notable = nodes[notableIndex];
-            for (int seedIndex = seedMinimumIndex; seedIndex <= seedMaximumIndex; seedIndex++)
+            Parallel.For(jewelMin / jewelIncrement, jewelMax / jewelIncrement + 1, i =>
             {
-                int jewel_seed = (seedIndex * jewelIncrement);
-                int jewel_index = (seedIndex - seedMinimumIndex);
-                //modify the tree using that jewel
-                TimelessJewel timelessJewelFromInput = GetTimelessJewel((uint)jewel_seed, (uint)jewelType);
+                i *= jewelIncrement;
+                int jewelSeed = i;
+                int jewelIndex = (jewelSeed - jewelMin) / jewelIncrement;
+                TimelessJewel timelessJewelFromInput = GetTimelessJewel((uint)jewelSeed, (uint)jewelType);
                 if (timelessJewelFromInput == null)
                     Program.ExitWithError("Failed to get the [yellow]timeless jewel[/] from input.");
-                //figure out how it affects this specific notable
+
                 var alternateTreeManager = new AlternateTreeManager(notable, timelessJewelFromInput);
-                uint passiveSkillGlobalIndex = alternateTreeManager.GetRegularPassiveSkillIndex((uint)NumAdditions);
-                byte passiveSkillIndex = MapGlobalIdToLocalId(localIdMapping, jewelType, passiveSkillGlobalIndex);
-                dataInternal[notableIndex * maxSeed + jewel_index] = passiveSkillIndex;
-            }
+                bool flag = alternateTreeManager.IsPassiveSkillReplaced();
+                byte passiveSkillIndex = 0;
+                uint notableAlternatePassiveIndex = 0;
+                string notableReplacementName = string.Empty;
+                if (flag)
+                {
+                    notableAlternatePassiveIndex = alternateTreeManager.ReplacePassiveSkill().AlternatePassiveSkill.Index;
+                    notableReplacementName = notableJewelReplacementNames[notableAlternatePassiveIndex];
+                    passiveSkillIndex = jewelEffectOptions[notableAlternatePassiveIndex + numAdditions];
+                }
+                else
+                {
+                    notableAlternatePassiveIndex = alternateTreeManager.AugmentPassiveSkill().FirstOrDefault()?.AlternatePassiveAddition.Index ?? 0;
+                    notableReplacementName = notableJewelReplacementNames[notableAlternatePassiveIndex];
+                    passiveSkillIndex = jewelEffectOptions[notableAlternatePassiveIndex];
+                }
+
+                if (isCsvExport)
+                {
+                    var exportRow = new CsvExportRow(
+                        jewelSeed,
+                        jewelName,
+                        jewelType,
+                        notable,
+                        notableAlternatePassiveIndex,
+                        notableReplacementName,
+                        notableJewelSocketMappings
+                    );
+                    if (exportRow.JewelSocketId > 0)
+                    {
+                        export.Add(exportRow);
+                    }
+                }
+
+                dataInternal[notableIndex * maxSeed + jewelIndex] = passiveSkillIndex;
+            });
         });
+
         data = dataInternal;
+        csvData = export.ToList();
     }
 
     private static void GetJewelTypeInfo(int jewelType, out int jewelMin, out int jewelMax, out int jewelIncrement, out string jewelName)
@@ -811,10 +902,12 @@ public static class Program
         return result;
     }
 
-    private static bool TryParseCommandLineArguments(string[] args, out string outputDir, out int compression, out string error)
+    private static bool TryParseCommandLineArguments(string[] args, out string outputDir, out int compression, out bool isCsvExport, out bool compressCsvExport, out string error)
     {
         outputDir = null;
         compression = 0;
+        isCsvExport = false;
+        compressCsvExport = false;
         error = null;
 
         if (args.Length != ExpectedArgumentCount)
@@ -853,9 +946,9 @@ public static class Program
             return false;
         }
 
-        if (!TryParseCompressionMode(compressionMode, out compression))
+        if (!TryParseCompressionMode(compressionMode, out compression, out isCsvExport, out compressCsvExport))
         {
-            error = $"Unrecognized output type '{compressionMode}'. Use compressed, uncompressed, both, or 1/2/3.";
+            error = $"Unrecognized output type '{compressionMode}'. Use compressed, uncompressed, both, csv, csv (compressed), or 1/2/3.";
             return false;
         }
 
@@ -866,9 +959,11 @@ public static class Program
         return true;
     }
 
-    private static bool TryParseCompressionMode(string compressionMode, out int compression)
+    private static bool TryParseCompressionMode(string compressionMode, out int compression, out bool isCsvExport, out bool compressCsvExport)
     {
         compression = 0;
+        isCsvExport = false;
+        compressCsvExport = false;
 
         if (string.IsNullOrWhiteSpace(compressionMode))
             return false;
@@ -891,6 +986,15 @@ public static class Program
             case "both":
                 compression = 3;
                 return true;
+            case "csv":
+                compression = 2;
+                isCsvExport = true;
+                return true;
+            case "csv (compressed)":
+                compression = 2;
+                isCsvExport = true;
+                compressCsvExport = true;
+                return true;
             default:
                 return false;
         }
@@ -907,12 +1011,44 @@ public static class Program
     {
         AnsiConsole.WriteLine("Usage:");
         AnsiConsole.WriteLine("  DataFileGenerator <alternate_additions_json> <alternate_skills_json> <skill_tree_json> <output_dir> <output_type>");
-        AnsiConsole.WriteLine("  output_type: compressed | uncompressed | both | 1 | 2 | 3");
+        AnsiConsole.WriteLine("  output_type: compressed | uncompressed | both | csv | csv (compressed) | 1 | 2 | 3");
         AnsiConsole.WriteLine();
         AnsiConsole.WriteLine("Abyss diagnostics:");
         AnsiConsole.WriteLine("  DataFileGenerator --inspect-abyss <additions_json> <skills_json> <tree_json> <jewel_type> <seed> <socket_or_node_id>");
         AnsiConsole.WriteLine("  DataFileGenerator --inspect-abyss-ascendancy <additions_json> <skills_json> <tree_json> <seed> <ascendancy_name>");
         AnsiConsole.WriteLine("  DataFileGenerator --export-abyss-range <additions_json> <skills_json> <tree_json> <output_file> <jewel_type> <seed_min> <seed_max> [compressed]");
+    }
+
+    private static string CreateCSVFile(List<CsvExportRow> csvExport, string outputDir, string outputFile, bool compress = false)
+    {
+        var outputPath = Path.Combine(outputDir, Path.ChangeExtension(outputFile, compress ? "csv.gz" : "csv"));
+        if (File.Exists(outputPath))
+        {
+            File.Delete(outputPath);
+        }
+
+        if (compress)
+        {
+            using var fileStream = File.Create(outputPath);
+            using var gzipStream = new GZipStream(fileStream, CompressionMode.Compress);
+            using var writer = new StreamWriter(gzipStream);
+            writer.Write(SerializeCSV(csvExport));
+        }
+        else
+        {
+            File.WriteAllText(outputPath, SerializeCSV(csvExport));
+        }
+
+        return outputPath;
+    }
+
+    private static string SerializeCSV(List<CsvExportRow> csvExport)
+    {
+        return CsvSerializer.SerializeToCsv(
+            csvExport
+                .OrderBy(s => s.JewelSeed)
+                .ThenBy(s => s.JewelSocketId)
+        );
     }
 
     private static void WaitForExit(int exitCode = 0)
