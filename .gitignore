@@ -1,6 +1,14 @@
-.vs
-**/Build
-**/output-data/*
-!**/output-data/readme.md
-**/source-data/*
-!**/source-data/readme.md
+# Development tools
+.idea/
+.tools/
+.profile/
+.vs/
+.vscode/
+*.code-workspace
+inspect.lua
+
+# Development files
+*.lnk
+
+# Build files
+Datafile Generator/DatafileGenerator/Build/

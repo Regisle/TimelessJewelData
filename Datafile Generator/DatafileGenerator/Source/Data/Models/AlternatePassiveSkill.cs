@@ -5,14 +5,17 @@ namespace DatafileGenerator.Data.Models;
 
 public class AlternatePassiveSkill
 {
+    [JsonPropertyName("Id")]
+    public string Id { get; init; }
+
+    [JsonPropertyName("Name")]
+    public string Name { get; init; }
+
     [JsonPropertyName("_rid")]
     public uint Index { get; init; }
 
     [JsonPropertyName("AlternateTreeVersionsKey")]
     public uint AlternateTreeVersionIndex { get; init; }
-
-    [JsonPropertyName("Name")]
-    public string Name { get; init; }
 
     [JsonPropertyName("StatsKeys")]
     public IReadOnlyCollection<uint> StatIndices { get; init; }

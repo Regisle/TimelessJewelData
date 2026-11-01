@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Linq;
 using DatafileGenerator.Data.Models;
 using DatafileGenerator.Game;
 
@@ -21,10 +20,13 @@ public class RandomNumberGenerator
 
         state = default;
 
-        Initialize(Array.Empty<uint>()
-            .Append(passiveSkill.GraphIdentifier)
-            .Append(timelessJewel.Seed)
-            .ToArray());
+        Initialize(passiveSkill.GraphIdentifier, timelessJewel.Seed);
+    }
+
+    public RandomNumberGenerator(uint seed0, uint seed1)
+    {
+        state = default;
+        Initialize(seed0, seed1);
     }
 
     private static uint ManipulateAlpha(uint value)
@@ -39,20 +41,21 @@ public class RandomNumberGenerator
 
     public uint Generate(uint exclusiveMaximumValue)
     {
-        uint maximumValue = (exclusiveMaximumValue - 1);
-        uint roundState = 0;
-        uint value = 0;
+        if (exclusiveMaximumValue == 0)
+            throw new ArgumentOutOfRangeException(nameof(exclusiveMaximumValue));
+        if (exclusiveMaximumValue == 1)
+            return 0;
 
+        // Reject the incomplete range at the top of uint32 before applying the
+        // modulo. Using ulong here lets the exact 2^32 boundary be represented.
+        ulong limit = (1UL << 32) / exclusiveMaximumValue * exclusiveMaximumValue;
+        uint value;
         do
         {
-            do
-            {
-                value = (GenerateUInt() | (2 * (value << 31)));
-                roundState = (0xFFFFFFFF | (2 * (roundState << 31)));
-            } while (roundState < maximumValue);
-        } while (((value / exclusiveMaximumValue) >= roundState) && ((roundState % exclusiveMaximumValue) != maximumValue));
+            value = GenerateUInt();
+        } while ((ulong)value >= limit);
 
-        return (value % exclusiveMaximumValue);
+        return value % exclusiveMaximumValue;
     }
 
     public uint Generate(uint minimumValue, uint maximumValue)
@@ -71,7 +74,7 @@ public class RandomNumberGenerator
         return ((roll + a) + 0x80000000);
     }
 
-    private void Initialize(uint[] seeds)
+    private void Initialize(uint seed0, uint seed1)
     {
         state = new uint[]
         {
@@ -84,7 +87,7 @@ public class RandomNumberGenerator
 
         uint index = 1;
 
-        for (int i = 0; i < seeds.Length; i++)
+        for (int i = 0; i < 2; i++)
         {
             uint roundState = ManipulateAlpha(
                 state[(index % 4) + 1] ^
@@ -93,7 +96,7 @@ public class RandomNumberGenerator
 
             state[((index + 1) % 4) + 1] += roundState;
 
-            roundState += (seeds[i] + index);
+            roundState += (((i == 0) ? seed0 : seed1) + index);
 
             state[(((index + 1) + 1) % 4) + 1] += roundState;
             state[(index % 4) + 1] = roundState;

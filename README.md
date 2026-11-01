@@ -1,34 +1,8 @@
-# Timeless Jewel Datafile Generator
+# Using the data files
 
-## Before you begin
+### Parsing Brutal Restraint, Elegant Hubris, Lethal Pride, and Militant Faith
 
-This tool requires several data files as inputs. Follow these steps to source the information:
-
-1. Clone this git repo from <https://github.com/Regisle/TimelessJewelData/tree/Generator>
-2. Open the latest branch
-3. Set up the `data.json` file by:
-   1. Downloading the `data.json` tree file from GGG's github: <https://github.com/grindinggear/skilltree-export/blob/master/data.json>
-   2. Saving the `data.json` file as `~\Datafile Generator\DatafileGenerator\source-data\data.json`
-4. Open <https://snosme.github.io/poe-dat-viewer/>
-5. The page shows you the **Latest PoE patch**. Paste the PoE1 Patch number into the **Patch #** field and click the **Import** button
-6. Set up the `alternatepassiveadditions.json` file by:
-   1. Select the `data` folder from the left-hand navigation pane to open it
-   2. Use the search box in the top-left of the screen to search for `AlternatePassiveAdditions`
-   3. Select the `alternatepassiveadditions.datc64` file
-   4. Click on **Export data** in the top-right of the screen
-   5. Save the `alternatepassiveadditions.json` file as `~\Datafile Generator\DatafileGenerator\source-data\alternatepassiveadditions.json`
-7. Set up the `alternatepassiveskills.json` file by:
-   1.  Clear the previous search
-   2.  Use the search bar to find `AlternatePassiveSkills`
-   3.  Select the `alternatepassiveskills.datc64` file
-   4.  Click on **Export data** in the top-right of the screen
-   5.  Save the `alternatepassiveskills.json` file as `~\Datafile Generator\DatafileGenerator\source-data\alternatepassiveskills.json`
-
-## Using the data files
-
-### Parsing Brutal Restraint, Elegant Hubris, Lethal Pride, Militant Faith, and Heroic Tragedy
-
-Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, where array\[node_id_INDEX \* jewel_seed_Size + jewel_seed_offset\] = index_of_change
+Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, where array\[node_id_INDEX \* jewel_seed_Size + jewel_seed_offset\] = index_of_Change
 
 	node_id_INDEX is given by Node_Indices.csv
 	jewel_seed_Size is the number of seeds for a given jewel (note elegant hubris seeds are divided by 20)
@@ -36,14 +10,12 @@ Data files are uint8 arrays (1 byte per node+seed) in a pure binary format, wher
 
 A list of which nodes are in range of what jewel socket can be found in Jewel_Node_Link.json
 
-Also note that Node_Indices.csv contains indices for all modifiable nodes, but the non-Glorious Vanity jewels will only have data for notables. Modifications to non-notables for these jewels are constant and thus have been omitted from their data files to save space.
+Also note that Node_Indices.csv contains indices for all modifiable nodes, but the non-Glorious Vanity jewels will only have data for notables (indices 0 to 390). Modifications to non-notables for these jewels are constant and thus have been omitted from their data files to save space.
 
-to find index_of_change:
+index_of_Change is dependant on value, 
 
-  parse alternate_passive_additions.json selecting only the entries that match the jewel type, ordered by _rid
-  parse alternate_passive_skills.json selecting only the entries that match the jewel type, ordered by _rid
-  concatenate the two, placing alternate_passive_additions before those of alternate_passive_skills
-  entry with index index_of_change will be the stat that was selected
+	additions are index_of_Change = _rid in alternate_passive_additions.json
+	replacements are index_of_Change - 94 = _rid in alternate_passive_skills.json
 
 Non-Glorious Vanity jewels are relatively simple to parse with this definition:
 
@@ -60,7 +32,7 @@ It is also possible to SEEK directly to the byte in the file that holds the desi
 
 ### Parsing Glorious Vanity
 
-Glorious Vanity, having variable stat replacements for * *all* * nodes as well as multiple stats per notable with rolls on those stats, is a much larger file (hence compressed for github), and is more complex. Its parsing method is similar to the others, but requires a fair few tweaks:
+Glorious Vanity, having variable stat replacments for * *all* * nodes as well as multiple stats per notable with rolls on those stats, is a much larger file (hence compressed for github), and is more complex. Its parsing method is similar to the others, but requires a fair few tweaks:
 
 like before:
 
@@ -68,12 +40,8 @@ like before:
 	jewel_seed_Size is the number of seeds for a given jewel
 	jewel_seed_offset is the value above the minimum
 
-to find index_of_change:
-
-  parse alternate_passive_additions.json selecting only the entries that match the jewel type, ordered by _rid
-  parse alternate_passive_skills.json selecting only the entries that match the jewel type, ordered by _rid
-  concatenate the two, placing alternate_passive_additions before those of alternate_passive_skills
-  entry with index index_of_change will be the stat that was selected
+	additions are index_of_Change = _rid in alternate_passive_additions.json
+	replacements are index_of_Change - 94 = _rid in alternate_passive_skills.json
 
 and data files are in a pure binary format with one byte per piece of information; however, with glorious vanity, each node requires multiple pieces of information.
 
@@ -84,7 +52,7 @@ For a jewel, each node can have multiple changes, and each change comes with 1 o
 
 To know the length of the header, we have the additional definition:
 
-	nodeCount is the number of nodes in the Node_Indices.csv
+	nodeCount is the number of nodes in the Node_Indices.csv (currently 1678)
 
 Because each node has more than 1 value associated with it, the recommended method for parsing it is a header array and a 2d array of data as follows:
 - create a header of size: nodeCount \* maxSeedIndex
@@ -121,22 +89,79 @@ is.read((char*)lut.data(), lut.size());
 
 take a random node, lets say lethal pride, Lava Lash, seed 10116 (as it ends up easier), this gives you an index of 0 + 116, the byte at that value is 52 (a "4" in ascii) which corresponds with "karui_notable_add_burning_damage", which is what it is ![](https://cdn.discordapp.com/attachments/175290321695932416/993077938847219722/unknown.png)
 
-## Generating the data files
 
-Datafiles are generated using the DatafileGenerator (a visual studio project, C#).    
-It's built on top of a timeless jewel simulator, so its not very concise, but the meat of the file format logic is in program.cs while the rest is just modelling the prng and parsing jsons.
+
+
+# Generating the data files
+
+Datafiles are generated using the DatafileGenerator (a Visual Studio project, C#).
+It's built on top of a timeless jewel simulator, so the core file-format logic is in `Program.cs` while the rest models the PRNG and parses JSON data.
 
 It will need an alternate passive additions json, an alternate passive skills json, and the most recent skill tree json. You'll also have to tell it where to output and whether you want the compressed or uncompressed files.    
 
-Running it will output 6 datafiles, 1 lua file, and 1 csv file (note that if compressed, the Glorious Vanity "file" will actually come out to be multiple files each with size at most 5MB due to the limitations within Path of Building).
+Running it will output all 11 jewel datafiles, 1 lua file, and 1 csv file (note that compressed files larger than 5MB are split into multiple parts due to limitations within Path of Building).
 
-## Generating CSV files
+## Abyss timeless jewels (versions 7-11)
 
-If you'd like to export human-readable CSV data dumps of the Timeless Jewel notable replacements, do the following
+The Abyss jewels introduced in 3.29 cannot use the original notable-by-seed layout:
 
-1. Follow the steps outlines in [Before you begin](#before-you-begin)
-2. Open `~\Datafile Generator\DatafileGenerator.sln` in Visual Studio
-3. (Optional) Add or remove `[IgnoreDataMember]` annotations in the `~\Datafile Generator\DatafileGenerator\Source\Data\Models\CsvExportRow.cs` file to specify which data fields you'd like to include in your CSV exports
-4. Run the program. If you are prompted for input files then you have saved the 3 json files in the wrong directory. You can still select them manually
-5. Choose **csv** or **csv (compressed)** as the export type
-6. The (GZipped) CSV files are exported to `~\Datafile Generator\output-data`
+- Versions 7-10 select 60 graph entries with a weighted walk starting at the jewel socket. Their output therefore depends on both the seed and socket.
+- Version 11 transforms nodes on the path from the socket to the character start. The path itself is deliberately not stored because Path of Building already calculates it. Its extra ascendancy selection is stored per seed and ascendancy.
+
+All integer fields below are little-endian. Stat rolls are signed 16-bit integers; negative rolls must not be read as unsigned values.
+
+### Common header
+
+| Field | Type | Description |
+| --- | --- | --- |
+| magic | 4 bytes | `ABYS` for versions 7-10 or `ABYN` for version 11 |
+| formatVersion | uint8 | Currently 1 |
+| jewelType | uint8 | Alternate tree version, 7 through 11 |
+| seedMinimum | uint16 | First stored seed |
+| seedMaximum | uint16 | Last stored seed |
+| seedIncrement | uint16 | Seed step |
+
+### `ABYS` socket-dependent body (versions 7-10)
+
+The common header is followed by `socketCount` (uint8), `abyssSize` (uint8), and `socketCount` graph IDs (uint16). The socket IDs are sorted numerically and include all 21 sockets on the base passive tree, including the six Large Jewel Sockets.
+
+Records then appear socket-major and seed-minor. For every socket and seed:
+
+1. Read `affectedNodeCount` (uint8).
+2. For each affected node, read its graph ID (uint16), then one modification record as described below.
+
+Nodes which consume a walk selection but cannot be transformed are omitted from `affectedNodeCount`.
+
+### `ABYN` path-dependent body (version 11)
+
+The common header is followed by `nodeCount` (uint16) and `nodeCount` sorted graph IDs (uint16). Modification records then appear node-major and seed-minor. Use PoB's socket-to-character-start path to choose which node records apply.
+
+After the node records is the ASCII marker `ASCS`, followed by `ascendancyCount` (uint16). Each ascendancy block contains:
+
+1. UTF-8 name length (uint8) and name bytes.
+2. For every seed, selected node count (uint8) followed by that many graph IDs (uint16).
+
+### Modification records
+
+Each modification begins with `componentCount` (uint8). Each component contains:
+
+| Field | Type | Description |
+| --- | --- | --- |
+| componentType | uint8 | 1 = replacement, 2 = addition |
+| localId | uint8 | Jewel-local change ID |
+| statCount | uint8 | Number of following rolls |
+| statRolls | int16[] | One signed value per stat |
+
+`NodeIndexMapping.lua` contains `localIdToGlobalId[jewelType]`, which maps `localId` back to the `_rid`-based global IDs used by `AlternatePassiveAdditions.json` and `AlternatePassiveSkills.json`.
+
+### Focused inspection and range export
+
+The generator has non-interactive commands for checking observed game examples without generating every seed:
+
+```text
+DataFileGenerator --inspect-abyss <additions.json> <skills.json> <tree.json> <jewelType> <seed> <socketOrNodeId>
+DataFileGenerator --inspect-abyss-ascendancy <additions.json> <skills.json> <tree.json> <seed> <ascendancyName>
+DataFileGenerator --export-abyss-range <additions.json> <skills.json> <tree.json> <outputFile> <jewelType> <seedMin> <seedMax> [compressed]
+```
+
+For versions 7-10, `socketOrNodeId` is a jewel socket and inspection prints every affected node. For version 11 it is a single path or ascendancy node whose transformation should be inspected. Supplying `compressed` writes the range as the zlib stream conventionally given a `.zip` extension by PoB.

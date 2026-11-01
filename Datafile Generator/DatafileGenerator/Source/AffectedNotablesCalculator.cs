@@ -70,9 +70,9 @@ public class AffectedNotablesCalculator
                     Name = kvp.Value.Name,
                     IsNotable = kvp.Value.IsNotable,
                     IsJewelSocket = kvp.Value.IsJewelSocket,
-                    Group = kvp.Value.Group,
-                    Orbit = (int?)kvp.Value.Orbit,
-                    OrbitIndex = kvp.Value.OrbitIndex
+                    Group = kvp.Value.Group.HasValue ? (int?)kvp.Value.Group.Value : null,
+                    Orbit = kvp.Value.Orbit.HasValue ? (int?)kvp.Value.Orbit.Value : null,
+                    OrbitIndex = kvp.Value.OrbitIndex.HasValue ? (int?)kvp.Value.OrbitIndex.Value : null
                 }),
             Constants = DataManager.FullTreeData.Constants,
             MinX = DataManager.FullTreeData.MinX,

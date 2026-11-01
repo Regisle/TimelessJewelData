@@ -5,6 +5,8 @@ namespace DatafileGenerator.Data.Models;
 
 public class AlternatePassiveAddition
 {
+    [JsonPropertyName("Id")]
+    public string Id { get; init; }
 
     [JsonPropertyName("_rid")]
     public uint Index { get; init; }
@@ -19,16 +21,16 @@ public class AlternatePassiveAddition
     public IReadOnlyCollection<uint> StatIndices { get; init; }
 
     [JsonPropertyName("Stat1Min")]
-    public uint StatAMinimumValue { get; init; }
+    public int StatAMinimumValue { get; init; }
 
     [JsonPropertyName("Stat1Max")]
-    public uint StatAMaximumValue { get; init; }
+    public int StatAMaximumValue { get; init; }
 
     [JsonPropertyName("Unknown7")]
-    public uint StatBMinimumValue { get; init; }
+    public int StatBMinimumValue { get; init; }
 
     [JsonPropertyName("Unknown8")]
-    public uint StatBMaximumValue { get; init; }
+    public int StatBMaximumValue { get; init; }
 
     [JsonPropertyName("PassiveType")]
     public IReadOnlyCollection<uint> ApplicablePassiveTypes { get; init; }

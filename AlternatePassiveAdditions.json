@@ -1,0 +1,6475 @@
+[
+  {
+    "_rid": 0,
+    "Id": "vaal_small_fire_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      42
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 1,
+    "Id": "vaal_small_cold_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      49
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 2,
+    "Id": "vaal_small_lightning_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      56
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 3,
+    "Id": "vaal_small_physical_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      26
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 4,
+    "Id": "vaal_small_chaos_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      63
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 5,
+    "Id": "vaal_small_minion_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      490
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 13,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 6,
+    "Id": "vaal_small_attack_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2654
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 7,
+    "Id": "vaal_small_spell_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      25
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 8,
+    "Id": "vaal_small_area_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      621
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 9,
+    "Id": "vaal_small_projectile_damage",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      500
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 10,
+    "Id": "vaal_small_damage_over_time",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2020
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 11,
+    "Id": "vaal_small_area_of_effect",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      436
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 12,
+    "Id": "vaal_small_projectile_speed",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      177
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 13,
+    "Id": "vaal_small_critical_strike_chance",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      556
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 14,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 14,
+    "Id": "vaal_small_critical_strike_multiplier",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      95
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 15,
+    "Id": "vaal_small_attack_speed",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      70
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 16,
+    "Id": "vaal_small_cast_speed",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      218
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 17,
+    "Id": "vaal_small_movement_speed",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      179
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 18,
+    "Id": "vaal_small_chance_to_ignite",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      613
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 19,
+    "Id": "vaal_small_chance_to_freeze",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      457
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 20,
+    "Id": "vaal_small_chance_to_shock",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      661
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 21,
+    "Id": "vaal_small_duration",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      217
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 22,
+    "Id": "vaal_small_life",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      125
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 23,
+    "Id": "vaal_small_mana",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      129
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 24,
+    "Id": "vaal_small_mana_regeneration",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      131
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 17,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 25,
+    "Id": "vaal_small_armour",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      117
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 26,
+    "Id": "vaal_small_evasion",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      120
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 27,
+    "Id": "vaal_small_energy_shield",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      135
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 28,
+    "Id": "vaal_small_attack_block",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      1085
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 29,
+    "Id": "vaal_small_spell_block",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2136
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 30,
+    "Id": "vaal_small_attack_dodge",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      622
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 31,
+    "Id": "vaal_small_spell_dodge",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      14960
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 32,
+    "Id": "vaal_small_aura_effect",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      3899
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 33,
+    "Id": "vaal_small_curse_effect",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      1393
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 34,
+    "Id": "vaal_small_fire_resistance",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      146
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 14,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 35,
+    "Id": "vaal_small_cold_resistance",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      148
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 14,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 36,
+    "Id": "vaal_small_lightning_resistance",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      150
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 14,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 37,
+    "Id": "vaal_small_chaos_resistance",
+    "AlternateTreeVersionsKey": 1,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      152
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 38,
+    "Id": "karui_attribute_strength",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      575
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      1
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 39,
+    "Id": "karui_small_strength",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      575
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      2
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 40,
+    "Id": "karui_notable_add_strength",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      575
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 41,
+    "Id": "karui_notable_add_percent_strength",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2076
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 42,
+    "Id": "karui_notable_add_armour",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      117
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 43,
+    "Id": "karui_notable_add_leech",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2745
+    ],
+    "Stat1Min": 40,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 44,
+    "Id": "karui_notable_add_double_damage",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      5925
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 45,
+    "Id": "karui_notable_add_life",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      125
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 46,
+    "Id": "karui_notable_add_fortify_effect",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      15037
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 1,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 47,
+    "Id": "karui_notable_add_life_regen",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      453
+    ],
+    "Stat1Min": 60,
+    "Stat1Max": 60,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 48,
+    "Id": "karui_notable_add_fire_resistance",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      146
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 49,
+    "Id": "karui_notable_add_melee_damage",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      1367
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 50,
+    "Id": "karui_notable_add_damage_from_crits",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      97
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 51,
+    "Id": "karui_notable_add_melee_crit_chance",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      1360
+    ],
+    "Stat1Min": 30,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 52,
+    "Id": "karui_notable_add_burning_damage",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      211
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 53,
+    "Id": "karui_notable_add_totem_damage",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      1826
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 54,
+    "Id": "karui_notable_add_melee_crit_multi",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      1299
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 55,
+    "Id": "karui_notable_add_physical_damage",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      26
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 56,
+    "Id": "karui_notable_add_warcry_buff_effect",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      5623
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 57,
+    "Id": "karui_notable_add_totem_placement_speed",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      1348
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 58,
+    "Id": "karui_notable_add_stun_duration",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      342
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 59,
+    "Id": "karui_notable_add_faster_burn",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      1334
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 60,
+    "Id": "karui_notable_add_reduced_stun_threshold",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      108
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 61,
+    "Id": "karui_notable_add_physical_added_as_fire",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      449
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 62,
+    "Id": "karui_notable_add_physical_taken_as_fire",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      20828
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 1,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 63,
+    "Id": "karui_notable_add_endurance_charge_on_kill",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 15,
+    "StatsKeys": [
+      3939
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 64,
+    "Id": "karui_notable_add_intimidate",
+    "AlternateTreeVersionsKey": 2,
+    "SpawnWeight": 15,
+    "StatsKeys": [
+      8318
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 65,
+    "Id": "maraketh_attribute_dex",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      581
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      1
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 66,
+    "Id": "maraketh_small_dex",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      581
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      2
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 67,
+    "Id": "maraketh_notable_add_dexterity",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      581
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 68,
+    "Id": "maraketh_notable_add_percent_dexterity",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      2075
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 69,
+    "Id": "maraketh_notable_add_evasion",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      120
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 70,
+    "Id": "maraketh_notable_add_flask_charges",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      462
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 71,
+    "Id": "maraketh_notable_add_speed",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      1949
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 72,
+    "Id": "maraketh_notable_add_life",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      125
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 73,
+    "Id": "maraketh_notable_add_blind",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      976
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 74,
+    "Id": "maraketh_notable_add_movement_speed",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      179
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 75,
+    "Id": "maraketh_notable_add_cold_resistance",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      148
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 76,
+    "Id": "maraketh_notable_add_projectile_damage",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      500
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 77,
+    "Id": "maraketh_notable_add_ailment_avoid",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      6199
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 78,
+    "Id": "maraketh_notable_add_global_crit_chance",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      556
+    ],
+    "Stat1Min": 25,
+    "Stat1Max": 25,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 79,
+    "Id": "maraketh_notable_add_poison_damage",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      3421
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 80,
+    "Id": "maraketh_notable_add_minion_damage",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      490
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 81,
+    "Id": "maraketh_notable_add_accuracy",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      84
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 82,
+    "Id": "maraketh_notable_add_elemental_damage",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      488
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 83,
+    "Id": "maraketh_notable_add_aura_effect",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      3899
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 84,
+    "Id": "maraketh_notable_add_minion_movement_speed",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      619
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 85,
+    "Id": "maraketh_notable_add_ailment_duration",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      2709
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 86,
+    "Id": "maraketh_notable_add_faster_poison",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      9223
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 87,
+    "Id": "maraketh_notable_add_ailment_effect",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 70,
+    "StatsKeys": [
+      6426
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 88,
+    "Id": "maraketh_notable_add_physical_added_as_cold",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      450
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 89,
+    "Id": "maraketh_notable_add_flask_effect",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 40,
+    "StatsKeys": [
+      12264
+    ],
+    "Stat1Min": 25,
+    "Stat1Max": 25,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 90,
+    "Id": "maraketh_notable_add_frenzy_charge_on_kill",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 15,
+    "StatsKeys": [
+      1358
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 91,
+    "Id": "maraketh_notable_add_onslaught",
+    "AlternateTreeVersionsKey": 3,
+    "SpawnWeight": 15,
+    "StatsKeys": [
+      1410
+    ],
+    "Stat1Min": 8000,
+    "Stat1Max": 8000,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 92,
+    "Id": "templar_small_devotion",
+    "AlternateTreeVersionsKey": 4,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      9759
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      2
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 93,
+    "Id": "templar_notable_devotion",
+    "AlternateTreeVersionsKey": 4,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      9759
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 94,
+    "Id": "kalguuran_small_ward",
+    "AlternateTreeVersionsKey": 6,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      14543
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      2
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 95,
+    "Id": "kalguuran_attribute_ward",
+    "AlternateTreeVersionsKey": 6,
+    "SpawnWeight": 100,
+    "StatsKeys": [
+      14543
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 1,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      1
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 96,
+    "Id": "abyss_murderous_notable_1",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      124
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 97,
+    "Id": "abyss_murderous_notable_2",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      576
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 98,
+    "Id": "abyss_murderous_notable_3",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      607
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 99,
+    "Id": "abyss_murderous_notable_4",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      146
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 100,
+    "Id": "abyss_murderous_notable_5",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      142
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 101,
+    "Id": "abyss_murderous_notable_6",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      70
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 102,
+    "Id": "abyss_murderous_notable_7",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      126
+    ],
+    "Stat1Min": 540,
+    "Stat1Max": 960,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 103,
+    "Id": "abyss_murderous_notable_8",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6913
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 104,
+    "Id": "abyss_murderous_notable_9",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      194
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 105,
+    "Id": "abyss_murderous_notable_10",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6199
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 106,
+    "Id": "abyss_murderous_notable_11",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      116
+    ],
+    "Stat1Min": 61,
+    "Stat1Max": 100,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 107,
+    "Id": "abyss_murderous_notable_12",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      8589
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 108,
+    "Id": "abyss_murderous_notable_13",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6891
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 109,
+    "Id": "abyss_murderous_notable_14",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6904
+    ],
+    "Stat1Min": 30,
+    "Stat1Max": 60,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 110,
+    "Id": "abyss_murderous_notable_15",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3475
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 111,
+    "Id": "abyss_murderous_notable_16",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12435
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 112,
+    "Id": "abyss_murderous_notable_17",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12440
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 113,
+    "Id": "abyss_murderous_notable_18",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6774,
+      6775
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 114,
+    "Id": "abyss_murderous_notable_19",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6776,
+      6777
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 115,
+    "Id": "abyss_murderous_notable_20",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6778,
+      6779
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 116,
+    "Id": "abyss_murderous_notable_21",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6780,
+      6781
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 117,
+    "Id": "abyss_murderous_notable_22",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6782,
+      6783
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 118,
+    "Id": "abyss_murderous_notable_23",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6784,
+      6785
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 6,
+    "Unknown7": 7,
+    "Unknown8": 8,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 119,
+    "Id": "abyss_murderous_notable_24",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6786,
+      6787
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 120,
+    "Id": "abyss_murderous_notable_25",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6788,
+      6789
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 121,
+    "Id": "abyss_murderous_notable_26",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6792,
+      6793
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 122,
+    "Id": "abyss_murderous_notable_27",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6794,
+      6795
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 123,
+    "Id": "abyss_murderous_notable_28",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6796,
+      6797
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 124,
+    "Id": "abyss_murderous_notable_29",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6798,
+      6799
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 33,
+    "Unknown8": 35,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 125,
+    "Id": "abyss_murderous_notable_30",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6800,
+      6801
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 126,
+    "Id": "abyss_murderous_notable_31",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6802,
+      6803
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 127,
+    "Id": "abyss_murderous_notable_32",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6804,
+      6805
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 128,
+    "Id": "abyss_murderous_notable_33",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6806,
+      6807
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 129,
+    "Id": "abyss_murderous_notable_34",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6808,
+      6809
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 130,
+    "Id": "abyss_murderous_notable_35",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6810,
+      6811
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 13,
+    "Unknown7": 20,
+    "Unknown8": 22,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 131,
+    "Id": "abyss_murderous_notable_36",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6812,
+      6813
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 132,
+    "Id": "abyss_murderous_notable_37",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6814,
+      6815
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 133,
+    "Id": "abyss_murderous_notable_38",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6818,
+      6819
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 134,
+    "Id": "abyss_murderous_notable_39",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6820,
+      6821
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 135,
+    "Id": "abyss_murderous_notable_40",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6822,
+      6823
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 136,
+    "Id": "abyss_murderous_notable_41",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6824,
+      6825
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 137,
+    "Id": "abyss_murderous_notable_42",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      14156,
+      14157
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 138,
+    "Id": "abyss_murderous_notable_43",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      14154,
+      14155
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 11,
+    "Unknown7": 17,
+    "Unknown8": 20,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 139,
+    "Id": "abyss_murderous_notable_44",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 300,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 140,
+    "Id": "abyss_murderous_notable_45",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      45,
+      46
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 7,
+    "Unknown7": 13,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 141,
+    "Id": "abyss_murderous_notable_46",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      52,
+      53
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 7,
+    "Unknown7": 11,
+    "Unknown8": 13,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 142,
+    "Id": "abyss_murderous_notable_47",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      59,
+      60
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 2,
+    "Unknown7": 25,
+    "Unknown8": 27,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 143,
+    "Id": "abyss_murderous_notable_48",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      30,
+      31
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 3,
+    "Unknown7": 4,
+    "Unknown8": 5,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 144,
+    "Id": "abyss_murderous_notable_49",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 200,
+    "StatsKeys": [
+      66,
+      67
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 9,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 145,
+    "Id": "abyss_murderous_notable_50",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6860
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 146,
+    "Id": "abyss_murderous_notable_51",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6861
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 147,
+    "Id": "abyss_murderous_notable_52",
+    "AlternateTreeVersionsKey": 7,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6862
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 148,
+    "Id": "abyss_searching_notable_1",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      124
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 149,
+    "Id": "abyss_searching_notable_2",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12602
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 150,
+    "Id": "abyss_searching_notable_3",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      582
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 151,
+    "Id": "abyss_searching_notable_4",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      607
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 152,
+    "Id": "abyss_searching_notable_5",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      148
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 153,
+    "Id": "abyss_searching_notable_6",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      142
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 154,
+    "Id": "abyss_searching_notable_7",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      70
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 155,
+    "Id": "abyss_searching_notable_8",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      556
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 156,
+    "Id": "abyss_searching_notable_9",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      95
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 157,
+    "Id": "abyss_searching_notable_10",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6860
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 158,
+    "Id": "abyss_searching_notable_11",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6861
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 159,
+    "Id": "abyss_searching_notable_12",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6862
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 160,
+    "Id": "abyss_searching_notable_13",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6912
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 161,
+    "Id": "abyss_searching_notable_14",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      193
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 162,
+    "Id": "abyss_searching_notable_15",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      4500
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 163,
+    "Id": "abyss_searching_notable_16",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      83
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 120,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 164,
+    "Id": "abyss_searching_notable_17",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      119
+    ],
+    "Stat1Min": 36,
+    "Stat1Max": 100,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 165,
+    "Id": "abyss_searching_notable_18",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 166,
+    "Id": "abyss_searching_notable_19",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6919
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 167,
+    "Id": "abyss_searching_notable_20",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6886
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 168,
+    "Id": "abyss_searching_notable_21",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6892
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 169,
+    "Id": "abyss_searching_notable_22",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6902
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 170,
+    "Id": "abyss_searching_notable_23",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6906
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 171,
+    "Id": "abyss_searching_notable_24",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6908
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 172,
+    "Id": "abyss_searching_notable_25",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3779
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 173,
+    "Id": "abyss_searching_notable_26",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12439
+    ],
+    "Stat1Min": -20,
+    "Stat1Max": -15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 174,
+    "Id": "abyss_searching_notable_27",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      45,
+      46
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 7,
+    "Unknown7": 13,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 175,
+    "Id": "abyss_searching_notable_28",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      52,
+      53
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 7,
+    "Unknown7": 11,
+    "Unknown8": 13,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 176,
+    "Id": "abyss_searching_notable_29",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      59,
+      60
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 2,
+    "Unknown7": 25,
+    "Unknown8": 27,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 177,
+    "Id": "abyss_searching_notable_30",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      30,
+      31
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 3,
+    "Unknown7": 4,
+    "Unknown8": 5,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 178,
+    "Id": "abyss_searching_notable_31",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 200,
+    "StatsKeys": [
+      66,
+      67
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 9,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 179,
+    "Id": "abyss_searching_notable_32",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6772,
+      6773
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 5,
+    "Unknown8": 6,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 180,
+    "Id": "abyss_searching_notable_33",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2256,
+      2257
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 4,
+    "Unknown7": 5,
+    "Unknown8": 6,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 181,
+    "Id": "abyss_searching_notable_34",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      412,
+      413
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 3,
+    "Unknown7": 28,
+    "Unknown8": 30,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 182,
+    "Id": "abyss_searching_notable_35",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6790,
+      6791
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 3,
+    "Unknown7": 28,
+    "Unknown8": 30,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 183,
+    "Id": "abyss_searching_notable_36",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      414,
+      415
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 11,
+    "Unknown7": 16,
+    "Unknown8": 19,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 184,
+    "Id": "abyss_searching_notable_37",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2258,
+      2259
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 11,
+    "Unknown7": 16,
+    "Unknown8": 19,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 185,
+    "Id": "abyss_searching_notable_38",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      416,
+      417
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 9,
+    "Unknown7": 14,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 186,
+    "Id": "abyss_searching_notable_39",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6816,
+      6817
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 9,
+    "Unknown7": 14,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 187,
+    "Id": "abyss_searching_notable_40",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      14158,
+      14159
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 9,
+    "Unknown7": 14,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 188,
+    "Id": "abyss_searching_notable_41",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 300,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 189,
+    "Id": "abyss_searching_notable_42",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6860
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 190,
+    "Id": "abyss_searching_notable_43",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6861
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 191,
+    "Id": "abyss_searching_notable_44",
+    "AlternateTreeVersionsKey": 8,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6862
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 192,
+    "Id": "abyss_hypnotic_notable_1",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      128
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 193,
+    "Id": "abyss_hypnotic_notable_2",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12603
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 194,
+    "Id": "abyss_hypnotic_notable_3",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      579
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 195,
+    "Id": "abyss_hypnotic_notable_4",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      607
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 196,
+    "Id": "abyss_hypnotic_notable_5",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      150
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 197,
+    "Id": "abyss_hypnotic_notable_6",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      142
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 198,
+    "Id": "abyss_hypnotic_notable_7",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      218
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 199,
+    "Id": "abyss_hypnotic_notable_8",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      132
+    ],
+    "Stat1Min": 66,
+    "Stat1Max": 180,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 200,
+    "Id": "abyss_hypnotic_notable_9",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6914
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 201,
+    "Id": "abyss_hypnotic_notable_10",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      195
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 202,
+    "Id": "abyss_hypnotic_notable_11",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      1077
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 203,
+    "Id": "abyss_hypnotic_notable_12",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6882
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 204,
+    "Id": "abyss_hypnotic_notable_13",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6895
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 205,
+    "Id": "abyss_hypnotic_notable_14",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6903
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 25,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 206,
+    "Id": "abyss_hypnotic_notable_15",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6907
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 207,
+    "Id": "abyss_hypnotic_notable_16",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12431
+    ],
+    "Stat1Min": -15,
+    "Stat1Max": -10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 208,
+    "Id": "abyss_hypnotic_notable_17",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12433
+    ],
+    "Stat1Min": -20,
+    "Stat1Max": -15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 209,
+    "Id": "abyss_hypnotic_notable_18",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12438
+    ],
+    "Stat1Min": -2,
+    "Stat1Max": -2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 210,
+    "Id": "abyss_hypnotic_notable_19",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6830,
+      6831
+    ],
+    "Stat1Min": 13,
+    "Stat1Max": 16,
+    "Unknown7": 18,
+    "Unknown8": 21,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 211,
+    "Id": "abyss_hypnotic_notable_20",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6832,
+      6833
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 14,
+    "Unknown7": 17,
+    "Unknown8": 19,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 212,
+    "Id": "abyss_hypnotic_notable_21",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6834,
+      6835
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 29,
+    "Unknown8": 34,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 213,
+    "Id": "abyss_hypnotic_notable_22",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6836,
+      6837
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 214,
+    "Id": "abyss_hypnotic_notable_23",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      6838,
+      6839
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 215,
+    "Id": "abyss_hypnotic_notable_24",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6840,
+      6841
+    ],
+    "Stat1Min": 13,
+    "Stat1Max": 16,
+    "Unknown7": 18,
+    "Unknown8": 21,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 216,
+    "Id": "abyss_hypnotic_notable_25",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6842,
+      6843
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 14,
+    "Unknown7": 17,
+    "Unknown8": 19,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 217,
+    "Id": "abyss_hypnotic_notable_26",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6844,
+      6845
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 29,
+    "Unknown8": 34,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 218,
+    "Id": "abyss_hypnotic_notable_27",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6846,
+      6847
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 219,
+    "Id": "abyss_hypnotic_notable_28",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      6848,
+      6849
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 220,
+    "Id": "abyss_hypnotic_notable_29",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6850,
+      6851
+    ],
+    "Stat1Min": 13,
+    "Stat1Max": 16,
+    "Unknown7": 18,
+    "Unknown8": 21,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 221,
+    "Id": "abyss_hypnotic_notable_30",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6852,
+      6853
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 14,
+    "Unknown7": 17,
+    "Unknown8": 19,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 222,
+    "Id": "abyss_hypnotic_notable_31",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6854,
+      6855
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 4,
+    "Unknown7": 29,
+    "Unknown8": 34,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 223,
+    "Id": "abyss_hypnotic_notable_32",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6856,
+      6857
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 224,
+    "Id": "abyss_hypnotic_notable_33",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 250,
+    "StatsKeys": [
+      6858,
+      6859
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 225,
+    "Id": "abyss_hypnotic_notable_34",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      1624,
+      1625
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 14,
+    "Unknown8": 17,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 226,
+    "Id": "abyss_hypnotic_notable_35",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      1626,
+      1627
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 11,
+    "Unknown7": 13,
+    "Unknown8": 16,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 227,
+    "Id": "abyss_hypnotic_notable_36",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      1628,
+      1629
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 3,
+    "Unknown7": 22,
+    "Unknown8": 27,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 228,
+    "Id": "abyss_hypnotic_notable_37",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      1622,
+      1623
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 7,
+    "Unknown7": 10,
+    "Unknown8": 13,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 229,
+    "Id": "abyss_hypnotic_notable_38",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 200,
+    "StatsKeys": [
+      1630,
+      1631
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 7,
+    "Unknown7": 10,
+    "Unknown8": 13,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 230,
+    "Id": "abyss_hypnotic_notable_39",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 300,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 231,
+    "Id": "abyss_hypnotic_notable_40",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6860
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 232,
+    "Id": "abyss_hypnotic_notable_41",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6861
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 233,
+    "Id": "abyss_hypnotic_notable_42",
+    "AlternateTreeVersionsKey": 9,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6862
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 234,
+    "Id": "abyss_ghastly_notable_1",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      579
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 235,
+    "Id": "abyss_ghastly_notable_2",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      607
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 236,
+    "Id": "abyss_ghastly_notable_3",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      152
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 237,
+    "Id": "abyss_ghastly_notable_4",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6873
+    ],
+    "Stat1Min": 22,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 238,
+    "Id": "abyss_ghastly_notable_5",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6874
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 239,
+    "Id": "abyss_ghastly_notable_6",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6915
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 240,
+    "Id": "abyss_ghastly_notable_7",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6916
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 241,
+    "Id": "abyss_ghastly_notable_8",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6917
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 242,
+    "Id": "abyss_ghastly_notable_9",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      5309
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 243,
+    "Id": "abyss_ghastly_notable_10",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      11160
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 244,
+    "Id": "abyss_ghastly_notable_11",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      16937
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 245,
+    "Id": "abyss_ghastly_notable_12",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      5361
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 246,
+    "Id": "abyss_ghastly_notable_13",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2140
+    ],
+    "Stat1Min": 24,
+    "Stat1Max": 48,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 247,
+    "Id": "abyss_ghastly_notable_14",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3172
+    ],
+    "Stat1Min": 30,
+    "Stat1Max": 50,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 248,
+    "Id": "abyss_ghastly_notable_15",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      619
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 249,
+    "Id": "abyss_ghastly_notable_16",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      161
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 250,
+    "Id": "abyss_ghastly_notable_17",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2141
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 251,
+    "Id": "abyss_ghastly_notable_18",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2142
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 11,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 252,
+    "Id": "abyss_ghastly_notable_19",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      1393
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 253,
+    "Id": "abyss_ghastly_notable_20",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6896
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 254,
+    "Id": "abyss_ghastly_notable_21",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6899
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 255,
+    "Id": "abyss_ghastly_notable_22",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6909
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 256,
+    "Id": "abyss_ghastly_notable_23",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6863,
+      6864
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 18,
+    "Unknown7": 21,
+    "Unknown8": 24,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 257,
+    "Id": "abyss_ghastly_notable_24",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6865,
+      6866
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 18,
+    "Unknown7": 21,
+    "Unknown8": 24,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 258,
+    "Id": "abyss_ghastly_notable_25",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6867,
+      6868
+    ],
+    "Stat1Min": 1,
+    "Stat1Max": 3,
+    "Unknown7": 33,
+    "Unknown8": 39,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 259,
+    "Id": "abyss_ghastly_notable_26",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 400,
+    "StatsKeys": [
+      6869,
+      6870
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 15,
+    "Unknown8": 18,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 260,
+    "Id": "abyss_ghastly_notable_27",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 200,
+    "StatsKeys": [
+      6871,
+      6872
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 12,
+    "Unknown7": 15,
+    "Unknown8": 18,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 261,
+    "Id": "abyss_ghastly_notable_28",
+    "AlternateTreeVersionsKey": 10,
+    "SpawnWeight": 300,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 262,
+    "Id": "abyss_special_notable_1",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      83
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 120,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 263,
+    "Id": "abyss_special_notable_2",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      607
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 264,
+    "Id": "abyss_special_notable_3",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      582
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 265,
+    "Id": "abyss_special_notable_4",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      579
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 266,
+    "Id": "abyss_special_notable_5",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6919
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 267,
+    "Id": "abyss_special_notable_6",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      576
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 268,
+    "Id": "abyss_special_notable_7",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      70
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 269,
+    "Id": "abyss_special_notable_8",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6906
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 270,
+    "Id": "abyss_special_notable_9",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6912
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 6,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 271,
+    "Id": "abyss_special_notable_10",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6913
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 272,
+    "Id": "abyss_special_notable_11",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      4500
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 273,
+    "Id": "abyss_special_notable_12",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      193
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 274,
+    "Id": "abyss_special_notable_13",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      194
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 275,
+    "Id": "abyss_special_notable_14",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      5361
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 276,
+    "Id": "abyss_special_notable_15",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      195
+    ],
+    "Stat1Min": 31,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 277,
+    "Id": "abyss_special_notable_16",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6199
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 278,
+    "Id": "abyss_special_notable_17",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      218
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 279,
+    "Id": "abyss_special_notable_18",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      152
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 280,
+    "Id": "abyss_special_notable_19",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      148
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 281,
+    "Id": "abyss_special_notable_20",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 300,
+    "StatsKeys": [
+      3396
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 282,
+    "Id": "abyss_special_notable_21",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      95
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 283,
+    "Id": "abyss_special_notable_22",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      119
+    ],
+    "Stat1Min": 36,
+    "Stat1Max": 100,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 284,
+    "Id": "abyss_special_notable_23",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      146
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 285,
+    "Id": "abyss_special_notable_24",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      126
+    ],
+    "Stat1Min": 540,
+    "Stat1Max": 960,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 286,
+    "Id": "abyss_special_notable_25",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      150
+    ],
+    "Stat1Min": 12,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 287,
+    "Id": "abyss_special_notable_26",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      132
+    ],
+    "Stat1Min": 66,
+    "Stat1Max": 180,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 288,
+    "Id": "abyss_special_notable_27",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      124
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 289,
+    "Id": "abyss_special_notable_28",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      128
+    ],
+    "Stat1Min": 21,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 290,
+    "Id": "abyss_special_notable_29",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      116
+    ],
+    "Stat1Min": 61,
+    "Stat1Max": 100,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 291,
+    "Id": "abyss_special_notable_30",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      142
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 292,
+    "Id": "abyss_special_notable_31",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3475
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 293,
+    "Id": "abyss_special_notable_32",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6907
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 7,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 294,
+    "Id": "abyss_special_notable_33",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6896
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 295,
+    "Id": "abyss_special_notable_34",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6882
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 4,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 296,
+    "Id": "abyss_special_notable_35",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12602
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 297,
+    "Id": "abyss_special_notable_36",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      556
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 12,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 298,
+    "Id": "abyss_special_notable_37",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6908
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 299,
+    "Id": "abyss_special_notable_38",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6892
+    ],
+    "Stat1Min": 8,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 300,
+    "Id": "abyss_special_notable_39",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      1393
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 301,
+    "Id": "abyss_special_notable_40",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12431
+    ],
+    "Stat1Min": -15,
+    "Stat1Max": -10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 302,
+    "Id": "abyss_special_notable_41",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6891
+    ],
+    "Stat1Min": 15,
+    "Stat1Max": 20,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 303,
+    "Id": "abyss_special_notable_42",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6860
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 304,
+    "Id": "abyss_special_notable_43",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6862
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 305,
+    "Id": "abyss_special_notable_44",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6861
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 18,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 306,
+    "Id": "abyss_special_notable_45",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6895
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 307,
+    "Id": "abyss_special_notable_46",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      1077
+    ],
+    "Stat1Min": 2,
+    "Stat1Max": 2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 308,
+    "Id": "abyss_special_notable_47",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12439
+    ],
+    "Stat1Min": -20,
+    "Stat1Max": -15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 309,
+    "Id": "abyss_special_notable_48",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12433
+    ],
+    "Stat1Min": -20,
+    "Stat1Max": -15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 310,
+    "Id": "abyss_special_notable_49",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12440
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 311,
+    "Id": "abyss_special_notable_50",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12435
+    ],
+    "Stat1Min": 4,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 312,
+    "Id": "abyss_special_notable_51",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12438
+    ],
+    "Stat1Min": -2,
+    "Stat1Max": -2,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 313,
+    "Id": "abyss_special_notable_52",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6874
+    ],
+    "Stat1Min": 9,
+    "Stat1Max": 16,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 314,
+    "Id": "abyss_special_notable_53",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6902
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 30,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 315,
+    "Id": "abyss_special_notable_54",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      8589
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 316,
+    "Id": "abyss_special_notable_55",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6904
+    ],
+    "Stat1Min": 30,
+    "Stat1Max": 60,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 317,
+    "Id": "abyss_special_notable_56",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      12603
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 318,
+    "Id": "abyss_special_notable_57",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6903
+    ],
+    "Stat1Min": 20,
+    "Stat1Max": 25,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 319,
+    "Id": "abyss_special_notable_58",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6909
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 320,
+    "Id": "abyss_special_notable_59",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6915
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 321,
+    "Id": "abyss_special_notable_60",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6916
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 322,
+    "Id": "abyss_special_notable_61",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      16937
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 323,
+    "Id": "abyss_special_notable_62",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      11160
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 324,
+    "Id": "abyss_special_notable_63",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2142
+    ],
+    "Stat1Min": 7,
+    "Stat1Max": 11,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 325,
+    "Id": "abyss_special_notable_64",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6899
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 15,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 326,
+    "Id": "abyss_special_notable_65",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2141
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 327,
+    "Id": "abyss_special_notable_66",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3172
+    ],
+    "Stat1Min": 30,
+    "Stat1Max": 50,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 328,
+    "Id": "abyss_special_notable_67",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      2140
+    ],
+    "Stat1Min": 24,
+    "Stat1Max": 48,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 329,
+    "Id": "abyss_special_notable_68",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6873
+    ],
+    "Stat1Min": 22,
+    "Stat1Max": 40,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 330,
+    "Id": "abyss_special_notable_69",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      161
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 331,
+    "Id": "abyss_special_notable_70",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      619
+    ],
+    "Stat1Min": 6,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 332,
+    "Id": "abyss_special_notable_71",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6917
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 333,
+    "Id": "abyss_special_notable_72",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      5309
+    ],
+    "Stat1Min": 10,
+    "Stat1Max": 10,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 334,
+    "Id": "abyss_special_notable_73",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6886
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 3,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 335,
+    "Id": "abyss_special_notable_74",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      3779
+    ],
+    "Stat1Min": 5,
+    "Stat1Max": 5,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  },
+  {
+    "_rid": 336,
+    "Id": "abyss_special_notable_75",
+    "AlternateTreeVersionsKey": 11,
+    "SpawnWeight": 500,
+    "StatsKeys": [
+      6914
+    ],
+    "Stat1Min": 3,
+    "Stat1Max": 8,
+    "Unknown7": 0,
+    "Unknown8": 0,
+    "Unknown9": 0,
+    "Unknown10": 0,
+    "PassiveType": [
+      3
+    ],
+    "Unknown12": 0
+  }
+]
