@@ -11,4 +11,10 @@ inspect.lua
 *.lnk
 
 # Build files
-Datafile Generator/DatafileGenerator/Build/
+**/Build
+
+# Input/Output files
+**/output-data/*
+!**/output-data/readme.md
+**/source-data/*
+!**/source-data/readme.md
