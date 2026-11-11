@@ -10,12 +10,6 @@ namespace DatafileGenerator.Data.Models
 
         [JsonPropertyName("y")]
         public double Y { get; set; }
-
-        [JsonPropertyName("orbits")]
-        public int[] Orbits { get; set; }
-
-        [JsonPropertyName("nodes")]
-        public string[] Nodes { get; set; }
     }
 
     public class SkillTreeConstants
@@ -29,19 +23,22 @@ namespace DatafileGenerator.Data.Models
 
     public class TreeDataFile
     {
-        [JsonPropertyName("groups")]
-        public Dictionary<int, SkillGroup> Groups { get; set; }
-
         [JsonPropertyName("nodes")]
         public Dictionary<string, PassiveSkill> PassiveSkills { get; set; }
 
-        [JsonPropertyName("constants")]
-        public SkillTreeConstants Constants { get; set; }
+        [JsonPropertyName("groups")]
+        public Dictionary<int, SkillGroup> Groups { get; set; }
 
         [JsonPropertyName("min_x")]
         public double MinX { get; set; }
 
         [JsonPropertyName("min_y")]
         public double MinY { get; set; }
+
+        [JsonPropertyName("constants")]
+        public SkillTreeConstants Constants { get; set; }
+
+        [JsonPropertyName("jewelSlots")]
+        public IReadOnlyList<uint> JewelSlots { get; set; }
     }
 }

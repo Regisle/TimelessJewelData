@@ -31,6 +31,8 @@ public class SkillNode
     public string Name { get; set; }
     public bool IsNotable { get; set; }
     public bool IsJewelSocket { get; set; }
+    public bool IsKeyStone { get; set; }
+    public bool IsCluster { get; set; }
     public int? Group { get; set; }
     public int? Orbit { get; set; }
     public int? OrbitIndex { get; set; }
@@ -47,7 +49,9 @@ public class SkillTreeData
 
 public class AffectedNotablesCalculator
 {
-    private const int BaseJewelRadius = 1800;
+    // Keystone effects use the smaller "Small" radius, while jewel sockets use the legacy larger radius.
+    private const int BaseJewelRadius = 800;
+    private const int BaseSocketRadius = 1800;
     private static readonly int[] Orbit16Angles = { 0, 30, 45, 60, 90, 120, 135, 150, 180, 210, 225, 240, 270, 300, 315, 330 };
     private static readonly int[] Orbit40Angles = {
         0, 10, 20, 30, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 135, 140, 150, 160, 170, 180, 190, 200, 210, 220, 225,
@@ -70,9 +74,11 @@ public class AffectedNotablesCalculator
                     Name = kvp.Value.Name,
                     IsNotable = kvp.Value.IsNotable,
                     IsJewelSocket = kvp.Value.IsJewelSocket,
-                    Group = kvp.Value.Group,
-                    Orbit = (int?)kvp.Value.Orbit,
-                    OrbitIndex = kvp.Value.OrbitIndex
+                    IsKeyStone = kvp.Value.IsKeyStone,
+                    IsCluster = kvp.Value.IsCluster,
+                    Group = kvp.Value.Group.HasValue ? (int?)kvp.Value.Group.Value : null,
+                    Orbit = kvp.Value.Orbit.HasValue ? (int?)kvp.Value.Orbit.Value : null,
+                    OrbitIndex = kvp.Value.OrbitIndex.HasValue ? (int?)kvp.Value.OrbitIndex.Value : null
                 }),
             Constants = DataManager.FullTreeData.Constants,
             MinX = DataManager.FullTreeData.MinX,
@@ -103,7 +109,7 @@ public class AffectedNotablesCalculator
                 var socketPos = CalculateNodePos(socket);
                 var distance = Distance(notablePos, socketPos);
 
-                if (distance < BaseJewelRadius && distance < closestDistance)
+                if (distance < BaseSocketRadius && distance < closestDistance)
                 {
                     closestDistance = distance;
                     closestSocket = socket;
@@ -120,6 +126,49 @@ public class AffectedNotablesCalculator
     }
 
     /// <summary>
+    /// Gets a mapping of Notable skill names to the Keystone skills that affect them.
+    /// Returns Dictionary&lt;string, List&lt;string&gt;&gt; where each key is a notable name and each value is the matching keystone names.
+    /// </summary>
+    public Dictionary<string, List<string>> GetNotableToKeystoneMapping(Dictionary<string, int> notableJewelSocketMappings = null)
+    {
+        var mapping = new Dictionary<string, List<string>>();
+        var keystones = _skillTree.Nodes.Values
+            .Where(n => n.IsKeyStone && !n.IsCluster && !string.IsNullOrWhiteSpace(n.Name))
+            .ToList();
+
+        var notableNamesToInclude = notableJewelSocketMappings == null
+            ? null
+            : new HashSet<string>(notableJewelSocketMappings.Keys, StringComparer.Ordinal);
+
+        foreach (var notable in _skillTree.Nodes.Values.Where(n => n.IsNotable && (notableNamesToInclude == null || notableNamesToInclude.Contains(n.Name))))
+        {
+            var notablePos = CalculateNodePos(notable);
+            var affectingKeystones = new List<string>();
+
+            foreach (var keystone in keystones)
+            {
+                var keystonePos = CalculateNodePos(keystone);
+                var distance = Distance(notablePos, keystonePos);
+
+                if (distance < BaseJewelRadius)
+                {
+                    affectingKeystones.Add(keystone.Name);
+                }
+            }
+
+            if (affectingKeystones.Count > 0)
+            {
+                mapping[notable.Name] = affectingKeystones
+                    .Distinct(StringComparer.Ordinal)
+                    .OrderBy(name => name, StringComparer.Ordinal)
+                    .ToList();
+            }
+        }
+
+        return mapping;
+    }
+
+    /// <summary>
     /// Calculates the position of a node on the skill tree.
     /// </summary>
     private Point CalculateNodePos(SkillNode node)
@@ -128,9 +177,13 @@ public class AffectedNotablesCalculator
             return new Point(0, 0);
 
         var targetGroup = _skillTree.Groups[node.Group.Value];
-        var targetAngle = OrbitAngleAt(node.Orbit.Value, node.OrbitIndex.Value);
-
         var targetGroupPos = ToCanvasCoords(targetGroup.X, targetGroup.Y);
+
+        // Keystones on orbit 0 are centred on their group rather than offset out onto the orbit ring.
+        if (node.Orbit.Value == 0)
+            return targetGroupPos;
+
+        var targetAngle = OrbitAngleAt(node.Orbit.Value, node.OrbitIndex.Value);
         var targetNodePos = ToCanvasCoords(
             targetGroup.X,
             targetGroup.Y - _skillTree.Constants.OrbitRadii[node.Orbit.Value]

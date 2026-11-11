@@ -1,6 +1,5 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using System.Linq;
 using DatafileGenerator.Data;
 using DatafileGenerator.Data.Models;
 using DatafileGenerator.Random;
@@ -12,6 +11,10 @@ public class AlternateTreeManager
     public PassiveSkill PassiveSkill { get; private set; }
 
     public TimelessJewel TimelessJewel { get; private set; }
+    private PassiveSkillType PassiveSkillType { get; }
+    private IReadOnlyList<AlternatePassiveSkill> ApplicableAlternatePassiveSkills { get; }
+    private IReadOnlyList<AlternatePassiveAddition> ApplicableAlternatePassiveAdditions { get; }
+    private uint ApplicableAlternatePassiveAdditionSpawnWeight { get; }
 
     public AlternateTreeManager(PassiveSkill passiveSkill, TimelessJewel timelessJewel)
     {
@@ -20,10 +23,17 @@ public class AlternateTreeManager
 
         PassiveSkill = passiveSkill;
         TimelessJewel = timelessJewel;
+        PassiveSkillType = DataManager.GetPassiveSkillType(passiveSkill);
+        ApplicableAlternatePassiveSkills = DataManager.GetApplicableAlternatePassiveSkills(passiveSkill, timelessJewel);
+        ApplicableAlternatePassiveAdditions = DataManager.GetApplicableAlternatePassiveAdditions(passiveSkill, timelessJewel);
+        ApplicableAlternatePassiveAdditionSpawnWeight = DataManager.GetApplicableAlternatePassiveAdditionsSpawnWeight(passiveSkill, timelessJewel);
     }
 
     public bool IsPassiveSkillReplaced()
     {
+        if (PassiveSkillType == PassiveSkillType.AscendancyNotable)
+            return true;
+
         if (PassiveSkill.IsKeyStone)
             return true;
 
@@ -34,10 +44,10 @@ public class AlternateTreeManager
 
             RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
 
-            return (randomNumberGenerator.Generate(0, 100) < TimelessJewel.AlternateTreeVersion.NotableReplacementSpawnWeight);
+            return (randomNumberGenerator.Generate(0U, 100U) < TimelessJewel.AlternateTreeVersion.NotableReplacementSpawnWeight);
         }
 
-        if (DataManager.GetPassiveSkillType(PassiveSkill) == PassiveSkillType.SmallAttribute)
+        if (PassiveSkillType == PassiveSkillType.SmallAttribute)
         {
             return TimelessJewel.AlternateTreeVersion.AreSmallAttributePassiveSkillsReplaced;
         }
@@ -45,61 +55,111 @@ public class AlternateTreeManager
         return TimelessJewel.AlternateTreeVersion.AreSmallNormalPassiveSkillsReplaced;
     }
 
+    public uint GetRegularPassiveSkillIndex(uint alternatePassiveSkillOffset)
+    {
+        if (PassiveSkillType == PassiveSkillType.AscendancyNotable)
+        {
+            RandomNumberGenerator ascendancyRandomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
+            AlternatePassiveSkill ascendancyReplacement = RollAlternatePassiveSkill(ascendancyRandomNumberGenerator);
+            return (ascendancyReplacement.Index + alternatePassiveSkillOffset);
+        }
+
+        if (PassiveSkill.IsKeyStone)
+        {
+            AlternatePassiveSkill alternatePassiveSkillKeyStone = DataManager.GetAlternatePassiveSkillKeyStone(TimelessJewel);
+            return (alternatePassiveSkillKeyStone.Index + alternatePassiveSkillOffset);
+        }
+
+        bool isNotable = (PassiveSkillType == PassiveSkillType.Notable);
+        bool hasConsumedNotableRoll = false;
+        bool isReplaced;
+        RandomNumberGenerator randomNumberGenerator = null;
+
+        if (isNotable)
+        {
+            if (TimelessJewel.AlternateTreeVersion.NotableReplacementSpawnWeight >= 100)
+            {
+                isReplaced = true;
+            }
+            else
+            {
+                randomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
+                uint notableRoll = randomNumberGenerator.Generate(0U, 100U);
+                hasConsumedNotableRoll = true;
+                isReplaced = (notableRoll < TimelessJewel.AlternateTreeVersion.NotableReplacementSpawnWeight);
+            }
+        }
+        else if (PassiveSkillType == PassiveSkillType.SmallAttribute)
+        {
+            isReplaced = TimelessJewel.AlternateTreeVersion.AreSmallAttributePassiveSkillsReplaced;
+        }
+        else
+        {
+            isReplaced = TimelessJewel.AlternateTreeVersion.AreSmallNormalPassiveSkillsReplaced;
+        }
+
+        if (randomNumberGenerator == null)
+            randomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
+
+        if (isNotable && !hasConsumedNotableRoll)
+            randomNumberGenerator.Generate(0U, 100U);
+
+        if (isReplaced)
+        {
+            AlternatePassiveSkill rolledAlternatePassiveSkill = RollAlternatePassiveSkill(randomNumberGenerator);
+            return (rolledAlternatePassiveSkill.Index + alternatePassiveSkillOffset);
+        }
+
+        uint minimumAdditions = TimelessJewel.AlternateTreeVersion.MinimumAdditions;
+        uint maximumAdditions = TimelessJewel.AlternateTreeVersion.MaximumAdditions;
+        uint additionCountRoll = minimumAdditions;
+
+        if (maximumAdditions > minimumAdditions)
+            additionCountRoll = randomNumberGenerator.Generate(minimumAdditions, maximumAdditions);
+
+        if (additionCountRoll == 0)
+            throw new InvalidOperationException("Expected at least one alternate passive addition for non-replaced passive skill.");
+
+        AlternatePassiveAddition rolledAlternatePassiveAddition = null;
+
+        while (rolledAlternatePassiveAddition == null)
+            rolledAlternatePassiveAddition = RollAlternatePassiveAddition(randomNumberGenerator);
+
+        return rolledAlternatePassiveAddition.Index;
+    }
+
     public AlternatePassiveSkillInformation ReplacePassiveSkill()
     {
         if (PassiveSkill.IsKeyStone)
         {
             AlternatePassiveSkill alternatePassiveSkillKeyStone = DataManager.GetAlternatePassiveSkillKeyStone(TimelessJewel);
-            Dictionary<uint, int> alternatePassiveSkillKeyStoneStatRolls = new Dictionary<uint, int>()
+            int[] alternatePassiveSkillKeyStoneStatRolls = new int[]
             {
-                { 0, alternatePassiveSkillKeyStone.StatAMinimumValue }
+                alternatePassiveSkillKeyStone.StatAMinimumValue
             };
-
-            return new AlternatePassiveSkillInformation(alternatePassiveSkillKeyStone, alternatePassiveSkillKeyStoneStatRolls, new List<AlternatePassiveAdditionInformation>());
+            return new AlternatePassiveSkillInformation(alternatePassiveSkillKeyStone, alternatePassiveSkillKeyStoneStatRolls, Array.Empty<AlternatePassiveAdditionInformation>());
         }
 
-        List<AlternatePassiveSkill> applicableAlternatePassiveSkills = DataManager.GetApplicableAlternatePassiveSkills(PassiveSkill, TimelessJewel);
-
-        AlternatePassiveSkill rolledAlternatePassiveSkill = null;
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
-        uint currentSpawnWeight = 0;
 
-        if (DataManager.GetPassiveSkillType(PassiveSkill) == PassiveSkillType.Notable)
-            randomNumberGenerator.Generate(0, 100);
+        if (PassiveSkillType == PassiveSkillType.Notable)
+            randomNumberGenerator.Generate(0U, 100U);
 
-        foreach (AlternatePassiveSkill applicableAlternatePassiveSkill in applicableAlternatePassiveSkills)
-        {
-            currentSpawnWeight += applicableAlternatePassiveSkill.SpawnWeight;
+        AlternatePassiveSkill rolledAlternatePassiveSkill = RollAlternatePassiveSkill(randomNumberGenerator);
 
-            uint roll = randomNumberGenerator.Generate(currentSpawnWeight);
-
-            if (roll < applicableAlternatePassiveSkill.SpawnWeight)
-                rolledAlternatePassiveSkill = applicableAlternatePassiveSkill;
-        }
-
-        Dictionary<uint, (int minimumRoll, int maximumRoll)> alternatePassiveSkillStatRollRanges = new Dictionary<uint, (int minimumRoll, int maximumRoll)>()
-        {
-            { 0, (rolledAlternatePassiveSkill.StatAMinimumValue, rolledAlternatePassiveSkill.StatAMaximumValue) },
-            { 1, (rolledAlternatePassiveSkill.StatBMinimumValue, rolledAlternatePassiveSkill.StatBMaximumValue) },
-            { 2, (rolledAlternatePassiveSkill.StatCMinimumValue, rolledAlternatePassiveSkill.StatCMaximumValue) },
-            { 3, (rolledAlternatePassiveSkill.StatDMinimumValue, rolledAlternatePassiveSkill.StatDMaximumValue) }
-        };
-
-        Dictionary<uint, int> alternatePassiveSkillStatRolls = new Dictionary<uint, int>();
-
-        // Capping the maximum iterations at 4 for now.
-        for (uint i = 0; i < Math.Min(rolledAlternatePassiveSkill.StatIndices.Count, 4); i++)
-        {
-            int alternatePassiveSkillStatRoll = alternatePassiveSkillStatRollRanges[i].minimumRoll;
-
-            if (alternatePassiveSkillStatRollRanges[i].maximumRoll > alternatePassiveSkillStatRollRanges[i].minimumRoll)
-                alternatePassiveSkillStatRoll = (int)randomNumberGenerator.Generate((uint)alternatePassiveSkillStatRollRanges[i].minimumRoll, (uint)alternatePassiveSkillStatRollRanges[i].maximumRoll);
-
-            alternatePassiveSkillStatRolls.Add(i, alternatePassiveSkillStatRoll);
-        }
+        int rolledAlternatePassiveSkillStatCount = Math.Min(rolledAlternatePassiveSkill.StatIndices.Count, 4);
+        int[] alternatePassiveSkillStatRolls = new int[rolledAlternatePassiveSkillStatCount];
+        if (rolledAlternatePassiveSkillStatCount >= 1)
+            alternatePassiveSkillStatRolls[0] = RollStat(randomNumberGenerator, rolledAlternatePassiveSkill.StatAMinimumValue, rolledAlternatePassiveSkill.StatAMaximumValue);
+        if (rolledAlternatePassiveSkillStatCount >= 2)
+            alternatePassiveSkillStatRolls[1] = RollStat(randomNumberGenerator, rolledAlternatePassiveSkill.StatBMinimumValue, rolledAlternatePassiveSkill.StatBMaximumValue);
+        if (rolledAlternatePassiveSkillStatCount >= 3)
+            alternatePassiveSkillStatRolls[2] = RollStat(randomNumberGenerator, rolledAlternatePassiveSkill.StatCMinimumValue, rolledAlternatePassiveSkill.StatCMaximumValue);
+        if (rolledAlternatePassiveSkillStatCount >= 4)
+            alternatePassiveSkillStatRolls[3] = RollStat(randomNumberGenerator, rolledAlternatePassiveSkill.StatDMinimumValue, rolledAlternatePassiveSkill.StatDMaximumValue);
 
         if ((rolledAlternatePassiveSkill.MinimumAdditions == 0) && (rolledAlternatePassiveSkill.MaximumAdditions == 0))
-            return new AlternatePassiveSkillInformation(rolledAlternatePassiveSkill, alternatePassiveSkillStatRolls, new List<AlternatePassiveAdditionInformation>());
+            return new AlternatePassiveSkillInformation(rolledAlternatePassiveSkill, alternatePassiveSkillStatRolls, Array.Empty<AlternatePassiveAdditionInformation>());
 
         uint minimumAdditions = (TimelessJewel.AlternateTreeVersion.MinimumAdditions + rolledAlternatePassiveSkill.MinimumAdditions);
         uint maximumAdditions = (TimelessJewel.AlternateTreeVersion.MaximumAdditions + rolledAlternatePassiveSkill.MaximumAdditions);
@@ -109,46 +169,33 @@ public class AlternateTreeManager
         if (maximumAdditions > minimumAdditions)
             additionCountRoll = randomNumberGenerator.Generate(minimumAdditions, maximumAdditions);
 
-        List<AlternatePassiveAdditionInformation> alternatePassiveAdditionInformations = new List<AlternatePassiveAdditionInformation>();
+        List<AlternatePassiveAdditionInformation> alternatePassiveAdditionInformations = new List<AlternatePassiveAdditionInformation>((int)additionCountRoll);
 
-        for (int i = 0; i < additionCountRoll; i++)
+        for (uint i = 0; i < additionCountRoll; i++)
         {
             AlternatePassiveAddition rolledAlternatePassiveAddition = null;
 
             while (rolledAlternatePassiveAddition == null)
                 rolledAlternatePassiveAddition = RollAlternatePassiveAddition(randomNumberGenerator);
 
-            Dictionary<uint, (uint minimumRoll, uint maximumRoll)> alternatePassiveAdditionStatRollRanges = new Dictionary<uint, (uint minimumRoll, uint maximumRoll)>()
-            {
-                { 0, (rolledAlternatePassiveAddition.StatAMinimumValue, rolledAlternatePassiveAddition.StatAMaximumValue) },
-                { 1, (rolledAlternatePassiveAddition.StatBMinimumValue, rolledAlternatePassiveAddition.StatBMaximumValue) }
-            };
-
-            Dictionary<uint, uint> alternatePassiveAdditionStatRolls = new Dictionary<uint, uint>();
-
-            // Capping the maximum iterations at 2 for now.
-            for (uint j = 0; j < Math.Min(rolledAlternatePassiveAddition.StatIndices.Count, 2); j++)
-            {
-                uint alternatePassiveAdditionStatRoll = alternatePassiveAdditionStatRollRanges[j].minimumRoll;
-
-                if (alternatePassiveAdditionStatRollRanges[j].maximumRoll > alternatePassiveAdditionStatRollRanges[j].minimumRoll)
-                    alternatePassiveAdditionStatRoll = randomNumberGenerator.Generate(alternatePassiveAdditionStatRollRanges[j].minimumRoll, alternatePassiveAdditionStatRollRanges[j].maximumRoll);
-
-                alternatePassiveAdditionStatRolls.Add(j, alternatePassiveAdditionStatRoll);
-            }
-
+            int rolledAlternatePassiveAdditionStatCount = Math.Min(rolledAlternatePassiveAddition.StatIndices.Count, 2);
+            int[] alternatePassiveAdditionStatRolls = new int[rolledAlternatePassiveAdditionStatCount];
+            if (rolledAlternatePassiveAdditionStatCount >= 1)
+                alternatePassiveAdditionStatRolls[0] = RollStat(randomNumberGenerator, rolledAlternatePassiveAddition.StatAMinimumValue, rolledAlternatePassiveAddition.StatAMaximumValue);
+            if (rolledAlternatePassiveAdditionStatCount >= 2)
+                alternatePassiveAdditionStatRolls[1] = RollStat(randomNumberGenerator, rolledAlternatePassiveAddition.StatBMinimumValue, rolledAlternatePassiveAddition.StatBMaximumValue);
             alternatePassiveAdditionInformations.Add(new AlternatePassiveAdditionInformation(rolledAlternatePassiveAddition, alternatePassiveAdditionStatRolls));
         }
 
         return new AlternatePassiveSkillInformation(rolledAlternatePassiveSkill, alternatePassiveSkillStatRolls, alternatePassiveAdditionInformations);
     }
 
-    public IReadOnlyCollection<AlternatePassiveAdditionInformation> AugmentPassiveSkill()
+    public IReadOnlyList<AlternatePassiveAdditionInformation> AugmentPassiveSkill()
     {
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator(PassiveSkill, TimelessJewel);
 
-        if (DataManager.GetPassiveSkillType(PassiveSkill) == PassiveSkillType.Notable)
-            randomNumberGenerator.Generate(0, 100);
+        if (PassiveSkillType == PassiveSkillType.Notable)
+            randomNumberGenerator.Generate(0U, 100U);
 
         uint minimumAdditions = TimelessJewel.AlternateTreeVersion.MinimumAdditions;
         uint maximumAdditions = TimelessJewel.AlternateTreeVersion.MaximumAdditions;
@@ -158,34 +205,21 @@ public class AlternateTreeManager
         if (maximumAdditions > minimumAdditions)
             additionCountRoll = randomNumberGenerator.Generate(minimumAdditions, maximumAdditions);
 
-        List<AlternatePassiveAdditionInformation> alternatePassiveAdditionInformations = new List<AlternatePassiveAdditionInformation>();
+        List<AlternatePassiveAdditionInformation> alternatePassiveAdditionInformations = new List<AlternatePassiveAdditionInformation>((int)additionCountRoll);
 
-        for (int i = 0; i < additionCountRoll; i++)
+        for (uint i = 0; i < additionCountRoll; i++)
         {
             AlternatePassiveAddition rolledAlternatePassiveAddition = null;
 
             while (rolledAlternatePassiveAddition == null)
                 rolledAlternatePassiveAddition = RollAlternatePassiveAddition(randomNumberGenerator);
 
-            Dictionary<uint, (uint minimumRoll, uint maximumRoll)> alternatePassiveAdditionStatRollRanges = new Dictionary<uint, (uint minimumRoll, uint maximumRoll)>()
-            {
-                { 0, (rolledAlternatePassiveAddition.StatAMinimumValue, rolledAlternatePassiveAddition.StatAMaximumValue) },
-                { 1, (rolledAlternatePassiveAddition.StatBMinimumValue, rolledAlternatePassiveAddition.StatBMaximumValue) }
-            };
-
-            Dictionary<uint, uint> alternatePassiveAdditionStatRolls = new Dictionary<uint, uint>();
-
-            // Capping the maximum iterations at 2 for now.
-            for (uint j = 0; j < Math.Min(rolledAlternatePassiveAddition.StatIndices.Count, 2); j++)
-            {
-                uint alternatePassiveAdditionStatRoll = alternatePassiveAdditionStatRollRanges[j].minimumRoll;
-
-                if (alternatePassiveAdditionStatRollRanges[j].maximumRoll > alternatePassiveAdditionStatRollRanges[j].minimumRoll)
-                    alternatePassiveAdditionStatRoll = randomNumberGenerator.Generate(alternatePassiveAdditionStatRollRanges[j].minimumRoll, alternatePassiveAdditionStatRollRanges[j].maximumRoll);
-
-                alternatePassiveAdditionStatRolls.Add(j, alternatePassiveAdditionStatRoll);
-            }
-
+            int rolledAlternatePassiveAdditionStatCount = Math.Min(rolledAlternatePassiveAddition.StatIndices.Count, 2);
+            int[] alternatePassiveAdditionStatRolls = new int[rolledAlternatePassiveAdditionStatCount];
+            if (rolledAlternatePassiveAdditionStatCount >= 1)
+                alternatePassiveAdditionStatRolls[0] = RollStat(randomNumberGenerator, rolledAlternatePassiveAddition.StatAMinimumValue, rolledAlternatePassiveAddition.StatAMaximumValue);
+            if (rolledAlternatePassiveAdditionStatCount >= 2)
+                alternatePassiveAdditionStatRolls[1] = RollStat(randomNumberGenerator, rolledAlternatePassiveAddition.StatBMinimumValue, rolledAlternatePassiveAddition.StatBMaximumValue);
             alternatePassiveAdditionInformations.Add(new AlternatePassiveAdditionInformation(rolledAlternatePassiveAddition, alternatePassiveAdditionStatRolls));
         }
 
@@ -195,22 +229,40 @@ public class AlternateTreeManager
     private AlternatePassiveAddition RollAlternatePassiveAddition(RandomNumberGenerator randomNumberGenerator)
     {
         ArgumentNullException.ThrowIfNull(randomNumberGenerator, nameof(randomNumberGenerator));
-
-        List<AlternatePassiveAddition> applicableAlternatePassiveAdditions = DataManager.GetApplicableAlternatePassiveAdditions(PassiveSkill, TimelessJewel);
-
-        uint totalSpawnWeight = ((uint)applicableAlternatePassiveAdditions
-               .Sum(q => q.SpawnWeight));
-
-        uint additionRoll = randomNumberGenerator.Generate(totalSpawnWeight);
-
-        foreach (AlternatePassiveAddition applicableAlternatePassiveAddition in applicableAlternatePassiveAdditions)
+        uint additionRoll = randomNumberGenerator.Generate(ApplicableAlternatePassiveAdditionSpawnWeight);
+        for (int i = 0; i < ApplicableAlternatePassiveAdditions.Count; i++)
         {
+            AlternatePassiveAddition applicableAlternatePassiveAddition = ApplicableAlternatePassiveAdditions[i];
             if (applicableAlternatePassiveAddition.SpawnWeight > additionRoll)
                 return applicableAlternatePassiveAddition;
-
             additionRoll -= applicableAlternatePassiveAddition.SpawnWeight;
         }
-
         return null;
+    }
+
+    private AlternatePassiveSkill RollAlternatePassiveSkill(RandomNumberGenerator randomNumberGenerator)
+    {
+        ArgumentNullException.ThrowIfNull(randomNumberGenerator, nameof(randomNumberGenerator));
+
+        AlternatePassiveSkill rolledAlternatePassiveSkill = null;
+        uint currentSpawnWeight = 0;
+
+        for (int i = 0; i < ApplicableAlternatePassiveSkills.Count; i++)
+        {
+            AlternatePassiveSkill applicableAlternatePassiveSkill = ApplicableAlternatePassiveSkills[i];
+            currentSpawnWeight += applicableAlternatePassiveSkill.SpawnWeight;
+            uint roll = randomNumberGenerator.Generate(currentSpawnWeight);
+            if (roll < applicableAlternatePassiveSkill.SpawnWeight)
+                rolledAlternatePassiveSkill = applicableAlternatePassiveSkill;
+        }
+
+        return rolledAlternatePassiveSkill;
+    }
+
+    private static int RollStat(RandomNumberGenerator randomNumberGenerator, int minimumRoll, int maximumRoll)
+    {
+        if (maximumRoll <= minimumRoll)
+            return minimumRoll;
+        return minimumRoll + (int)randomNumberGenerator.Generate((uint)(maximumRoll - minimumRoll + 1));
     }
 }

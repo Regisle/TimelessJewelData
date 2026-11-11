@@ -1,6 +1,22 @@
-.vs
+# Development tools
+.idea/
+.tools/
+.profile/
+.vs/
+.vscode/
+*.code-workspace
+inspect.lua
+
+# Development files
+*.lnk
+
+# Build files
 **/Build
+
+# Input/Output files
 **/output-data/*
+!**/output-data/
 !**/output-data/readme.md
 **/source-data/*
+!**/source-data/
 !**/source-data/readme.md

@@ -10,6 +10,11 @@ public class AlternateTreeVersion
         4 => true,
         5 => true,
         6 => false,
+        7 => true,
+        8 => true,
+        9 => true,
+        10 => true,
+        11 => true,
         _ => false
     };
     public bool AreSmallNormalPassiveSkillsReplaced => Index switch
@@ -20,6 +25,11 @@ public class AlternateTreeVersion
         4 => false,
         5 => true,
         6 => false,
+        7 => true,
+        8 => true,
+        9 => true,
+        10 => true,
+        11 => true,
         _ => false
     };
     public uint MinimumAdditions => Index switch
@@ -29,7 +39,12 @@ public class AlternateTreeVersion
         3 => 1,
         4 => 1,
         5 => 0,
-        6 => 0,
+        6 => 1,
+        7 => 1,
+        8 => 1,
+        9 => 1,
+        10 => 1,
+        11 => 1,
         _ => 0
     };
     public uint MaximumAdditions => Index switch
@@ -39,7 +54,12 @@ public class AlternateTreeVersion
         3 => 1,
         4 => 1,
         5 => 0,
-        6 => 0,
+        6 => 1,
+        7 => 1,
+        8 => 1,
+        9 => 1,
+        10 => 1,
+        11 => 1,
         _ => 0
     };
     public uint NotableReplacementSpawnWeight => Index switch

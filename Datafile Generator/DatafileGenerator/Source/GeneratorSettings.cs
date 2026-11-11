@@ -5,7 +5,7 @@ namespace DatafileGenerator;
 public static class GeneratorSettings
 {
     public static readonly string ApplicationName = "DatafileGenerator";
-    public static readonly Version ApplicationVersion = new Version(1, 3);
+    public static readonly Version ApplicationVersion = new Version(1, 4);
 
     public static string AlternatePassiveAdditionsFilePath;
     public static string AlternatePassiveSkillsFilePath;
