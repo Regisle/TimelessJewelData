@@ -96,8 +96,9 @@ public sealed class AbyssAscendancyManager
             if (!connected.IsAscendancy || !string.Equals(connected.AscName, ascendancyName, StringComparison.Ordinal))
                 continue;
 
+            // Four-point notables such as Opportunistic are eligible in 3.30.
             if (connected.IsNotable && IsEligibleAscendancyNotable(connected) &&
-                ascendancyCosts.TryGetValue(graphIdentifier, out int cost) && cost < 4)
+                ascendancyCosts.TryGetValue(graphIdentifier, out int cost) && cost < 5)
                 affected.Add(connected);
             frontier.Add(connected);
         }
