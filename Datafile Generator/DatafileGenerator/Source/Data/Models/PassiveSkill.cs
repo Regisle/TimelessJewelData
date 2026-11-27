@@ -57,6 +57,9 @@ public class PassiveSkill : IComparable<PassiveSkill>
     [JsonPropertyName("isAscendancyStart")]
     public bool IsAscendancyStart { get; init; }
 
+    [JsonPropertyName("grantedPassivePoints")]
+    public int GrantedPassivePoints { get; init; }
+
     [JsonPropertyName("isMultipleChoice")]
     public bool IsMultipleChoice { get; init; }
 

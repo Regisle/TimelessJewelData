@@ -27,24 +27,6 @@ public sealed class AbyssAscendancyManager
         if (classStart == null)
             return Array.Empty<PassiveSkill>();
 
-        Dictionary<uint, int> ascendancyCosts = new Dictionary<uint, int>() { [ascendancyStart.GraphIdentifier] = 0 };
-        Queue<PassiveSkill> costFrontier = new Queue<PassiveSkill>();
-        costFrontier.Enqueue(ascendancyStart);
-        while (costFrontier.Count > 0)
-        {
-            PassiveSkill selected = costFrontier.Dequeue();
-            foreach (string connection in EnumerateConnections(selected))
-            {
-                if (!uint.TryParse(connection, out uint graphIdentifier) || ascendancyCosts.ContainsKey(graphIdentifier))
-                    continue;
-                PassiveSkill connected = DataManager.GetPassiveSkill(graphIdentifier);
-                if (connected == null || !string.Equals(connected.AscName, ascendancyName, StringComparison.Ordinal))
-                    continue;
-                ascendancyCosts.Add(graphIdentifier, ascendancyCosts[selected.GraphIdentifier] + 1);
-                costFrontier.Enqueue(connected);
-            }
-        }
-
         SingleSeedRandomNumberGenerator randomNumberGenerator = new SingleSeedRandomNumberGenerator(jewelSeed);
         // The client's synthetic root connects to both nodes in this order. It
         // marks them seen before randomly walking either entry into the wheel.
@@ -57,8 +39,8 @@ public sealed class AbyssAscendancyManager
             int selectedIndex = frontier.Count == 1 ? 0 : checked((int)randomNumberGenerator.Generate((uint)frontier.Count));
             PassiveSkill selected = frontier[selectedIndex];
             frontier.RemoveAt(selectedIndex);
-            VisitConnections(selected.InConnections, ascendancyName, ascendancyCosts, seenConnections, frontier, affected);
-            VisitConnections(selected.OutConnections, ascendancyName, ascendancyCosts, seenConnections, frontier, affected);
+            VisitConnections(selected.InConnections, ascendancyName, seenConnections, frontier, affected);
+            VisitConnections(selected.OutConnections, ascendancyName, seenConnections, frontier, affected);
         }
         return affected;
     }
@@ -76,7 +58,6 @@ public sealed class AbyssAscendancyManager
     private static void VisitConnections(
         IReadOnlyList<string> connections,
         string ascendancyName,
-        IReadOnlyDictionary<uint, int> ascendancyCosts,
         HashSet<uint> seenConnections,
         List<PassiveSkill> frontier,
         List<PassiveSkill> affected)
@@ -96,14 +77,15 @@ public sealed class AbyssAscendancyManager
             if (!connected.IsAscendancy || !string.Equals(connected.AscName, ascendancyName, StringComparison.Ordinal))
                 continue;
 
-            if (connected.IsNotable && IsEligibleAscendancyNotable(connected) &&
-                ascendancyCosts.TryGetValue(graphIdentifier, out int cost) && cost < 4)
+            if (IsEligibleAscendancyNotable(connected))
                 affected.Add(connected);
             frontier.Add(connected);
         }
     }
 
     private static bool IsEligibleAscendancyNotable(PassiveSkill passiveSkill) =>
+        passiveSkill.IsNotable &&
+        passiveSkill.GrantedPassivePoints == 0 &&
         !passiveSkill.IsProxy &&
         !passiveSkill.IsMastery &&
         !passiveSkill.IsJewelSocket &&
