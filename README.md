@@ -129,7 +129,7 @@ Running it will output all 11 jewel datafiles, 1 lua file, and 1 csv file (note 
 The Abyss jewels introduced in 3.29 cannot use the original notable-by-seed layout:
 
 - Versions 7-10 select 60 graph entries with a weighted walk starting at the jewel socket. Their output therefore depends on both the seed and socket.
-- Version 11 transforms nodes on the path from the socket to the character start. The path itself is deliberately not stored because Path of Building already calculates it. Its extra ascendancy selection is stored per seed and ascendancy.
+- Version 11 transforms nodes on the path from the socket to the character start. The path itself is deliberately not stored because Path of Building already calculates it. Its extra ascendancy selection is stored per seed and ascendancy. It skips multiple-choice nodes and notables that grant passive points.
 
 All integer fields below are little-endian. Stat rolls are signed 16-bit integers; negative rolls must not be read as unsigned values.
 
